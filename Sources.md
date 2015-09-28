@@ -30,16 +30,18 @@ Modified from  [http://nbviewer.ipython.org/github/BenLangmead/comp-genomics-cla
 ###Assembly programs
 
 * `Velvet` version 1.2.10 from [http://www.ebi.ac.uk/~zerbino/velvet/](http://www.ebi.ac.uk/~zerbino/velvet/)
-* `SPAdes` genome assembler version 3.1.1 from [http://bioinf.spbau.ru/spades](http://bioinf.spbau.ru/spades)
-* HGAP: part of smrtanalysis 2.2.0 from PacBio, see [http://pacbiodevnet.com/](http://pacbiodevnet.com/)
+* `SPAdes` genome assembler version 3.6.0 from [http://bioinf.spbau.ru/spades](http://bioinf.spbau.ru/spades)
+* HGAP: part of smrtanalysis 2.3.0 from PacBio, see [http://pacbiodevnet.com/](http://pacbiodevnet.com/)
+* `megahit` version 1.0.2 from [https://github.com/voutcn/megahit/releases](https://github.com/voutcn/megahit/releases)
 
 ###Other programs
 
-* `bwa` version 0.7.5a-r405 [http://bio-bwa.sourceforge.net/](http://bio-bwa.sourceforge.net/)
-* `samtools` version: 1.0 from [http://www.htslib.org/)(http://www.htslib.org/)
+* `bwa` version 0.7.12 from [http://bio-bwa.sourceforge.net/](http://bio-bwa.sourceforge.net/)
+* `samtools` version: 1.1 from [http://www.htslib.org/](http://www.htslib.org/)
 * `IPython` and the IPython notebook, version 2.3.0, from [http://ipython.org/](http://ipython.org/)
 * `IGV` version 2.3 from [http://www.broadinstitute.org/igv/](http://www.broadinstitute.org/igv/)
-* `REAPR` version: 1.0.17 from [http://www.sanger.ac.uk/resources/software/reapr/](http://www.sanger.ac.uk/resources/software/reapr/)
+* `REAPR` version: 1.0.18 from [http://www.sanger.ac.uk/resources/software/reapr/](http://www.sanger.ac.uk/resources/software/reapr/)
+* `quast` 3.0 from [http://bioinf.spbau.ru/quast](http://bioinf.spbau.ru/quast)
 
 ###Scripts
 
