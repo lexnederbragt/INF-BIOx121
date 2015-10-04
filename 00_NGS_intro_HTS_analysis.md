@@ -71,19 +71,18 @@ Exercise using mentimeter wordcloud
 
 Illumina [has a poster](http://www.illumina.com/applications/sequencing/ngs-library-prep/library-prep-methods.html) with all library preparation methods. 
 
-Lior patter has "an up-to-date annotated bibliography of *Seq assays (functional genomics assays based on high-througphput sequencing)" on [this page](https://liorpachter.wordpress.com/seq/).
+Lior Pachter has "an up-to-date annotated bibliography of *Seq assays (functional genomics assays based on high-througphput sequencing)" on [this page](https://liorpachter.wordpress.com/seq/).
 
 Slide with figure 4 from [Reuter *et al* 2015](http://dx.doi.org/10.1016/j.molcel.2015.05.004).
 
 ####Selected applications
 
-RNA-seq
-Assembly and metagenomics
-ChIP-seq
-Amplicon sequencing
-SNP typing and discovery
-
-Single-cell?
+* RNA-seq
+* Assembly and metagenomics
+* ChIP-seq
+* Amplicon sequencing
+* SNP typing and discovery
+* Single-cell sequencing
 
 ##Principles and problems of HTS data analysis
 
@@ -127,9 +126,9 @@ Slides:
 Mentimeter exercise
 
 
-$$$$$$$$$$$$$  
-$ HERE I AM $  
-$$$$$$$$$$$$$  
+[Anscombe's quartet](https://en.m.wikipedia.org/wiki/Anscombe's_quartet): https://en.m.wikipedia.org/wiki/Anscombe's_quartet
+
+####Some aspects of errors in reads
 
 Exercise: what can go wrong during Illumina sequencing (i.e. errors)
 
@@ -137,6 +136,8 @@ Exercise: what can go wrong during PacBio sequencing (i.e. errors)
 Slide: from Metzker
 
 Slide: GC bias plot from this one paper
+
+Batch effects
 
 End with
 
