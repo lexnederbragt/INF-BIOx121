@@ -82,9 +82,6 @@ Followed by the 'enter' key.
 Now, we'll make the new folder and move into it:
 
 ```
-
-
-
 mkdir qc
 cd qc
 pwd
@@ -129,7 +126,7 @@ Study the results.
 
 The plot called "Per base sequence quality" shows an overview of the range of quality scores across all based at each position in the fastq file. The y-axis shows quality scores and the x-axis shows the read position. For each read position, a boxplot is used to show the distribution of quality scores for all reads. The yellow boxes represent quality scores within the inter-quartile range (25% - 75%). The upper and lower whiskers represent 10% and 90% point. The central red line shows the median of the quality values and the blue line shows the mean of the quality values.
 
-A rule of thumb is that a quality score of 30 indicates a 1 in 1000 probability of error and a quality score of 20 indicates a 1 in 100 probability of error (see the wikipedia page on the fastq format at [http://en.wikipedia.org/wiki/Fastq](http://en.wikipedia.org/wiki/Fastq). The higher the score the better the base call. You will see from the plots that the quality of the base calling deteriorates along the read (as is always the case with Illumina sequencing). Sometimes, a minimum requirement for Per Base Sequence Quality is that the first 36 bases should have a median and mean quality score over 20.
+A rule of thumb is that a quality score of 30 indicates a 1 in 1000 probability of error and a quality score of 20 indicates a 1 in 100 probability of error (see the wikipedia page on the fastq format at [http://en.wikipedia.org/wiki/Fastq](http://en.wikipedia.org/wiki/Fastq). The higher the score the better the base call. You will see from the plots that the quality of the base calling deteriorates along the read (as is always the case with Illumina sequencing).
 
 The plot 'Per tile sequence quality' shows the deviation from the average quality for each tile, i.e. part of the flowcell. The graph allows you to look at the quality scores from each tile across all of your bases to see if there was a loss in quality associated with only one part of the flowcell. The colours are on a cold to hot scale, with cold colours being positions where the quality was at or below the average for that base in the run, and hotter colours indicate that a tile had worse qualities than other tiles for that base. A good run should show a plot that is blue all over.
 
@@ -141,7 +138,7 @@ Now, answer these questions:
 * How many reads were there in total in the `cod_read1.fastq` file?
 * How many bases were there in total in the file?
 * Which part(s) of the reads would you say are of low quality - if any?
-* Would the run have passed the minimum requirement for Per Base Sequence Quality?
+* Would you have accepted this data if you were given it by your sequencing provider?
 
 Repeat the fastqc analysis for the file `/data/qc/cod_read2.fastq`, which contains the reverse read ('read2').
 
@@ -150,7 +147,7 @@ Open the `cod_read2_fastqc.html` in your webbrowser.
 **Questions**
 
 * Are there part(s) of the reads that have a lower quality compared to the `cod_read1.fastq` file?
-* Would the run have passed the minimum requirement for Per Base Sequence Quality?
+* Would you have accepted this data if you were given it by your sequencing provider?
 
 
 NB. You can get more information about the use of the fastqc program by writing
@@ -165,6 +162,11 @@ Now run fastqc on the other files in the `/data/qc` folder and evaluate the resu
 
 * start with the files called `more_cod_read*`. How do these compare to the cod reads you looked at before?
 * then take the ChipSeq and microRNA example read files (they only have one fastq file each)
+
+**Question:** which of the different Illumina Sequence identifiers are used for these reads? 
+
+**Question:** discuss the results with your neighbour, and try to explain the fastqc results for these files.
+
 
 ####Other programs to try
 
