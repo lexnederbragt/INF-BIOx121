@@ -3,8 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to INF-BIOx121's documentation!
-=======================================
+Course material for the INF-BIOx121 course
+==========================================
+
+2015 course edition material will appear here.
 
 Contents:
 
@@ -17,6 +19,5 @@ Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
 
