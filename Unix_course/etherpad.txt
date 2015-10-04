@@ -1,0 +1,102 @@
+wget http://swcarpentry.github.io/shell-novice/shell-novice-data.zip
+
+
+Material taught based on http://swcarpentry.github.io/shell-novice/ from http://software-carpentry.org/lessons.html
+
+
+Practice: The Command Line Murders  https://github.com/veltman/clmystery
+wget https://github.com/veltman/clmystery/archive/master.zip
+unzip master.zip
+cd clmystery-master
+
+                                                                                                                                          
+
+-#- '-bash' is the shell around the kernel (basically a program that runs all oter programs like ls, grep or firefox)
+-#- 'freebee' is a remote server @abel
+-#- '.' is the current folder (used to copy things to your currend pwd for example)
+-#- 'Tab' will autofill, double click to do a ls  (sort of)
+-#- Up and Down keys scrolls through your previous 
+-#- '*' is the wildcard
+-#- '>' redirect into a file (creates the file if it is not there or overrwite the file if it exist)
+-#- '>>' will append to end of file instead of creating/overriding
+-#- '|' pipe. Piping is stringing together multiple programs. Each piping will take the output from the one program as input in the next.
+
+whoami:     system will return username
+clear:         clear the terminal window. can still scroll up (ctrl+l is faster)
+pwd:          print work directory. Also display the paths to the current wd
+wget (curl): gets file from the internet
+
+ls aruments:
+    folder names 
+    -F (marks folders / and files)
+    -1 display as list
+cd arguments:     folder names. without arguments you return to your home folder
+
+
+
+rm:         delete file (no trashcan/recycle bin so be carefull)
+rm arguments:
+    -r overrides most problems  like nonempty folders, etc
+
+rmdir:      remove directory (must be empty)
+
+cat:       concatenate
+mv:        move
+cp:        copy
+
+wc:      lines (formally counts all newline characters \n), words, characters, inkl whitespace (bytes)
+    arguments -l: show only lines
+
+sort:      program that sorts contents  
+sort arguments:
+    -n is numerical sorting
+    -r reverse sorting
+
+head: Start of file
+tail:   End of file
+
+echo: repeat the arguments and print them in the terminal 
+
+less: open a file in a simple shell text reader
+  -pgDwn: space
+  -pgUp: B
+  -while in the reader, you can search in the document with typing '/' 'findNext'=n
+
+%% Searching %%
+
+grep is line by line, while cut is field by field
+
+grep arguments:
+ -w match words exact
+ -i turn the search case insensitive
+ -c line count
+ -n display line numbers
+ -v exlusion of words
+ - use quotation marks if you want to use multiple words (usually a good idea to always use it)
+
+cut arguments:
+  -f is specifying the field 
+  -c
+
+uniq searches for unique instances
+  -c count the number of times the unique instance happened
+
+Hints:
+ls NEN*.txt
+for animal in basilisk.dat unicorn.dat ; do echo mv $animal original-$animal; done
+for animal in basilisk.dat unicorn.dat ; do mv $animal original-$animal; done
+for animal in *.dat ; do mv $animal original-$animal; done
+
+exercise:
+goostats takes two arguments: name of input file and name of output file
+Example:
+bash goostats NENE01729A.txt stats-NENE01729A.txt
+
+Write a loop that runs the goostats command on all NEN*.txt files
+Try echo the command in the loop before actually running it
+
+MANTRA: If something seems boring, easy and repetetive, a computer can do it for you!
+
+
+
+
