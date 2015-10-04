@@ -128,32 +128,30 @@ Mentimeter exercise
 
 [Anscombe's quartet](https://en.m.wikipedia.org/wiki/Anscombe's_quartet): https://en.m.wikipedia.org/wiki/Anscombe's_quartet
 
-####Some aspects of errors in reads
+###Some aspects of errors in reads
 
-Exercise: what can go wrong during Illumina sequencing (i.e. errors)
+####What can go wrong during Illumina sequencing (i.e. errors)
+Mentimeter exercise
 
-Exercise: what can go wrong during PacBio sequencing (i.e. errors)
-Slide: from Metzker
 
-Slide: GC bias plot from this one paper
+####What can go wrong during PacBio sequencing (i.e. errors)
+Mentimeter exercise
+Slide: PacBio sequencing explained from the Metzker paper
 
-Batch effects
+Slide: GC bias plot from this Laehnemann et al paper
 
-End with
+Batch effects: see <http://bitesizebio.com/20998/beware-the-bane-of-batch-effects/>
 
-- what are the basic skills we want you to learn?
-    - qc (reads and analysis results)
-    - normalisation
-    - study design (e.g. replicates)
-    - principles of mapping
-    - principles of assembly
-    - statistics, hypothesis testing
-    - summary statistics and visualisation
-        - sanity checking/validation
-    - model system versus non-model system organisms (not such a good reference if one at all)
-    - reproducibility
-    - find data, munge it
 
-A Comprehensive Assessment of Somatic Mutation Calling in Cancer Genomes http://biorxiv.org/content/early/2014/12/24/012997
+###What are the basic skills we want you to learn?
 
-Use http://no.padlet.com/ ?
+* Quality control (both reads and analysis results)
+* Study design (e.g. replicates)
+* Principles of mapping
+* Principles of assembly
+* Statistics, hypothesis testing
+* Summary statistics and visualisation
+* Sanity checking/validation of results
+* Model system versus non-model system organisms
+* Reproducibility
+* Finding data, and munging it
