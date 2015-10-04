@@ -1,6 +1,7 @@
-#Read QC
+Quality control of sequencing reads
+===================================
 
-Course material for the INF-BIOx121 'High Throughput Sequencing technologies and bioinformatics analysis ' course at the University of Oslo, Fall 2014
+Course material for the INF-BIOx121 'High Throughput Sequencing technologies and bioinformatics analysis ' course at the University of Oslo, Fall 2015
 
 ##Conventions in this document
 
