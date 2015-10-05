@@ -35,7 +35,7 @@ You will find several fastq files in that folder. We will start the practical wi
 
 They contain 1 million randomly sampled reads from a HiSeq 2x100 bp PE (paired end) run
 
-###Part 1: Understanding reads, QC of sequence data
+###Part 1: Understanding reads
 
 Learning points:
 
@@ -62,7 +62,7 @@ less /data/qc/cod_read2.fastq
 
 **Question:** do you see whether the reads in the same order in both files?
 
-####Quality control of Illumina reads
+###Part 2: quality control of Illumina data
 
 We will be using a program called **FastQC**. The program is available with a graphical user interface, or as a command-line only version. We will use the latter one. It takes a single fastq file (the file can be compressed) as input, and produces a web page (html file) with the results of a number of analyses.
 
