@@ -10,6 +10,9 @@ Once you are logged in, please fill out our pre-course questionnaire so we can  
 
 ssh username@cod3.hpc.uio.no
 
+####################
+Introduction to HTS and data analysis
+
 Exercise: Read lengths versus throughput
 
 * for each sequencing instrument still being sold, find the specifications on the company’s website
@@ -35,6 +38,19 @@ https://docs.google.com/spreadsheets/d/1a6x8fpnqhKbJaTbbc4w5NH0Ptn_klj6CJ6ZlzJ4D
 'Tube map' from  http://nirvacana.com/thoughts/becoming-a-data-scientist
 www.govote.at code 17 40 93
 
-sequencing instruments guide.
-https://genohub.com/ngs-instrument-guide/
+Sequencing instruments guide: https://genohub.com/ngs-instrument-guide/
 
+####################
+Experimental design
+
+Sequencing Coverage Calculator
+http://support.illumina.com/downloads/sequencing_coverage_calculator.html
+
+####################
+Read QC
+
+https://wiki.uio.no/projects/clsi/index.php/INF-BIOX121_H15#Downloading_results_obtained_during_the_course
+
+Illumina four-color sequencing by synthesis visualised: https://www.youtube.com/watch?v=tuD-ST5B3QA
+
+Prinseq: http://edwards.sdsu.edu/cgi-bin/prinseq/prinseq.cgi dataset 31343433393435393130
