@@ -26,7 +26,7 @@ Material will be added as it comes in.
 **Galaxy**
 
 
-**De *novo genome* assembly**
+**De novo genome assembly**
 
 **How to become an efficient bioinformatician**
 

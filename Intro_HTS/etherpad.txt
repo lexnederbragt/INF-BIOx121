@@ -1,0 +1,40 @@
+This pad: https://etherpad.mozilla.org/infbiox121
+
+Course wiki https://wiki.uio.no/projects/clsi/index.php/INF-BIOX121_H15
+
+On Windows, in the applications menu, look for the IFI-Linux.xw32 program and launch that; this should log you in to a linux machine
+
+If you get a warning about your home area not being mounted, you'll need a guest account, we'll get those for you.
+
+Once you are logged in, please fill out our pre-course questionnaire so we can  get an impression on the background of the students:  http://goo.gl/forms/aiXtGJtZPO
+
+ssh username@cod3.hpc.uio.no
+
+Exercise: Read lengths versus throughput
+
+* for each sequencing instrument still being sold, find the specifications on the company’s website
+* make a plot in a google spreadsheet with the read length on the x-axis and the per-run throughput in Gigabp on the Y axis
+* make both axis log scale
+
+
+julian: 
+https://docs.google.com/spreadsheets/d/1ayn-TSfrhC8DzuOQr8J0Fbg4E967lglxdpAU_agjGwY/edit?usp=sharing
+
+William@co
+https://docs.google.com/spreadsheets/d/1QnXIWYnEEgUzbNOFseQBHi7bkKCo8i6PJgLfT1tSv-c/edit?usp=sharing
+
+Supergroup
+https://docs.google.com/spreadsheets/d/1fEpr4VfaMjDS5cpzmWgiWpC219r_KPrDG2xvyCLPZXU/edit?usp=sharing
+
+
+Front seat dudes and dudettes:
+https://docs.google.com/spreadsheets/d/1Gp7IEDVUcjpAZYD9ngUI_vy4Esn4RtiUEOfF02eLcsQ/edit?usp=sharing
+
+https://docs.google.com/spreadsheets/d/1a6x8fpnqhKbJaTbbc4w5NH0Ptn_klj6CJ6ZlzJ4Dx3o/edit#gid=0
+
+'Tube map' from  http://nirvacana.com/thoughts/becoming-a-data-scientist
+www.govote.at code 17 40 93
+
+sequencing instruments guide.
+https://genohub.com/ngs-instrument-guide/
+
