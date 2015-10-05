@@ -11,8 +11,7 @@ Material will be added as it comes in.
 
 - content of the `etherpad <https://raw.githubusercontent.com/lexnederbragt/INF-BIOx121/2015/Unix_course/etherpad.txt>`__
 
-**Intro to High Throughput Sequencing**  
-**Applications and Principles and problems of HTS data analysis**
+**Intro to High Throughput Sequencing & Applications and Principles and problems of HTS data analysis**
 
 - schedule of what was discussed, with links `web <https://github.com/lexnederbragt/INF-BIOx121/blob/2015/Intro_HTS/NGS_intro_HTS_analysis.md>`__ `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Intro_HTS/NGS_intro_HTS_analysis.pdf>`__
 - slides `pptx <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Intro_HTS/NGS_intro_HTS_analysis_slides.pptx>`__
@@ -21,6 +20,8 @@ Material will be added as it comes in.
 
 
 **Experimental design**
+
+- lecture slides `pptx <https://github.com/lexnederbragt/INF-BIOx121/blob/2015/Intro_HTS/NGS_experimental_design_slides.pptx?raw=true>`__
 
 **Quality control of sequencing reads**
 
