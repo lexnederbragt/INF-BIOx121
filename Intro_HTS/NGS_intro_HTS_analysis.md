@@ -7,6 +7,8 @@ Day 1 of the INF-BIO5151/9121 course "High Throughput Sequencing technologies an
 ####What sequencing platforms do you know
 Exercise using Mentimeter wordcloud
 
+![MacDown Screenshot](images/poll1.png)
+
 * Illumina HiSeq 1000 1500 2000 2500 3000 4000
 * Illumina HiSeq X (Five and Ten)
 * Illumina NextSeq 500
@@ -42,7 +44,7 @@ Discuss my version on figshare: <http://figshare.com/articles/developments_in_NG
 Slide with figure 1 from [Reuter *et al* 2015](http://dx.doi.org/10.1016/j.molcel.2015.05.004).
 
 ####Similarities between all sequencing platforms
-Exercise using mentimeter wordcloud
+Exercise using mentimeter wordcloud - skipped
 
 ####Details on the technology behind the different sequencing platforms
 
@@ -69,6 +71,8 @@ Slides/whiteboard: Paired end versus single end versus mate pair, subreads, 2D r
 ####What applications do you know of for HTS?
 Exercise using mentimeter wordcloud
 
+![MacDown Screenshot](images/poll2.png)
+
 Illumina [has a poster](http://www.illumina.com/applications/sequencing/ngs-library-prep/library-prep-methods.html) with all library preparation methods. 
 
 Lior Pachter has "an up-to-date annotated bibliography of *Seq assays (functional genomics assays based on high-througphput sequencing)" on [this page](https://liorpachter.wordpress.com/seq/).
@@ -89,6 +93,8 @@ Slide with figure 4 from [Reuter *et al* 2015](http://dx.doi.org/10.1016/j.molce
 ####What skills do you think you need for analysing HTS data?
 Exercise using mentimeter wordcloud.  
 'Tube map' from <http://nirvacana.com/thoughts/becoming-a-data-scientist/>.
+
+![MacDown Screenshot](images/poll3.png)
 
 Slides:
 
@@ -123,7 +129,7 @@ Slides:
 ||Reproducibility|pipelines|
      
 ####Ranking skills important for analysing HTS data
-Mentimeter exercise
+Mentimeter exercise - skipped
 
 
 [Anscombe's quartet](https://en.m.wikipedia.org/wiki/Anscombe's_quartet): https://en.m.wikipedia.org/wiki/Anscombe's_quartet
@@ -131,11 +137,10 @@ Mentimeter exercise
 ###Some aspects of errors in reads
 
 ####What can go wrong during Illumina sequencing (i.e. errors)
-Mentimeter exercise
-
+Mentimeter exercise - skipped
 
 ####What can go wrong during PacBio sequencing (i.e. errors)
-Mentimeter exercise
+Mentimeter exercise - skipped
 Slide: PacBio sequencing explained from the Metzker paper
 
 Slide: GC bias plot from this Laehnemann et al paper

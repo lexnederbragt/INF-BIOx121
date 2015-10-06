@@ -42,3 +42,9 @@ Material will be added as it comes in.
 **How to become an efficient bioinformatician**
 
 **RNA seq: differential expression analysis**
+
+
+
+.. toctree::
+   :maxdepth: 2
+
