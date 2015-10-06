@@ -22,14 +22,17 @@ Material will be added as it comes in.
 **Experimental design**
 
 - lecture slides `pptx <https://github.com/lexnederbragt/INF-BIOx121/blob/2015/Intro_HTS/NGS_experimental_design_slides.pptx?raw=true>`__
+- etherpad content is in the one linked to above
 
 **Quality control of sequencing reads**
 
 -  `Web <https://github.com/lexnederbragt/INF-BIOx121/blob/2015/QC/Read_QC.md>`__
 -  `PDF <https://github.com/lexnederbragt/INF-BIOx121/blob/2015/QC/Read_QC.pdf>`__
+- etherpad content is in the one linked to above
 
 **Mapping and variant calling**
 
+- slides part 1 `pptx <https://github.com/lexnederbragt/INF-BIOx121/blob/2015/Variant_calling/variantCallingCourse_oct2015_Part1.pptx?raw=true>`__ `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Variant_calling/variantCallingCourse_oct2015_Part1.pdf>`__
 
 **Galaxy**
 
