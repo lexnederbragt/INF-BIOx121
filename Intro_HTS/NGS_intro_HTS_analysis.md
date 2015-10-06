@@ -1,5 +1,5 @@
-#Intro to High Throughput Sequencing and applications
-
+Intro to High Throughput Sequencing and applications
+=======================================
 Day 1 of the INF-BIO5151/9121 course "High Throughput Sequencing technologies and bioinformatics analysis"
 
 ## Sequencing technologies

@@ -1,4 +1,5 @@
-#Assembly using SPADES
+Assembly using SPADES
+=====================
 
 Spades was written as an assembly program for bacterial genomes, from regular, as well as from whole-genome amplified samples. It performed very well in the GAGE-B competition, see [http://ccb.jhu.edu/gage_b/](http://ccb.jhu.edu/gage_b/). SPAdes also works well, sometimes even best, when given high-coverage datasets.
 

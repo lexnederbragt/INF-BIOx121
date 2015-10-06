@@ -1,21 +1,22 @@
-#Mapping reads to an assembly and visualising the results
-
+Mapping reads to an assembly and visualising the results
+======================================
 We will use `bwa` for mapping. this is the same program you used for the variant calling module.
 
 ####Set up the environment
 Load the following modules:
 
 ```
-module load samtools
-module load bwa
-module load python2
+module load bwa/0.7.8
+module load samtools/samtools-1.1
+module load reapr/1.0.18
+module load python2/2.7.9
 ```
 
 ####Indexing the assembly
 
 Your new assembly now becomes the 'reference' for `bwa`. `bwa` needs an index of the sequences to make mapping go faster. For large genomes such as the human genome, this takes a long time. For the small bacterial genome we work with here this is very fast.
 
-Move (using `cd`) to the folder with your final assembled sequenced, e.g. `contigs.fa` for velvet.  
+Move (using `cd`) to the folder with your final assembled sequences, i.e. the `velvet_pe+mp.fa` file when you first do this.  
 
 Index the fasta file with:
 
@@ -74,14 +75,17 @@ Repeat the `bwa mem` and `samtools` commands above, but:
 ####Plotting the insert size distribution
 Since we know know where the pairs of reads map, we can obtain he distance between them. That information is stored in the SAM/BAM output in the 9th column, 'TLEN' (observed Template LENgth).
 
-We will use python, and the python modules `pysam` and `R` (through the python `rpy2` module) to plot the distribution of insert sizes for a subset of the alignments. This we will do in another IPython notebook
+We will use python, and the python modules `pysam` and `R` (through the python `rpy2` module) to plot the distribution of insert sizes for a subset of the alignments. This we will do in another Jupyter notebook
 
-* Copy the notebook file `/data/assembly/Plot_insertsizes.ipynb` to the folder with the BAM files
+* Copy the `bwa` folder with eh sorted `bam` files from the server to the assembly folder on your local Linux machine
+* Copy the notebook file `/data/assembly/Plot_insertsizes.ipynb` to the same folder
 * In the terminal, `cd` to the same folder
-* Open a new terminal window (log in to the server again) for running the IPython notebook from and in it, `cd` to the folder with the BAM files
-* See the instructions for how to start the IPython notebook on the wiki at [https://wiki.uio.no/projects/clsi/index.php/INF-BIOX121_H14_RStudio_IPython](https://wiki.uio.no/projects/clsi/index.php/INF-BIOX121_H14_RStudio_IPython)
-* After a little bit, your webbrowser will start with a new tab labelled `IPython dashboard`, and the notebook `Plot_insertsizes` listed
-* Click on the notebook name, it will open in a new tab
+* open the Jupyter notebook
+
+```
+jupyter notebook Plot_insertsizes.ipynb
+```
+ 
 * Execute the cells as listed.
 * For `infile`, use the name of the sorted BAM file for the mapping of the paired end or mate pair reads
 * Generate plots for both the paired end mapping *and* the mate pair mapping
@@ -92,12 +96,12 @@ We will use python, and the python modules `pysam` and `R` (through the python `
 * Why isn't the mean of the distribution a useful number for the mate pair library?
 
 
-When you are done with the IPython notebook:
+When you are done with the Jupyter notebook:
 
 * If you want to save the figures, copy them from the notebook into another program
 * Save the notebook
 * Close the browser windows
-* In the terminal where you started IPython notebook, click ctrl-c and confirm.
+* In the terminal where you started Jupyter notebook, click ctrl-c and confirm.
 
 
 ####Visualising the assembly in a genome browser

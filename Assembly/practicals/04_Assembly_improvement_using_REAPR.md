@@ -1,4 +1,5 @@
-#Assembly improvement using REAPR
+Assembly improvement using REAPR
+================================
 From the REAPR website:
 > REAPR is a tool that evaluates the accuracy of a genome assembly using mapped paired end [and mate pair] reads, without the use of a reference genome for comparison. It can be used in any stage of an assembly pipeline to automatically break incorrect scaffolds and flag other errors in an assembly for manual inspection. It reports mis-assemblies and other warnings, and produces a new broken assembly based on the error calls.
 

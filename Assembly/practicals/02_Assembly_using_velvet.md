@@ -1,4 +1,5 @@
-#Assembly using velvet
+Assembly using velvet
+=====================
 
 ###*De novo* assembly of Illumina reads using velvet
 
@@ -18,7 +19,7 @@ We wil first use paired end reads only:
 Velvet requires an index file to be built before the assembly takes place. We must choose a *k-* mer value for building the index. Longer *k-* mers result in a more stringent assembly, at the expense of coverage. There is no definitive value of *k* for any given project. However, there are several absolute rules:
 
 * *k* must be less than the read length
-* it should be an odd number. 
+* it should be an odd number 
 
 Firstly we are going to run Velvet in single-end mode, *ignoring the pairing information*. Later on we will incorporate this information.
 
@@ -26,7 +27,14 @@ First, we need to make sure we can use velvet:
 
 
 ####Set up the environment
-Load the following module:
+
+For this part of the course, *every time you log into the server* you need to execute the command below. IMPORTANT do not use spaces between `PATH=` and `$PATH`!
+
+```
+export PATH=/data/bin/:$PATH
+```
+
+To be able to use velvet, load the following module:
 
 ```
 module load velvet
@@ -56,7 +64,7 @@ cd velvet
 
 ####A first assembly
 
-Find a value of *k* (between 21 and 99) to start with, and record your choice in this google spreadsheet: [bit.ly/INFBIO1](http://bit.ly/INFBIO1). Run `velveth` to build the hash index (see below).
+Find a value of *k* (between 21 and 113) to start with, and record your choice in this google spreadsheet: [bit.ly/INFBIO1](http://bit.ly/INFBIO1). Run `velveth` to build the hash index (see below).
 
 Program|Options|Explanation
 -------|-------|-------------
@@ -104,7 +112,7 @@ Velvet will end with a text like this:
 
 The number of nodes represents the number of nodes in the graph, which (more or less) is the number of contigs. Velvet reports its N50 (as well as everything else) in 'kmer' space. The conversion to 'basespace' is as simple as adding k-1 to the reported length.
 
-Look again at the folder `asm_name`, you should see the following extra files:
+Look again at the folder `ASM_NAME`, you should see the following extra files:
 
 `contigs.fa`  
 `Graph`  
@@ -123,7 +131,7 @@ The important files are:
 * What k-mer did you use?
 * What is the N50 of the assembly?
 * What is the size of the largest contig?
-* How many contigs are there in the `contigs.fa` file? Use `grep -c NODE contigs.fa`
+* How many contigs are there in the `contigs.fa` file? Use `grep -c NODE contigs.fa`. Is this the same number as velvet reported?
 
 
 Log your results in this google spreadsheet: `bit.ly/INFBIO1`
@@ -135,34 +143,56 @@ Log your results in this google spreadsheet: `bit.ly/INFBIO1`
 
 Now run `velveth` and `velvetg` for the kmer size determined by the whole class. Use this kmer from now on!
 
-####Estimating and setting exp_cov
+####Estimating and setting `exp_cov`
 
-Much better assemblies are produced if Velvet understands the expected coverage for unique regions of your genome. This allows it to try and resolve repeats. The command `velvet-estimate-exp-cov.pl` is supplied with Velvet and will plot a histogram of k-mer frequency for each node in the graph, listing k-mer frequency, and the number of count of nodes with that frequency
+Much better assemblies are produced if Velvet understands the expected coverage for unique regions of your genome. This allows it to try and resolve repeats. The data to determine this is in the `stats.txt` file. The full description of this file is in the Velvet Manual, at [http://www.ebi.ac.uk/~zerbino/velvet/Manual.pdf](http://www.ebi.ac.uk/~zerbino/velvet/Manual.pdf).
 
-`velvet-estimate-exp_cov.pl ASM_NAME/stats.txt`
+A so-called Jupyter notebook has been provided to plot the distribution of the coverage of the nodes. In order to use it, you need to do the following on the local linux machine *Not on the server*:
 
-The output shows:
+* install the Jupyter notebook and some python packages (this may take a few minutes):
 
-* k-mer coverage
-* count of contigs (nodes in the *de Bruijn* graph) with that coverage
-* series of *'s making up a histogram 
+```
+pip install --user jupyter pandas numpy pysam
+```
 
-The *peak value* in this histogram can be used as a guide to the best k-mer value for `exp_cov`.
+* prepare a folder on your linux machine
+
+```
+cd ~
+mkdir assembly
+cd assembly
+mkdir velvet
+cd velvet
+mkdir ASM_NAME
+cd ASM_NAME
+```
+
+* copy the `stats.txt` file from the server to this folder using the `rsync` command
+* copy the notebook file `/data/assembly/node_coverage.ipynb` from the server to this folder using `rsync`
+* start the notebook:
+
+```
+jupyter notebook node_coverage.ipynb
+
+```
+* After a little while, your webbrowser will start with a new tab with the notebook in it
+* follow the instructions in the notebook
 
 **Question:**
 
 * What do you think is the approximate expected k-mer coverage for your assembly?
 
-Now run velvet again, supplying the value for `exp_cov` (k-mer coverage, *not* genome coverage) corresponding to your answer:
+Now run velvet again, supplying the value for `exp_cov` (k-mer coverage) corresponding to your answer:
 
 ```
 velvetg ASM_NAME -exp_cov PEAK_K_MER_COVERAGE
 ```
+
 **Question:**
 
 * What improvements do you see in the assembly by setting a value for `exp_cov`?
 
-####Setting *cov_cutoff*
+####Setting `cov_cutoff`
 
 You can also clean up the graph by removing low-frequency nodes from the *de Bruijn* graph using the `cov_cutoff` parameter. Low-frequency nodes can result from sequencing errors, or from parts of the genome with very little sequencing coverage. Removing them will often result in better assemblies, but setting the cut-off too high will also result in losing useful parts of the assembly. Using the histogram from previously, estimate a good value for `cov_cutoff`.
 
@@ -257,12 +287,12 @@ Some of the metrics the script reports are:
 
 Have a look for contigs which are long and have a much higher coverage than the average for your genome. One tedious way to do this is to look into the `contigs.fa` file (with `less`). You will see the name of the contig ('NODE'), it's length and the kmer coverage. However, trying to find long contigs with high coverage this way is not very efficient.  
 
-A faster was is to use the `stats.txt` file. The full description of this file is in the Velvet Manual, at [http://www.ebi.ac.uk/~zerbino/velvet/Manual.pdf](http://www.ebi.ac.uk/~zerbino/velvet/Manual.pdf). 
+A faster was is to again use the `stats.txt` file.
 
 Relevant columns are:
 
 1) ID --> sequence ID, same as 'NODE' number in the `contigs.fa` file  
-2) lgth --> sequence 'length' (BUT see the velvet manual)  
+2) lgth --> sequence 'length'
 6) short1_cov --> kmer coverage (column 6)  
 
 
@@ -344,4 +374,4 @@ velvetg ASM_NAME4 -cov_cutoff auto -exp_cov auto
 Make a copy of the contigs file and call it `velvet_mp_only`
 
 ###Next steps
-Next, map the reads used for the assemblies back to the scaffolds. See the tutorial 'Mapping_reads_to_an_assembly'
+Next, map the reads used for the assemblies back to the scaffolds. See the tutorial 'Mapping reads to an assembly'
