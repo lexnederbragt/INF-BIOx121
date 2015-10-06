@@ -6,18 +6,10 @@
 Course material for the INF-BIOx121 course
 ==========================================
 
-2015 course edition material will appear here.
+2015 course edition material can be found `here <http://inf-biox121.readthedocs.org/en/2015/>`__. The wiki of the 2015 course is `here <https://wiki.uio.no/projects/clsi/index.php/INF-BIOX121_H15>`__.
 
-Contents:
+For previous course editions, check out `this website <https://wiki.uio.no/projects/clsi/index.php/INF-BIOX121>`__.
 
 .. toctree::
    :maxdepth: 2
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`search`
 
