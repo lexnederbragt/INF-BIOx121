@@ -9,7 +9,6 @@ Load the following modules:
 module load bwa/0.7.8
 module load samtools/samtools-1.1
 module load reapr/1.0.18
-module load python2/2.7.9
 ```
 
 ####Indexing the assembly
@@ -75,42 +74,31 @@ Repeat the `bwa mem` and `samtools` commands above, but:
 ####Plotting the insert size distribution
 Since we know know where the pairs of reads map, we can obtain he distance between them. That information is stored in the SAM/BAM output in the 9th column, 'TLEN' (observed Template LENgth).
 
-We will use python, and the python modules `pysam` and `R` (through the python `rpy2` module) to plot the distribution of insert sizes for a subset of the alignments. This we will do in another Jupyter notebook
+We will use python, and the python module `pysam` to plot the distribution of insert sizes for a subset of the alignments. This we will do in another Jupyter notebook.
 
-* Copy the `bwa` folder with eh sorted `bam` files from the server to the assembly folder on your local Linux machine
-* Copy the notebook file `/data/assembly/Plot_insertsizes.ipynb` to the same folder
-* In the terminal, `cd` to the same folder
+* copy the `bwa` folder with the sorted `bam` files from the server to the assembly folder on your local Linux machine
+* copy the notebook file `/data/assembly/Plot_insertsizes.ipynb` to the same folder
+* in the terminal, `cd` to the same folder
 * open the Jupyter notebook
 
 ```
 jupyter notebook Plot_insertsizes.ipynb
 ```
  
-* Execute the cells as listed.
-* For `infile`, use the name of the sorted BAM file for the mapping of the paired end or mate pair reads
-* Generate plots for both the paired end mapping *and* the mate pair mapping
+* execute the cells as listed
+* for `infile`, use the name of the sorted BAM file for the mapping of the paired end or mate pair reads
+* generate plots for both the paired end mapping *and* the mate pair mapping
 
 **Questions**
 
 * Which insert size distribution is the tightest around the mean?
-* Why isn't the mean of the distribution a useful number for the mate pair library?
-
-
-When you are done with the Jupyter notebook:
-
-* If you want to save the figures, copy them from the notebook into another program
-* Save the notebook
-* Close the browser windows
-* In the terminal where you started Jupyter notebook, click ctrl-c and confirm.
+* Why isn't the mean of the distribution a useful metric for the mate pair library?
 
 
 ####Visualising the assembly in a genome browser
 For this part, we will use Integrative Genomics Viewer (IGV), a genome browser developed by the Broad Institute.  Instead of using one of the built-in genomes, we will add the assembly as a new reference genome.
 
-**NOTE** you may need to install IGV first (MAC and Windows users), in that case go through the instructions at [http://www.broadinstitute.org/igv/](http://www.broadinstitute.org/igv/) and install it in your home area on the PC/MAC.
-
-* Download the assembly `fasta` file and the `bam` and `bam.bai` files to the local hard disk (e.g., in a folder on the Desktop) of the PC/Mac you are using, see the instructions on the course wiki. 
-* **On the PC** (*NOT* on bioinfcourse.hpc.uio.no) start the IGV program by typing `igv` (Linux), opening the program from the start explorer (Windows), or double clicking on the `igv.command` file (Mac)
+* **On the PC** (*NOT* on the server) start the IGV program by typing `igv`
 * Choose `Genomes --> Load Genome from File…` (**NB** not File --> Load from File...)
 * Select the fasta file with your assembly (**NB** the same file as you used for mapping the reads against!)
 
@@ -120,7 +108,7 @@ Adding tracks to the browser is as simple as uploading a new file:
 * Choose `File --> Load from File…`
 * Choose the sorted BAM file of the paired end mapping 
 * Repeat this for the BAM file of the mate pair mapping 
-* You can choose different sequences (contigs/scaffolds) from the drop-down menu at the top. Start browsing (one of) the longest scaffold(s)
+* You can choose different sequences (contigs/scaffolds) from the drop-down menu at the top. Start by selecting (one of) the longest scaffold(s)
 * Start browsing!
 * Zoom in to see the alignments
 
@@ -131,18 +119,17 @@ Adding tracks to the browser is as simple as uploading a new file:
 
 
 ####Adding the locations of gaps as another track
-It would be convenient to be able to see the location of gaps in the browser. For this purpose run the following command (e.g., in the folder with the `bwa` results). we will use 10 bases as minimum gap length: `-m 10`
+It would be convenient to be able to see the location of gaps in the browser. For this purpose use a script made by your teacher that creates a `bed` file with gap locations. We will use 10 bases as minimum gap length: `-m 10`. The scuipt uses BioPython so the 'python2' module is needed for it to run.
 
 ```
-scaffoldgap2bed.py -i ../ASSEMBLY.FASTA -m 10 >gaps.bed
+module load python2/2.7.9
+scaffoldgap2bed.py -i ASSEMBLY.FASTA -m 10 >gaps.bed
 ```
-
-This will create a BED file with locations of the gaps. 
 
 * Inspect the BED file
 * Add the BED file to the browser (download it first to the PC)
 * Drag the track to the top
-* Zoom in one gaps and look at the alignments.
+* Zoom in one gaps and look at the alignments
 
 **Question:**
 

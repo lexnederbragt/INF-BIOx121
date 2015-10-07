@@ -69,11 +69,11 @@ Find a value of *k* (between 21 and 113) to start with, and record your choice i
 Program|Options|Explanation
 -------|-------|-------------
 velveth||Build the Velvet index file|
-|foldername|use this name for the results folder
-|value_of_k|use k-mers of this size
-|-short|short reads (as opposed to long, Sanger-like reads)
-|-separate|read1 and read2 are in separate files
-|-fastq|read type is fastq
+||foldername|use this name for the results folder
+||value_of_k|use k-mers of this size
+||-short|short reads (as opposed to long, Sanger-like reads)
+||-separate|read1 and read2 are in separate files
+||-fastq|read type is fastq
 
 Build the index as follows:
 
@@ -181,6 +181,12 @@ jupyter notebook node_coverage.ipynb
 **Question:**
 
 * What do you think is the approximate expected k-mer coverage for your assembly?
+
+When you are done with the Jupyter notebook:
+
+* save the notebook
+* close the browser windows
+* in the terminal where you started Jupyter notebook, click ctrl-c and confirm.
 
 Now run velvet again, supplying the value for `exp_cov` (k-mer coverage) corresponding to your answer:
 
