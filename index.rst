@@ -32,7 +32,7 @@ Material will be added as it comes in.
 
 **Mapping and variant calling**
 
-- slides part 1 `pptx <https://github.com/lexnederbragt/INF-BIOx121/blob/2015/Variant_calling/variantCallingCourse_oct2015_Part1.pptx?raw=true>`__ `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Variant_calling/variantCallingCourse_oct2015_Part1.pdf>`__
+- slides part 1 `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Variant_calling/variantCallingCourse_oct2015_Part1.pdf>`__
 
 **Galaxy**
 
