@@ -489,3 +489,5 @@ Next steps
 
 Next, map the reads used for the assemblies back to the scaffolds. See
 the tutorial 'Mapping reads to an assembly'
+
+.. toctree:: :maxdepth: 1
