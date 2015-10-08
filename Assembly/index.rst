@@ -1,5 +1,13 @@
+De novo genome assembly
+=======================
+
+A module in the fall 2015 edition of INF-BIOx121
+
+Table of contents:
+
+
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    practicals/02_Assembly_using_velvet
    practicals/03_Mapping_reads_to_an_assembly
