@@ -37,16 +37,14 @@ Material will be added as it comes in.
 - slides part 2 `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Variant_calling/variantCallingCourse_oct2015_Part2.pdf>`__
 
 **Galaxy**
- - slides `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Galaxy/Galaxy_introduction_INFBIOx121_autumn2015.pdf>`__
+
+- slides `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Galaxy/Galaxy_introduction_INFBIOx121_autumn2015.pdf>`__
 
 **De novo genome assembly**
+
+- start `here <http://inf-biox121.readthedocs.org/en/2015/Assembly/>`__
 
 **How to become an efficient bioinformatician**
 
 **RNA seq: differential expression analysis**
-
-
-
-.. toctree::
-   :maxdepth: 2
 
