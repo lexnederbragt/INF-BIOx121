@@ -1,4 +1,4 @@
-De novo genome assembly
+*De novo* genome assembly
 =======================
 
 A module in the fall 2015 edition of INF-BIOx121
@@ -6,7 +6,7 @@ A module in the fall 2015 edition of INF-BIOx121
 Slides:
 
 - Introduction to the assembly module `pptx <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Assembly/presentations/01_intro_to_assembly_module.pptx>`__
-- Principles and problems of de novo genome assembly `pptx <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Assembly/presentations/02_Principles_and_problems_of_de_novo_genome_assembly.pptx>`__
+- Principles and problems of *de novo* genome assembly `pptx <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Assembly/presentations/02_Principles_and_problems_of_de_novo_genome_assembly.pptx>`__
 - Assembly before and after `pptx <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Assembly/presentations/03_Assembly_before_and_after.pptx>`__
 
 

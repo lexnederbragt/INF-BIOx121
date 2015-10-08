@@ -13,9 +13,9 @@ What sequencing platforms do you know
 Exercise using Mentimeter wordcloud
 
 .. figure:: images/poll1.png
-   :alt: MacDown Screenshot
+   :alt: Mentimeter wordcloud
 
-   MacDown Screenshot
+   Mentimeter wordcloud
 
 -  Illumina HiSeq 1000 1500 2000 2500 3000 4000
 -  Illumina HiSeq X (Five and Ten)
@@ -93,9 +93,9 @@ What applications do you know of for HTS?
 Exercise using mentimeter wordcloud
 
 .. figure:: images/poll2.png
-   :alt: MacDown Screenshot
+   :alt: Mentimeter wordcloud
 
-   MacDown Screenshot
+   Mentimeter wordcloud
 
 Illumina `has a
 poster <http://www.illumina.com/applications/sequencing/ngs-library-prep/library-prep-methods.html>`__
@@ -129,9 +129,9 @@ What skills do you think you need for analysing HTS data?
   http://nirvacana.com/thoughts/becoming-a-data-scientist/.
 
 .. figure:: images/poll3.png
-   :alt: MacDown Screenshot
+   :alt: Mentimeter wordcloud
 
-   MacDown Screenshot
+   Mentimeter wordcloud
 
 Slides:
 
