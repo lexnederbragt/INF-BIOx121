@@ -1,4 +1,5 @@
 _build
+*.md
 .ipynb_checkpoints
 .DS_Store
 Assembly/presentations/00_Assembly_puzzle.pptx
