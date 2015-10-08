@@ -26,7 +26,7 @@ Material will be added as it comes in.
 
 **Quality control of sequencing reads**
 
--  `Web <https://github.com/lexnederbragt/INF-BIOx121/blob/2015/QC/Read_QC.md>`__
+-  `Web <http://inf-biox121.readthedocs.org/en/2015/QC/Read_QC.html>`__
 -  `PDF <https://github.com/lexnederbragt/INF-BIOx121/blob/2015/QC/Read_QC.pdf>`__
 - etherpad content is in the one linked to above
 
