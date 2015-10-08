@@ -9,14 +9,14 @@ Material will be added as it comes in.
 
 **Unix pre-course for people new to the unix command-line**
 
-- content of the `etherpad <https://raw.githubusercontent.com/lexnederbragt/INF-BIOx121/2015/Unix_course/etherpad.txt>`__
+- content of the `etherpad <https://github.com/lexnederbragt/INF-BIOx121/blob/2015/Unix_course/etherpad.txt>`__
 
 **Intro to High Throughput Sequencing & Applications and Principles and problems of HTS data analysis**
 
 - schedule of what was discussed, with links `web <https://github.com/lexnederbragt/INF-BIOx121/blob/2015/Intro_HTS/NGS_intro_HTS_analysis.md>`__ `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Intro_HTS/NGS_intro_HTS_analysis.pdf>`__
 - slides `pptx <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Intro_HTS/NGS_intro_HTS_analysis_slides.pptx>`__
 - the basic skills we want you to learn `pptx <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Intro_HTS/Basic_skills.pptx>`__
-- `etherpad <https://raw.githubusercontent.com/lexnederbragt/INF-BIOx121/2015/Intro_HTS/etherpad.txt>`__ content 
+- content of the `etherpad <https://github.com/lexnederbragt/INF-BIOx121/blob/2015/Intro_HTS/etherpad.txt>`__ 
 
 
 **Experimental design**
@@ -33,8 +33,8 @@ Material will be added as it comes in.
 **Mapping and variant calling**
 
 - slides part 1 `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Variant_calling/variantCallingCourse_oct2015_Part1.pdf>`__
-
 - slides part 2 `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Variant_calling/variantCallingCourse_oct2015_Part2.pdf>`__
+- content of the `etherpad <https://github.com/lexnederbragt/INF-BIOx121/blob/2015/Variant_calling/etherpad.txt>`__
 
 **Galaxy**
 

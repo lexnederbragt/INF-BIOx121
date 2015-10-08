@@ -1,0 +1,34 @@
+Remember every time you log into cod3 on a terminal
+source /data/vc/exerDefinitions/setupEnv.bash # to ensure that you have set a few useful variables defining file paths
+/data/vc/exerDefinitions/copyFiles.bash # to make sure you have all the latest versions of files copied to your home directory
+
+# Note: if you do not complete an exercise, you should get in touch with me or one of the assistants
+# You will need to copy the pre-computed results to the relevant directory in your home area
+# The commands will look something like the following for the 020_basicPipeline (you can figure out the command for 030_advancedPipeline):
+rsync -au --progress /data/vc/exerResults/020_basicPipeline ~/vc/exerSandbox/q
+
+# Today we will need to copy quite a few files from our exercises back to our local machines to be able to visualise them in IGV
+# We will use rsync to do this from a terminal ON YOUR LOCAL MACHINE
+# -a ensures you retain the timestamps on the receiver
+# -u ensures you only transfer files that have changed on the sender
+# --progress ensures you get a report on progress
+rsync -au --progress yourUsername@cod3.hpc.uio.no:~/vc/exerSandbox/02_basicPipeline dirOnYourLocalMachine
+
+rsync -au --progress yourUsername@cod3.hpc.uio.no:~/vc/exerSandbox/03_advancedPipeline dirOnYourLocalMachine
+
+## Fix for last exercise
+
+You get an error in this command
+java -Xmx2G -jar ${swDir}/GenomeAnalysisTK-3.2-2/GenomeAnalysisTK.jar -T VariantAnnotator \
+-R $refFile \
+--variant $vcfNSFP \
+--resource:exac ${dataDir}/exac/ExAC.r0.3.sites.vep.chr5.vcf.gz \
+--expression exac.AF \
+-o ${vcfNSFP%.*}.exac.vcf
+
+Skip ahead to this command:
+bcftools view -O b ${vcfNSFP%.*}.exac.vcf > ${vcfNSFP%.*}.exac.bcf
+and change it to:
+    bcftools view -O b ${vcfNSFP%.*}.vcf > ${vcfNSFP%.*}.bcf
+    AND change all following commands accordingly
+    
