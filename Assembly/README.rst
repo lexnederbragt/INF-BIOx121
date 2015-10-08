@@ -6,9 +6,10 @@ Day 1
 
 -  brief overview of the module
 -  assembly exercise
--  lecture: Principles and problems of de novo genome assembly
+-  lecture: "Principles and problems of *de novo* genome assembly"
+-  tutorial: exploring De Bruijn graphs
 -  tutorial: assembly with velvet
--  start overnight assemblies
+-  starting overnight assemblies
 
 Day 2
 ~~~~~
@@ -18,12 +19,12 @@ Day 2
 -  visualisation of mapped reads in IGV
 -  assembly improvement using REAPR
 -  evaluating the other assemblies
--  setting up and starting overnight assemblies
+-  deciding on up and starting overnight assemblies
 
 Day 3
 ~~~~~
 
 -  comparing assemblies to the reference using Quast
--  lecture: Assembly, before and after
+-  lecture: "Assembly, before and after"
 -  comparative evaluation of assemblies
 -  rounding up: which assembly was best?

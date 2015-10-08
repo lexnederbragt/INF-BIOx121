@@ -15,6 +15,7 @@ Practicals:
 .. toctree::
    :maxdepth: 1
 
+   README
    practicals/02_Assembly_using_velvet
    practicals/03_Mapping_reads_to_an_assembly
    practicals/04_Assembly_improvement_using_REAPR
