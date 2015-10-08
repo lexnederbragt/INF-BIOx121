@@ -3,7 +3,7 @@ Course material for the fall 2015 edition of INF-BIOx121
 
 NOTE The course Wiki, with all important information, is `here <https://wiki.uio.no/projects/clsi/index.php/INF-BIOX121_H15>`__.
 
-NOTE if you are comfortable with git and github, all material is available from `this github repository <https://github.com/lexnederbragt/INF-BIOx121/tree/2015>`__.
+NOTE if you are comfortable with git and github, all material is available from `this github repository <https://github.com/lexnederbragt/INF-BIOx121/tree/2015>`__. Make sure to switch to the `2015` branch.
 
 Material will be added as it comes in.
 
@@ -45,6 +45,8 @@ Material will be added as it comes in.
 - start `here <http://inf-biox121.readthedocs.org/en/2015/Assembly/>`__
 
 **How to become an efficient bioinformatician**
+
+- program :doc:`Bioinformaticians_day/index`
 
 **RNA seq: differential expression analysis**
 
