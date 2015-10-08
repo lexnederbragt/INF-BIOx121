@@ -34,6 +34,8 @@ Material will be added as it comes in.
 
 - slides part 1 `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Variant_calling/variantCallingCourse_oct2015_Part1.pdf>`__
 
+- slides part 2 `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Variant_calling/variantCallingCourse_oct2015_Part2.pdf>`__
+
 **Galaxy**
  - slides `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Galaxy/Galaxy_introduction_INFBIOx121_autumn2015.pdf>`__
 
