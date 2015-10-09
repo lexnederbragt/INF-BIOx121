@@ -193,6 +193,20 @@ A so-called Jupyter notebook has been provided to plot the distribution
 of the coverage of the nodes. In order to use it, you need to do the
 following on the local linux machine *Not on the server*:
 
+NOTE: if you are on ``vetur`` OR ``vor``, type:
+
+::
+
+    ssh nordur
+
+OR
+
+::
+
+    ssh austur
+
+and enter your password.
+
 -  install the Jupyter notebook and some python packages (this may take
    a few minutes):
 
@@ -222,7 +236,13 @@ following on the local linux machine *Not on the server*:
 
     jupyter notebook node_coverage.ipynb
 
--  After a little while, your webbrowser will start with a new tab with
+OR
+
+::
+
+    ipython notebook node_coverage.ipynb
+
+-  After a little while, your web browser will start with a new tab with
    the notebook in it
 -  follow the instructions in the notebook
 
