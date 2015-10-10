@@ -133,31 +133,63 @@ What skills do you think you need for analysing HTS data?
 
    Mentimeter wordcloud
 
-Slides:
-
-\| Subject \| Items \| HTS data analysis example\|
-\|:-------\|:--------------\|:--------------------\| \|\ **Data**\ \|
-Amount of data\|multi-GB fastq files \|\|Finding data\|ENA, SRA,
-ensembl, UCSC\| \|\|Getting data in the right shape\|fastq versions\|
-\|\|Scrubbing\|read errors, denoising of amplicons\| \|\|Understanding
-the data (file formats)\|vcf file format\| \|\|Data management (storing,
-copying, moving data)\|store ``bam`` files?\| \|\|Sharing data\|ENA,
-SRA\| \|\ **Software**\ \|Understanding the algorithms\|mapping reads\|
-\|\|Installing software\|don't get me started\| \|\|Choosing program
-from all possible\|mapping programs\| \|\|Can not always use the same
-tool\|availability of a reference genome\| \|\|Not always the same tool
-that is best\|iMetAmos\| \|\|Software parameter space\|kmer size for
-assembly\| \|\|Validation of computational results\|assembly
-comparison\| \|\ **Compute resources**\ \|Local versus HPC versus
-cloud\|Abel versus Amazon\| \|\|Computational time\|mapping versus
-assembly\| \|\|Getting access\|Abel\| \|\|Optimal use of HPC
-resources\|disk I/O for life science applications\| \|\ **User
-interfaces**\ \|unix shell\|\ ``bwa``\ \| \|\|web-based\|Galaxy,
-Hyperbrowser\| \|\|GUI-based\|Microsoft office, CLCBio\|
-\|\ **Skills**\ \|Unix skills\|\ ``ssh``, ``rsync``\ \| \|\|Programming
-skills\|R, python\| \|\|Statistics\|GWAS\| \|\ **Ethics**\ \|Ethical
-approval\|human subjects\| \|\|Sensitive data\|human sequencing data\|
-\|\|Reproducibility\|pipelines\|
++-------------------------+---------------------------------------------------+------------------------------------------+
+| Subject                 | Items                                             | HTS data analysis example                |
++=========================+===================================================+==========================================+
+| **Data**                | Amount of data                                    | multi-GB fastq files                     |
++-------------------------+---------------------------------------------------+------------------------------------------+
+|                         | Finding data                                      | ENA, SRA, ensembl, UCSC                  |
++-------------------------+---------------------------------------------------+------------------------------------------+
+|                         | Getting data in the right shape                   | fastq versions                           |
++-------------------------+---------------------------------------------------+------------------------------------------+
+|                         | Scrubbing                                         | read errors, denoising of amplicons      |
++-------------------------+---------------------------------------------------+------------------------------------------+
+|                         | Understanding the data (file formats)             | vcf file format                          |
++-------------------------+---------------------------------------------------+------------------------------------------+
+|                         | Data management (storing, copying, moving data)   | store bam files or not?                  |
++-------------------------+---------------------------------------------------+------------------------------------------+
+|                         | Sharing data                                      | ENA, SRA                                 |
++-------------------------+---------------------------------------------------+------------------------------------------+
+| **Software**            | Understanding the algorithms                      | mapping reads                            |
++-------------------------+---------------------------------------------------+------------------------------------------+
+|                         | Installing software                               | don't get me started                     |
++-------------------------+---------------------------------------------------+------------------------------------------+
+|                         | Choosing program from all possible                | mapping programs                         |
++-------------------------+---------------------------------------------------+------------------------------------------+
+|                         | Can not always use the same tool                  | availability of a reference genome       |
++-------------------------+---------------------------------------------------+------------------------------------------+
+|                         | Not always the same tool that is best             | iMetAmos                                 |
++-------------------------+---------------------------------------------------+------------------------------------------+
+|                         | Software parameter space                          | kmer size for assembly                   |
++-------------------------+---------------------------------------------------+------------------------------------------+
+|                         | Validation of computational results               | assembly comparison                      |
++-------------------------+---------------------------------------------------+------------------------------------------+
+| **Compute resources**   | Local versus HPC versus cloud                     | Abel versus Amazon                       |
++-------------------------+---------------------------------------------------+------------------------------------------+
+|                         | Computational time                                | mapping versus assembly                  |
++-------------------------+---------------------------------------------------+------------------------------------------+
+|                         | Getting access                                    | Abel                                     |
++-------------------------+---------------------------------------------------+------------------------------------------+
+|                         | Optimal use of HPC resources                      | disk I/O for life science applications   |
++-------------------------+---------------------------------------------------+------------------------------------------+
+| **User interfaces**     | unix shell                                        | bwa                                      |
++-------------------------+---------------------------------------------------+------------------------------------------+
+|                         | web-based                                         | Galaxy, Hyperbrowser                     |
++-------------------------+---------------------------------------------------+------------------------------------------+
+|                         | GUI-based                                         | Microsoft office, CLCBio                 |
++-------------------------+---------------------------------------------------+------------------------------------------+
+| **Skills**              | Unix skills                                       | ssh, rsync                               |
++-------------------------+---------------------------------------------------+------------------------------------------+
+|                         | Programming skills                                | R, python                                |
++-------------------------+---------------------------------------------------+------------------------------------------+
+|                         | Statistics                                        | GWAS                                     |
++-------------------------+---------------------------------------------------+------------------------------------------+
+| **Ethics**              | Ethical approval                                  | human subjects                           |
++-------------------------+---------------------------------------------------+------------------------------------------+
+|                         | Sensitive data                                    | human sequencing data                    |
++-------------------------+---------------------------------------------------+------------------------------------------+
+|                         | Reproducibility                                   | pipelines                                |
++-------------------------+---------------------------------------------------+------------------------------------------+
 
 Ranking skills important for analysing HTS data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -179,8 +211,9 @@ Mentimeter exercise - skipped
 What can go wrong during PacBio sequencing (i.e. errors)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Mentimeter exercise - skipped Slide: PacBio sequencing explained from
-the Metzker paper
+Mentimeter exercise - skipped
+
+Slide: PacBio sequencing explained from the Metzker paper
 
 Slide: GC bias plot from this Laehnemann et al paper
 
