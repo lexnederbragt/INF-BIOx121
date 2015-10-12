@@ -45,6 +45,14 @@ Possible questions
    3.6 by choosing ``module load spades/3.6.0``. See the
    `changelog <http://spades.bioinf.spbau.ru/changelog.html>`__.
 
+Your group's task
+~~~~~~~~~~~~~~~~~
+
+-  set up one or more hypotheses
+-  set up one assembly per group member to test your hypothesis
+-  discuss your choices with the teacher
+-  start your assemblies
+
 Megahit assembly
 ~~~~~~~~~~~~~~~~
 
@@ -59,7 +67,7 @@ the 50x paired end data would be:
         -2 /data/assembly/MiSeq_Ecoli_MG1655_50x_R2.fastq \
         > megahit.out 2>&1
 
-The assembly will be in the ``final.contigs.fa`` file.
+The assembler will be in the ``final.contigs.fa`` file.
 
 Note that for ``reapr`` to work, you'll need to adjust the naming of the
 fasta files:

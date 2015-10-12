@@ -51,6 +51,8 @@ https://wiki.uio.no/projects/clsi/index.php/Tip:using_screen
 
     source /cluster/software/smrtanalysis/current/etc/setup.sh
 
+(ignore the WARNINGS).
+
 -  make a file that has a list of the input files like this:
 
 ::
