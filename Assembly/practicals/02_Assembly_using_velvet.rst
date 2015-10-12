@@ -371,8 +371,8 @@ OR, save the output to a file with
 Here, ``>`` (redirect) symbol used to ‘redirect’ what is written to the
 screen to a file.
 
-**For this exercise**, use the the known length for this strain, 4.6
-Mbp, for the genome size
+**For this exercise**, use the known length for this strain, 4.6 Mbp,
+for the genome size
 
 Some of the metrics the script reports are:
 

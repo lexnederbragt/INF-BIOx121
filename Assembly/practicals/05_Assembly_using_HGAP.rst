@@ -83,7 +83,7 @@ https://wiki.uio.no/projects/clsi/index.php/Tip:using_screen
 
     smrtpipe.py -D TMP=./ -D SHARED_DIR=./ \  
     -D NPROC=2 -D MAX_THREADS=2 \  
-    --params=HGAP3_settings.xml xml:input.xml &> smrtpipe.out 2>&1
+    --params=HGAP3_settings.xml xml:input.xml > smrtpipe.out 2>&1
 
 **NOTES**
 
