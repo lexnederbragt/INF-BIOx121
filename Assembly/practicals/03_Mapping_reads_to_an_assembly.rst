@@ -139,19 +139,22 @@ For this part, we will use Integrative Genomics Viewer (IGV), a genome
 browser developed by the Broad Institute. Instead of using one of the
 built-in genomes, we will add the assembly as a new reference genome.
 
--  **On the PC** (*NOT* on the server) start the IGV program by typing
-   ``igv``
+**On the PC** (*NOT* on the server):
+
+-  download the assembly ``fasta`` file to the folder where you also
+   have the ``bwa`` result files
+-  start the IGV program by typing ``igv``
 -  Choose ``Genomes --> Load Genome from File…`` (**NB** not File -->
    Load from File...)
--  Select the fasta file with your assembly (**NB** the same file as you
-   used for mapping the reads against!)
+-  Select the ``fasta`` file with your assembly (**NB** the same file as
+   you used for mapping the reads against!)
 
 | **Adding the mapped reads**
 | Adding tracks to the browser is as simple as uploading a new file:
 
 -  Choose ``File --> Load from File…``
--  Choose the sorted BAM file of the paired end mapping
--  Repeat this for the BAM file of the mate pair mapping
+-  Choose the sorted ``bam`` file of the paired end mapping
+-  Repeat this for the ``bam`` file of the mate pair mapping
 -  You can choose different sequences (contigs/scaffolds) from the
    drop-down menu at the top. Start by selecting (one of) the longest
    scaffold(s)
