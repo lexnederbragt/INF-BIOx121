@@ -49,9 +49,10 @@ REAPR output
    *only those* scaffolds from the assembly that were broken at places
    REAPR determined an error
 -  The file ``04.break.broken_assembly.fa`` is a revised version of the
-   assembly, with all scaffolds, whether they were broken or not. The
-   *last two numbers in the contig name* are the coordinates where reapr
-   broke the assembly
+   assembly, with all scaffolds, whether they were broken or not. Broken
+   contigs have their name changed: ``REAPR_bin`` is added to the
+   beginning, and the *last two numbers in the name* are the coordinates
+   where reapr broke the assembly
 -  Finally, There is a ``gff`` file with the detected errors called
    ``03.score.errors.gff.gz``. You can add this file to the browser, but
    it needs a small modification: all spaces in the file need to be
@@ -67,4 +68,5 @@ REAPR output
 You can now add the ``03.score.errors_nospaces.gff`` file to IGV (after
 downloading it). Find the regions where reapr broke the assembly (using
 the ``04.break.broken_assembly.fa`` file) and see whether you agree with
-reapr's conclusion.
+reapr's conclusion. Regions where reapr broke the assembly are marked
+with ``FCD_failure``.
