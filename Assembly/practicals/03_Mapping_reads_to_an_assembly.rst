@@ -108,16 +108,17 @@ We will use python, and the python module ``pysam`` to plot the
 distribution of insert sizes for a subset of the alignments. This we
 will do in another Jupyter notebook.
 
--  copy the ``bwa`` folder with the sorted ``bam`` files from the server
-   to the assembly folder on your local Linux machine
+-  copy the ``bwa`` folder with the sorted ``.bam`` files and index
+   files (``.bam.bai``) from the server to the assembly folder on your
+   local Linux machine
 -  copy the notebook file ``/data/assembly/Plot_insertsizes.ipynb`` to
-   the same folder
+   the same folder on your local Linux machine
 -  in the terminal, ``cd`` to the same folder
 -  open the Jupyter notebook
 
 ::
 
-    jupyter notebook Plot_insertsizes.ipynb
+    ipython notebook Plot_insertsizes.ipynb
 
 -  execute the cells as listed
 -  for ``infile``, use the name of the sorted BAM file for the mapping
