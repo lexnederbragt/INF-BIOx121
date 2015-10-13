@@ -65,8 +65,8 @@ REAPR output
 
     zcat 03.score.errors.gff.gz |sed 's/ /_/g' >03.score.errors_nospaces.gff
 
-You can now add the ``03.score.errors_nospaces.gff`` file to IGV (after
-downloading it). Find the regions where reapr broke the assembly (using
-the ``04.break.broken_assembly.fa`` file) and see whether you agree with
-reapr's conclusion. Regions where reapr broke the assembly are marked
-with ``FCD_failure``.
+In this file, regions where reapr broke the assembly are marked with
+``FCD_failure``. You can now add the ``03.score.errors_nospaces.gff``
+file to IGV (after downloading it). Find the regions where reapr broke
+the assembly (using the ``04.break.broken_assembly.fa`` file) and see
+whether you agree with reapr's conclusion.
