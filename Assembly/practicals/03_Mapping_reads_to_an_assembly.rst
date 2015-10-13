@@ -12,7 +12,7 @@ Load the following modules:
 ::
 
     module load bwa/0.7.8
-    module load samtools/samtools-1.1
+    module load samtools/1.1
     module load reapr/1.0.18
 
 Indexing the assembly
