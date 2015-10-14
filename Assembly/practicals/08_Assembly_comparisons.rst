@@ -1,6 +1,8 @@
 Suggestions for questions to ask
 ================================
 
+NOTE in the end this part of the course material was skipped.
+
 Table of available data
 ~~~~~~~~~~~~~~~~~~~~~~~
 
