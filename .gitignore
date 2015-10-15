@@ -3,3 +3,5 @@ _build
 .ipynb_checkpoints
 .DS_Store
 Assembly/presentations/00_Assembly_puzzle.pptx
+Assembly/schedule_detailed.rst
+!Assembly/schedule_detailed.md
