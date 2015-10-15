@@ -1,0 +1,103 @@
+Assembly day 1
+
+If you run out of disk space on the local PC, you'll need to delete files from last week. Guest accounts only have 5Gb space.
+
+Assembly module material: http://inf-biox121.readthedocs.org/en/2015/Assembly/
+
+Day 1 after lunch: start at http://inf-biox121.readthedocs.org/en/2015/Assembly/practicals/02_Assembly_using_velvet.html
+Run assemblies on the cod3 server
+
+
+Go to www.govote.at and use the code 14 30 58
+
+To make the terminal prompt show which server you are on, type
+export PS1="[\u@\h \W]\$ "
+
+Will Trimble on palindromic kmers: "Even-k kmers come in two classes--those that are palindromic and those that are not. Odd kmers are never palindromic--all kmers and their reverse compliments are distinct--so you never worry about double-counting them or forgetting to double count them.So it's a convenience to limit your attention to kmers that can't collide with their reverse complements."
+
+
+See also https://pmelsted.wordpress.com/2014/01/17/edge-cases-in-de-bruijn-graphs/ and https://pmelsted.wordpress.com/2014/02/24/debugging-de-bruijn-graphs/
+
+
+From cod3, check what you are running on cod4:
+    
+
+
+ssh username@cod4.hpc.uio.no "top -b -n 1 -u username"
+
+Get last line of file
+
+tail assembly.out
+
+Follow output while it is being written (updating 'live')
+
+tail -f assembly.out
+t
+
+Assembly day 2
+Run this command to set up your environment again:
+    
+export PATH=/data/bin/:$PATH
+
+
+Overnight assemblies
+Run the assemblathon_stats script on your assembly
+One person of each group makes a copy of this google spreadsheet:
+https://docs.google.com/spreadsheets/d/1j_BWpW6dFkgqj3UOiMFXDsVXayec6C6CXFiFGuFisUQ/edit?usp=sharing
+Fill in the details of the assemblies
+
+Precomputed assemblies are here: /data/assembly/precomputed
+Don't copy everything, just the finished fasta (check the instuctions)
+
+Shared spreadsheet for Jonas' group:
+    https://docs.google.com/spreadsheets/d/1CCyss3mUn_xNI99C4b85nDfm2qZU73VeR0MRcEy8N3M/edit?usp=sharing
+    
+    shared spreadsheet for Julians group:
+ https://docs.google.com/spreadsheets/d/1xB2Gm3L-a1_ZwbJ9rlCyvPHK3D3xocSpvr24W_aYI-c/edit?usp=sharing
+
+shared spreadsheet for Erik's group:
+https://docs.google.com/spreadsheets/d/1vKZgQoy2dA0bAVzgeEMlnmzWlTAYQj8NXXIDYQiOhts/edit?usp=sharing
+
+shared spreadsheet for Shiva's group:
+https://docs.google.com/spreadsheets/d/1UcZaUIMnXaVJLdfguA62kd26kZKzb31FemZhhM-6n3o/edit?usp=sharing
+
+Shared spreadsheet for anonymous' group:
+https://docs.google.com/spreadsheets/d/11kCIl_pg09MbJJKo_4hkojm2ZRvDw9_l5SNe6cAECvo/edit?usp=sharing
+
+Share spreadsheet for window back row
+https://docs.google.com/spreadsheets/d/1N2Sa_EBZYxbjC18fRJb-qgCN5DujvAQKtXV2dCD9YaM/edit?usp=sharing
+
+REAPR's last line should be
+[REAPR pipeline] Running summary
+
+####################
+Assembly day 3
+
+* run bwa with the Illumina paired end and mate pairs (not the PacBio or MinIOn reads) on the  the SPADES or HGAP assembly you have
+* skip the ipython notebook for plotting insert sizes
+* do not start IGV for this mapping (you can do this later if you want)
+* run reapr as before using the mate pair bam files
+* Add reapr results in your group's spreadsheet
+
+Front group spreadsheet
+https://docs.google.com/spreadsheets/d/1q7v5C-UWJ7rODUpphZA9wGeEf6SIMhB3IRjux-F4EKQ/edit?usp=sharing
+
+Share spreadsheet for window back row
+https://docs.google.com/spreadsheets/d/1N2Sa_EBZYxbjC18fRJb-qgCN5DujvAQKtXV2dCD9YaM/edit?usp=sharing
+
+
+Assemblies used for quast:
+
+velvet: contigs.fa
+velvet + reapr: reapr_out/04.break.broken_assembly.fa
+
+/data/assembly/precomputed/spades_PE+MP/scaffolds.fasta
+/data/assembly/precomputed/spades_PE+ONT/scaffolds.fasta
+/data/assembly/precomputed/spades_PE+PacBio/scaffolds.fasta
+/data/assembly/precomputed/HGAP/data/polished_assembly.fasta.gz
+
+
+quast results I showed are in /data/assembly/precomputed/quast
+
+The Genome War:
+http://www.amazon.com/The-Genome-War-Venter-Capture/dp/0345433742
