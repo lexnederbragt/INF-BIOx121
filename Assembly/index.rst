@@ -12,8 +12,6 @@ Slides:
 
 Practicals:
 
-Content of the `etherpad<https://github.com/lexnederbragt/INF-BIOx121/blob/2015/Assembly/etherpad.txt>`__
-
 .. toctree::
    :maxdepth: 1
 
@@ -25,3 +23,5 @@ Content of the `etherpad<https://github.com/lexnederbragt/INF-BIOx121/blob/2015/
    practicals/06_Assembly_using_SPADES
    practicals/07_Comparing_assemblies_to_the_reference
    practicals/Sources
+
+Content of the `etherpad <https://github.com/lexnederbragt/INF-BIOx121/blob/2015/Assembly/etherpad.txt>`__
