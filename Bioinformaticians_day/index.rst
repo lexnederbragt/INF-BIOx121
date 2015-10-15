@@ -32,6 +32,6 @@ Time             Speaker - topic
   
                  * includes a brief introduction to some bioinformatics resources on the web
 
-14:00 - 14:45    Janina Fuss - How I came to say: "no thanks, I actually prefer the command line"
+14:00 - 14:45    Janina Fuss - How I came to say: "no thanks, I actually prefer the command line" `pptx <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Bioinformaticians_day/Janina.pptx>`__
 
 ===============  =============================================================
