@@ -372,7 +372,14 @@ Here, ``>`` (redirect) symbol used to ‘redirect’ what is written to the
 screen to a file.
 
 **For this exercise**, use the known length for this strain, 4.6 Mbp,
-for the genome size
+for the genome size.
+
+NOTE make sure you have run this command to enable the use of the
+script:
+
+::
+
+    export PATH=/data/bin/:$PATH
 
 Some of the metrics the script reports are:
 

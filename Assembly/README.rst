@@ -19,7 +19,6 @@ Day 2
 -  visualisation of mapped reads in IGV
 -  assembly improvement using REAPR
 -  evaluating the other assemblies
--  deciding on up and starting overnight assemblies
 
 Day 3
 ~~~~~
