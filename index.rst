@@ -34,6 +34,7 @@ Material will be added as it comes in.
 
 - slides part 1 `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Variant_calling/variantCallingCourse_oct2015_Part1.pdf>`__
 - slides part 2 `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Variant_calling/variantCallingCourse_oct2015_Part2.pdf>`__
+- scripts and other files used during the practicals are `here <https://github.com/lexnederbragt/INF-BIOx121/blob/2015/Variant_calling/exerDefinitions>`__
 - content of the `etherpad <https://github.com/lexnederbragt/INF-BIOx121/blob/2015/Variant_calling/etherpad.txt>`__
 
 **Galaxy**
