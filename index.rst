@@ -52,3 +52,4 @@ Material will be added as it comes in.
 
 - slides part 1 `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/RNA-seq/RNA_seq_day_1_online.pdf>`__
 - slides part 2 `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/RNA-seq/RNA_seq_day_2_online.pdf>`__
+- slides part 3 `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/RNA-seq/RNA_seq_day_3_online.pdf>`__
