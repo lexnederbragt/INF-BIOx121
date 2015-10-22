@@ -1,0 +1,39 @@
+On your local machine download from cod3 some fastq files (replace toTheDirOnLocalMachineWhereYouAreDownloadingThings and yourUsername by sensible values in the commands):
+cd toTheDirOnLocalMachineWhereYouAreDownloadingThings
+mkdir 020_lifePortalExercise
+cd 020_lifePortalExercise
+
+rsync -au --progress yourUsername@cod3.hpc.uio.no:~/vc/inputData/reads_agilentV1_chr5/real_patient/*.fastq .
+
+Open the LifePortal in a browser: https://lifeportal.uio.no
+
+Import files >> Upload file >> Select file format = "fastqsanger" and the R1 fastq file on your local machine >> No need to change any of the other fields (no need to specify genome) >> Click EXECUTE
+
+Repeat the above for read 2
+
+We will now attempt to replicate some of the operations we did in 020_basicPipeline.bash from the mapping with bwa (probably a good idea to have 020_basicPipeline.bash open in an editor or less).
+
+MAPPING: Scroll down in the tools menu of the LifePortal: NGS mapping >> Map with BWA for Illumina (0.7.8) (version 0.7.8) >> Select hg19 (as b37 not available) >> Paired end >> Make sure you specify read 1 file first and then read2 file >> Select lp68 project >> change duration to d 00 h 00 m 20 >> EXECUTE
+
+INSPECT SAM file: click on the eye symbol in your history >> scroll down in the main central LifePortal panel and you should know what you are looking at.
+
+FIXMATE INFORMATION: in tools panel, find "NGS:picard" and expand and you should see the tool you need: pick as the input the SAM file you generated >> keep coordinate sorted >> Select lp 68 project >> change duration to d 00 h 00 m 20 >> EXECUTE
+
+
+ADDorReplaceReadGroups: in tools meny you should be able to find the tool you need >> pick as your input the output from your previous step >> Leave the read group id unchanged but add a label of your choice (single word) to sample name and library (and fill in the other fields as suggested) >> again modify the computational parameters as before
+
+MarkDuplicates: easy to find this by now >> select your BAM file from the previous stage >> De-select the "remove duplicates from output file" >> For the specially interested note the optical duplicates option (do not change this) >> again set it up for the computation >> EXECUTE
+
+You will notice two output from the previous step: the BAM file and an html file that contains some duplicate metrics that are difficult to read: try to find the value for PERCENT_DUPLICATION
+
+ValidateSamFile >> I cannot see this tool on the LifePortal, if you can spot it try to validate the BAM file. But anyway, it should be all OK.
+
+In the original exercise 020_basicPipeline.bash, you will see that we proceeded to do variant calling. Here we will instead compute some coverage metrics.
+
+SAM/BAM Alignment Summary Metrics >> The LifePortal should already have the right files select (if not fix this) >> set the compute parameters >> EXECUTE
+
+See if you can make sense of the output. It might help to look in the following file on cod3: ~/vc/exerDefinitions/helperScripts/metricsDefs_alignment.txt
+
+
+
+
