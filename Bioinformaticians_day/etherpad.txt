@@ -1,0 +1,5 @@
+Notes from Janina's talk:
+Janina referred to this tool: BIR Pipeline for Preparation of Phylogenomic Data. http://www.ncbi.nlm.nih.gov/pubmed/25987827
+SCaFoS: a tool for Selection, Concatenation and Fusion of Sequences for phylogenomics http://www.biomedcentral.com/1471-2148/7/S1/S2
+man pages: type 'man less' or 'man sort' on the command line to get the manual of the command
+geeknote http://www.geeknote.me/ command line interface to evernote

@@ -26,8 +26,7 @@ Material will be added as it comes in.
 
 **Quality control of sequencing reads**
 
--  `Web <http://inf-biox121.readthedocs.org/en/2015/QC/Read_QC.html>`__
--  `PDF <https://github.com/lexnederbragt/INF-BIOx121/blob/2015/QC/Read_QC.pdf>`__
+-  Exercises `web <http://inf-biox121.readthedocs.org/en/2015/QC/Read_QC.html>`__ `pdf <https://github.com/lexnederbragt/INF-BIOx121/blob/2015/QC/Read_QC.pdf>`__
 - etherpad content is in the one linked to above
 
 **Mapping and variant calling**
@@ -54,3 +53,8 @@ Material will be added as it comes in.
 - slides part 1 `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/RNA-seq/RNA_seq_day_1_online.pdf>`__
 - slides part 2 `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/RNA-seq/RNA_seq_day_2_online.pdf>`__
 - slides part 3 `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/RNA-seq/RNA_seq_day_3_online.pdf>`__
+
+**Statistical genomics**
+
+- slides `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Statistical_genomics/Statistical_genomics_INFBIOx121_autumn2015.pdf>`__
+- reproducibility exercise `variant A <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Statistical_genomics/Stat_genomics_reproducibility_exercise_A.pdf>`__ `variant B <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Statistical_genomics/Stat_genomics_reproducibility_exercise_B.pdf>`__
