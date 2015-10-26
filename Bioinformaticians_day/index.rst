@@ -7,7 +7,7 @@ Part of the INF-BIOx121 course “High Throughput Sequencing technologies and bi
 ===============  =============================================================
 Time             Speaker - topic
 ===============  =============================================================
-09:00 - 09:45    Karin Lagesen - More resources for bioinformaticians
+09:00 - 09:45    Karin Lagesen - More resources for bioinformaticians `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Bioinformaticians_day/dataressurser15.pdf>`__
 
                  * abel, notur, norstore
                  * google fu, seqanswers, biostars etc
