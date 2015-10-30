@@ -5,7 +5,12 @@ Datafiles
 ~~~~~~~~~
 
 -  Miseq 2 x 150 paired end reads
--  from http://www.illumina.com/science/data_library.ilmn
+-  originally found at
+   http://www.illumina.com/science/data_library.ilmn, but the data are
+   no longer there. Those interested can find a copy of the subset used
+   in the course here:
+   `read1 <https://www.dropbox.com/s/kopguhd9z2ffbf6/MiSeq_Ecoli_MG1655_50x_R1.fastq>`__
+   `read2 <https://www.dropbox.com/s/i99h7dnaq61hrrc/MiSeq_Ecoli_MG1655_50x_R2.fastq>`__
 -  random subsampling using seqtk https://github.com/lh3/seqtk
 -  Nextera mate pair reads
 -  from Illumina basespace
