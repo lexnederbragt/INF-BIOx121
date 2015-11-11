@@ -148,8 +148,8 @@ spaces!
 
     fastqc -o ./ /data/qc/cod_read1.fastq
 
-Note that we use '``-o ./``\ ' here, which specifies the current folder
-'``./``\ ' as location for the output.
+Note that we use '``-o ./``' here, which specifies the current folder
+'``./``' as location for the output.
 
 The program will tell you how far it has come, and should finish in a
 minute or so. Check that it finished without error messages.

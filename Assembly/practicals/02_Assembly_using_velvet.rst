@@ -124,9 +124,9 @@ you chose. You should see the following files:
     Roadmaps
     Sequences
 
-The '``Log``\ ' file has a useful reminder of what commands you typed to
+The '``Log``' file has a useful reminder of what commands you typed to
 get this assembly result, for reproducing results later on.
-'``Sequences``\ ' contains the sequences we put in, and '``Roadmaps``\ '
+'``Sequences``' contains the sequences we put in, and '``Roadmaps``'
 contains the index you just created.
 
 Now we will run the assembly with default parameters:
@@ -234,7 +234,7 @@ and enter your password.
 
 ::
 
-    jupyter notebook node_coverage.ipynb
+    python notebook node_coverage.ipynb
 
 OR
 
