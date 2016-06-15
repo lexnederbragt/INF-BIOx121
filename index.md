@@ -9,7 +9,7 @@ The High Throughput Sequencing technologies and bioinformatics
 analysis course consists of five weeks, three days each week, of
 lectures and practicals, and a final take-home exam, plus a written exam on the course material and the reading material.
 
-##Schedule
+## Schedule
 Course days are from 9:00 to 16:00 (teachers will stay until 17:00 if
 requested), some lectures, mostly hands-on exercises. All materials for lectures and practicals will be linked from the schedule below. 
 
@@ -54,7 +54,7 @@ course.
 * Java: rom 2423 Informatics building (Ole-Johan Dahls hus)
 * KN: 'Lille auditorium' in Kristin Nygaards hus (next to the Informatics building)
 
-##Requirements
+## Requirements
 
 * No prior background in bioinformatics or computer science is required, however, we expect students to have a basic understanding of the unix shell. For this, we organise an **introductory unix course** about a
 week before the course starts - details will be provided upon acceptance. Participants who are familiar with the shell
@@ -67,7 +67,7 @@ coordinators (see contact details below) at least three weeks before the
 start of the course.*
 
 
-##Computers/laptops, internet access, and UiO user account
+## Computers/laptops, internet access, and UiO user account
 All students must bring a laptop with either a Windows (Windows 7 or more recent), Unix/Linux, or OS X (i.e. an Apple computer) operating system.
 
 * The computer should not be more than 2-3 years old
@@ -80,11 +80,11 @@ All students must bring a laptop with either a Windows (Windows 7 or more recent
 
 If you are struggling with anything of the above, in particular if you have forgotten your UiO user name/password or you do not have one, you must contact the course coordinator (see contact details on this page) as soon as possible, and at least one week before the start of the course.
 
-##Curriculum_and_suggested_reading
+## Curriculum and suggested reading
 The curriculum consists of a set of scientific articles. The exam will
-contain questions on the material presented in these papers on the material covered during the course. Specific details of the curriculum, and a list of further suggested papers, can be found [here](misc/curriculum.md).
+contain questions on the material presented in these papers on the material covered during the course. Specific details of the curriculum, and a list of further suggested papers, can be found [here](misc/curriculum).
 
-##Exam
+## Exam
 The exam for this course will be:
 
 -   a written exam on the course and curriculum, time and place
@@ -99,7 +99,7 @@ The exam for this course will be:
 **NOTE** Both exams have to be passed to earn 10 study credits.  
 **NOTE** 80% attendance is required to take the final exam.
 
-##Contact information
+## Contact information
 
 * Lex Nederbragt (Course coordinator) - e-mail: lex.nederbragt - at -
 ibv.uio.no
@@ -107,9 +107,7 @@ ibv.uio.no
 medisin.uio.no
 * Course administration/registration - e-mail: studieinfo@ifi.uio.no
 
-##Teachers
-
-FIXME
+## Teachers
 
 * Lex Nederbragt (LN, Centre for Ecological and Evolutionary Synthesis,
 Dept. of Biosciences & Research Group for Biomedical Informatics Dept. of Informatics, University of Oslo)
