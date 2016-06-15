@@ -82,7 +82,7 @@ If you are struggling with anything of the above, in particular if you have forg
 
 ## Curriculum and suggested reading
 The curriculum consists of a set of scientific articles. The exam will
-contain questions on the material presented in these papers on the material covered during the course. Specific details of the curriculum, and a list of further suggested papers, can be found [here](misc/curriculum).
+contain questions on the material presented in these papers on the material covered during the course. Specific details of the curriculum, and a list of further suggested papers, can be found [here](misc/curriculum.html).
 
 ## Exam
 The exam for this course will be:
@@ -96,7 +96,8 @@ The exam for this course will be:
     be handed out to all participants during the last course day.
     
 
-**NOTE** Both exams have to be passed to earn 10 study credits.  
+**NOTE** Both exams have to be passed to earn 10 study credits.
+  
 **NOTE** 80% attendance is required to take the final exam.
 
 ## Contact information
