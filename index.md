@@ -16,37 +16,201 @@ requested), some lectures, mostly hands-on exercises. All materials for lectures
 NOTE The schedule below is tentative, and may be changed prior to the
 course.
 
-|Day      |Date      | Room|Subject|
-|---------|----------|-----|-------|
-|**Week 34**|||
-|TBD|TBD |TBD|Unix pre course|
-|**Week 36**|||
-|Wednesday|Sept. 7 ||
-|Thursday|Sept. 8 ||
-|Friday|Sept. 9 ||
-|**Week 37**|||
-|Monday|Sept. 12 ||
-|Tuesday|Sept. 13 ||
-|Wednesday|Sept. 14 ||
-|**Week 38**|||
-|Monday|Sept. 19 ||
-|Tuesday|Sept. 20 ||
-|Wednesday|Sept. 21 ||
-|**Week 39**|||
-|Wednesday|Sept. 28 ||
-|Thursday|Sept. 29 ||
-|Friday|Sept. 30 ||
-|**Week 40**|||
-| no teaching, 'høstferie'|
-|**Week 41**|||
-|Monday|Oct. 10 ||
-|Tuesday|Oct. 11 ||
-|Wednesday|Oct. 12 ||
-|**Week 42**|||
-| home exam|
-|**Week 43**|||
-| home exam|
-|**Exam dates TBD**|
+<table>
+<thead>
+<tr class="header">
+<th align="left">Day</th>
+<th align="left">Date</th>
+<th align="left">Room</th>
+<th align="left">Subject</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Week 34</strong></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">TBD</td>
+<td align="left">TBD</td>
+<td align="left">TBD</td>
+<td align="left">Unix pre course</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Week 36</strong></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Wednesday</td>
+<td align="left">Sept. 7</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Thursday</td>
+<td align="left">Sept. 8</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Friday</td>
+<td align="left">Sept. 9</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Week 37</strong></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Monday</td>
+<td align="left">Sept. 12</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Tuesday</td>
+<td align="left">Sept. 13</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Wednesday</td>
+<td align="left">Sept. 14</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Week 38</strong></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Monday</td>
+<td align="left">Sept. 19</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Tuesday</td>
+<td align="left">Sept. 20</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Wednesday</td>
+<td align="left">Sept. 21</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Week 39</strong></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Wednesday</td>
+<td align="left">Sept. 28</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Thursday</td>
+<td align="left">Sept. 29</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Friday</td>
+<td align="left">Sept. 30</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Week 40</strong></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">no teaching, 'høstferie'</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Week 41</strong></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Monday</td>
+<td align="left">Oct. 10</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Tuesday</td>
+<td align="left">Oct. 11</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Wednesday</td>
+<td align="left">Oct. 12</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Week 42</strong></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">home exam</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Week 43</strong></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">home exam</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Exam dates TBD</strong></td>
+</tr>
+</tbody>
+</table>
 
 **Room locations:**
 
