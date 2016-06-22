@@ -10,7 +10,7 @@ analysis course consists of five weeks, three days each week, of
 lectures and practicals, and a final take-home exam, plus a written exam on the course material and the reading material.
 
 ## Schedule
-Course days are from 9:00 to 16:00 (teachers will stay until 17:00 if
+Course days are from 9:00 to 16:00 (teachers may stay longer if
 requested), some lectures, mostly hands-on exercises. All materials for lectures and practicals will be linked from the schedule below. 
 
 NOTE The schedule below is tentative, and may be changed prior to the
@@ -20,7 +20,7 @@ course.
 <thead>
 <tr class="header">
 <th align="left">Day</th>
-<th align="left">Date</th>
+<th align="left">Room</th>
 <th align="left">Morning (09:00-12:00)</th>
 <th align="left">Afternoon (13:00-16:00)</th>
 </tr>
@@ -39,20 +39,20 @@ course.
 <td align="left"><strong>Week 36</strong></td>
 </tr>
 <tr class="even">
-<td align="left">Wednesday</td>
-<td align="left">Sept. 7</td>
+<td align="left">Wednesday Sept. 7</td>
+<td align="left"><strong>KN</strong></td>
 <td align="left">High-throughput sequencing</td>
 <td align="left">High-throughput sequencing</td>
 </tr>
 <tr class="odd">
-<td align="left">Thursday</td>
-<td align="left">Sept. 8</td>
+<td align="left">Thursday Sept. 8</td>
+<td align="left">Python</td>
 <td align="left">Principles and problems of HTS data analysis</td>
 <td align="left">Experimental design</td>
 </tr>
 <tr class="even">
-<td align="left">Friday</td>
-<td align="left">Sept. 9</td>
+<td align="left">Friday Sept. 9</td>
+<td align="left">Python</td>
 <td align="left">Read QC + trimming</td>
 <td align="left">Project organisation, data management, reporting</td>
 </tr>
@@ -60,41 +60,41 @@ course.
 <td align="left"><strong>Week 37</strong></td>
 </tr>
 <tr class="even">
-<td align="left">Monday</td>
-<td align="left">Sept. 12</td>
-<td align="left">De novo assembly</td>
-<td align="left">De novo assembly</td>
+<td align="left">Monday Sept. 12</td>
+<td align="left">Python</td>
+<td align="left"><em>De novo</em> assembly</td>
+<td align="left"><em>De novo</em> assembly</td>
 </tr>
 <tr class="odd">
-<td align="left">Tuesday</td>
-<td align="left">Sept. 13</td>
-<td align="left">De novo assembly</td>
-<td align="left">De novo assembly</td>
+<td align="left">Tuesday Sept. 13</td>
+<td align="left">Python</td>
+<td align="left"><em>De novo</em> assembly</td>
+<td align="left"><em>De novo</em> assembly</td>
 </tr>
 <tr class="even">
-<td align="left">Wednesday</td>
-<td align="left">Sept. 14</td>
-<td align="left">De novo assembly</td>
-<td align="left">De novo assembly</td>
+<td align="left">Wednesday Sept. 14</td>
+<td align="left">Python</td>
+<td align="left"><em>De novo</em> assembly</td>
+<td align="left"><em>De novo</em> assembly</td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>Week 38</strong></td>
 </tr>
 <tr class="even">
-<td align="left">Monday</td>
-<td align="left">Sept. 19</td>
+<td align="left">Monday Sept. 19</td>
+<td align="left">Python</td>
 <td align="left">RNA seq: differential expression analysis</td>
 <td align="left">RNA seq: differential expression analysis</td>
 </tr>
 <tr class="odd">
-<td align="left">Tuesday</td>
-<td align="left">Sept. 20</td>
+<td align="left">Tuesday Sept. 20</td>
+<td align="left"><strong>Java</strong></td>
 <td align="left">RNA seq: differential expression analysis</td>
 <td align="left">RNA seq: differential expression analysis</td>
 </tr>
 <tr class="even">
-<td align="left">Wednesday</td>
-<td align="left">Sept. 21</td>
+<td align="left">Wednesday Sept. 21</td>
+<td align="left"><strong>KN</strong></td>
 <td align="left">RNA seq: differential expression analysis</td>
 <td align="left">RNA seq: differential expression analysis</td>
 </tr>
@@ -102,20 +102,20 @@ course.
 <td align="left"><strong>Week 39</strong></td>
 </tr>
 <tr class="even">
-<td align="left">Wednesday</td>
-<td align="left">Sept. 28</td>
+<td align="left">Wednesday Sept. 28</td>
+<td align="left">Python</td>
 <td align="left">Mapping and variant calling</td>
 <td align="left">Mapping and variant calling</td>
 </tr>
 <tr class="odd">
-<td align="left">Thursday</td>
-<td align="left">Sept. 29</td>
+<td align="left">Thursday Sept. 29</td>
+<td align="left">Python</td>
 <td align="left">Mapping and variant calling</td>
 <td align="left">Mapping and variant calling</td>
 </tr>
 <tr class="even">
-<td align="left">Friday</td>
-<td align="left">Sept. 30</td>
+<td align="left">Friday Sept. 30</td>
+<td align="left">Python</td>
 <td align="left">Mapping and variant calling</td>
 <td align="left">Mapping and variant calling</td>
 </tr>
@@ -129,20 +129,20 @@ course.
 <td align="left"><strong>Week 41</strong></td>
 </tr>
 <tr class="even">
-<td align="left">Monday</td>
-<td align="left">Oct. 10</td>
+<td align="left">Monday Oct. 10</td>
+<td align="left">Python</td>
 <td align="left">Reproducible bioinformatics analysis using Galaxy</td>
 <td align="left">Reproducible bioinformatics analysis using Galaxy</td>
 </tr>
 <tr class="odd">
-<td align="left">Tuesday</td>
-<td align="left">Oct. 11</td>
+<td align="left">Tuesday Oct. 11</td>
+<td align="left">Python</td>
 <td align="left">Statistical genomics (Hyperbrowser)</td>
 <td align="left">Statistical genomics (Hyperbrowser)</td>
 </tr>
 <tr class="even">
-<td align="left">Wednesday</td>
-<td align="left">Oct. 12</td>
+<td align="left">Wednesday Oct. 12</td>
+<td align="left">Python</td>
 <td align="left">Statistical genomics (Hyperbrowser)</td>
 <td align="left">Statistical genomics (Hyperbrowser)</td>
 </tr>
