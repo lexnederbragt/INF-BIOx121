@@ -55,7 +55,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'INF-BIOx121'
-copyright = u'2015, Lex Nederbragt'
+copyright = u'2016, Lex Nederbragt'
 author = u'Lex Nederbragt'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -118,7 +118,7 @@ todo_include_todos = False
 # a list of builtin themes.
 html_theme = 'alabaster'
 html_theme = 'default'
-
+html_theme = 'classic'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
