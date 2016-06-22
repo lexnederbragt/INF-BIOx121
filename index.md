@@ -54,7 +54,7 @@ course.
 <td align="left">Friday Sept. 9</td>
 <td align="left">Python</td>
 <td align="left">Read QC + trimming</td>
-<td align="left">Project organisation, data management, reporting</td>
+<td align="left">Project and data organisation, reporting</td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>Week 37</strong></td>
@@ -131,8 +131,8 @@ course.
 <tr class="even">
 <td align="left">Monday Oct. 10</td>
 <td align="left">Python</td>
-<td align="left">Reproducible bioinformatics analysis using Galaxy</td>
-<td align="left">Reproducible bioinformatics analysis using Galaxy</td>
+<td align="left">Reproducible bioinformatics using Galaxy</td>
+<td align="left">Reproducible bioinformatics using Galaxy</td>
 </tr>
 <tr class="odd">
 <td align="left">Tuesday Oct. 11</td>
