@@ -17,6 +17,7 @@ NOTE The schedule below is tentative, and may be changed prior to the
 course.
 
 <table border="1">
+<table>
 <thead>
 <tr class="header">
 <th align="left">Day</th>
@@ -30,9 +31,9 @@ course.
 <td align="left"><strong>Week 34</strong></td>
 </tr>
 <tr class="even">
-<td align="left">TBD</td>
-<td align="left">TBD</td>
-<td align="left">TBD</td>
+<td align="left">Tuesday August 23rd</td>
+<td align="left"><strong>Smalltalk</strong></td>
+<td align="left">Unix pre course</td>
 <td align="left">Unix pre course</td>
 </tr>
 <tr class="odd">
@@ -94,7 +95,7 @@ course.
 </tr>
 <tr class="even">
 <td align="left">Wednesday Sept. 21</td>
-<td align="left"><strong>KN</strong></td>
+<td align="left"><strong>Smalltalk</strong></td>
 <td align="left">RNA seq: differential expression analysis</td>
 <td align="left">RNA seq: differential expression analysis</td>
 </tr>
@@ -163,13 +164,13 @@ course.
 </tr>
 </tbody>
 </table>
-
 <p><p>
 
 **Room locations:**
 
-* Python: rom 2269 Informatics building (Ole-Johan Dahls hus)
-* Java: rom 2423 Informatics building (Ole-Johan Dahls hus)
+* Smalltalk: room 1416, first floor auditorium near the man entrance  (Ole-Johan Dahls hus)
+* Python: room 2269 Informatics building (Ole-Johan Dahls hus)
+* Java: room 2423 Informatics building (Ole-Johan Dahls hus)
 * KN: 'Lille auditorium' in Kristin Nygaards hus (next to the Informatics building)
 
 ## Requirements
