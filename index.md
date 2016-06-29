@@ -17,7 +17,6 @@ NOTE The schedule below is tentative, and may be changed prior to the
 course.
 
 <table border="1">
-<table>
 <thead>
 <tr class="header">
 <th align="left">Day</th>
