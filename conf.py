@@ -55,7 +55,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'INF-BIOx121'
-copyright = u'2015, Lex Nederbragt'
+copyright = u'2015-, Lex Nederbragt'
 author = u'Lex Nederbragt'
 
 # The version info for the project you're documenting, acts as replacement for
