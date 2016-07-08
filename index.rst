@@ -18,6 +18,8 @@ The 2016 course edition material can be found `here <http://inf-biox121.readthed
 
 `2013 <https://wiki.uio.no/projects/clsi/index.php/INF-BIOX120_H13>`__
 
+2012: INF-BIO9120 and INF-BIO5120 Fall 2012 did not have its own website
+
 .. toctree::
    :maxdepth: 2
 
