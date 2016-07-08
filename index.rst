@@ -1,6 +1,8 @@
 Course material for the fall 2015 edition of INF-BIOx121
 ========================================================
 
+NOTE: for other course editions, check out `this website <http://inf-biox121.readthedocs.io>`__.
+
 NOTE The course Wiki, with all important information, is `here <https://wiki.uio.no/projects/clsi/index.php/INF-BIOX121_H15>`__.
 
 NOTE if you are comfortable with git and github, all material is available from `this github repository <https://github.com/lexnederbragt/INF-BIOx121/tree/2015>`__. Make sure to switch to the `2015` branch.
