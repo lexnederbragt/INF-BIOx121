@@ -12,9 +12,11 @@ The 2016 course edition material can be found `here <http://inf-biox121.readthed
 
 **Previous editions**
 
-`2015 <http://inf-biox121.readthedocs.org/en/2015/>`__
+`2015 <http://inf-biox121.readthedocs.org/en/2015>`__
 
-For even previous course editions, check out `this website <https://wiki.uio.no/projects/clsi/index.php/INF-BIOX121>`__.
+`2014 <https://wiki.uio.no/projects/clsi/index.php/INF-BIOX121_H14>`__
+
+`2013 <https://wiki.uio.no/projects/clsi/index.php/INF-BIOX120_H13>`__
 
 .. toctree::
    :maxdepth: 2
