@@ -15,7 +15,7 @@ Material will be added as it comes in.
 
 **Intro to High Throughput Sequencing & Applications and Principles and problems of HTS data analysis**
 
-- schedule of what was discussed, with links `web <https://github.com/lexnederbragt/INF-BIOx121/blob/2015/Intro_HTS/NGS_intro_HTS_analysis.md>`__ `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Intro_HTS/NGS_intro_HTS_analysis.pdf>`__
+- schedule of what was discussed, with links `web <http://inf-biox121.readthedocs.io/en/2015/Intro_HTS/NGS_intro_HTS_analysis.html>`__ `pdf <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Intro_HTS/NGS_intro_HTS_analysis.pdf>`__
 - slides `pptx <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Intro_HTS/NGS_intro_HTS_analysis_slides.pptx>`__
 - the basic skills we want you to learn `pptx <https://github.com/lexnederbragt/INF-BIOx121/raw/2015/Intro_HTS/Basic_skills.pptx>`__
 - content of the `etherpad <https://github.com/lexnederbragt/INF-BIOx121/blob/2015/Intro_HTS/etherpad.txt>`__ 
