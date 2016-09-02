@@ -18,15 +18,11 @@ Figures 1-4 from
 
 [Genotype and SNP calling from next-generation sequencing data](https://wiki.uio.no/projects/clsi/images/3/33/Genotype_and_SNP_calling_from_next-generation_sequencing_data.pdf), Nielsen _et. al._, Nature Reviews Genetics 2011
 
-[Exome sequencing identifies the cause of a mendelian disorder](https://wiki.uio.no/projects/clsi/images/7/79/Ng2010.pdf), Ng _et. al._, Nature Genetics 2009
-
 [A survey of best practices for RNA-seq data analysis](https://wiki.uio.no/projects/clsi/images/a/a6/Conesa2016.pdf), Conesa _et. al._ Genome Biology 2016
 
 [The power and promise of RNA‐seq in ecology and evolution](https://wiki.uio.no/projects/clsi/images/6/63/Todd2016.pdf), Todd _et. al._, Molecular Ecology 2016
 
 [The dilemma of choosing the ideal permutation strategy while estimating statistical significance of genome-wide enrichment](https://wiki.uio.no/projects/clsi/images/9/92/The_dilemma_of_choosing_the_ideal_permutation_strategy_while_estimating_statistical_significance_of_genome-wide_enrichment.pdf), Subhajyoti _et. al._, Briefings in Bioinformatics 2013
-
-[Transcriptionally active regions are the preferred targets for chromosomal HPV integration in cervical carcinogenesis](https://wiki.uio.no/projects/clsi/images/4/4e/Christiansen2015.pdf), Christiansen _et. al._, PLoS ONE 2015
 
 [GSuite HyperBrowser: integrative analysis of dataset collections across the genome and epigenome](https://wiki.uio.no/projects/clsi/images/8/86/SimovskiPre.pdf), Simovski _et. al._, BioRxiv preprint
 
