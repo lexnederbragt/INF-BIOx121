@@ -190,7 +190,7 @@ All students must bring a laptop with either a Windows (Windows 7 or more recent
 
 * The computer should not be more than 2-3 years old
 * It should be possible to connect the computer to the UiO wireless network
-* You must have a root/administrator password that gives you access to installing new software on the computer
+* You must have modern internet browser installed (Chrome, Firefox, Safari, ...)
 * You must have a valid UiO user account and must be able to log onto a computer on the UiO network
   * If you are unsure if you have a UiO user account and a valid password, you should try to log in using kiosk.uio.no as described [here](http://www.uio.no/english/services/it/network/home-and-away/kiosk/index.html). If you are unable to log in, try the hints you find [here](http://www.uio.no/english/services/it/network/home-and-away/kiosk/programkiosk/index.html).
   * Instructions (in Norwegian) about how to find your user name and get a new password can be found [here](http://www.uio.no/tjenester/it/brukernavn-passord/ikke-passord.html).
