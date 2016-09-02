@@ -44,7 +44,7 @@ Christiansen _et. al._, PLoS ONE 2015
 **_GSuite HyperBrowser: integrative analysis of dataset collections across the genome and epigenome_**  
 Simovski _et. al._, BioRxiv preprint
 
-**_Ten Simple Rules for Reproducible Computational Research_**  
+[Ten Simple Rules for Reproducible Computational Research](https://wiki.uio.no/projects/clsi/images/e/ed/Sandve2013-2.pdf)
 Sandve _et. al._, PLoS Computational Biology 2013
 
 **_A Quick Guide to Organizing Computational Biology Projects_**  
