@@ -47,7 +47,7 @@ Simovski _et. al._, BioRxiv preprint
 **_Ten Simple Rules for Reproducible Computational Research_**  
 Sandve _et. al._, PLoS Computational Biology 2013
 
-**_A Quick Guide to Organizing Computational Biology Projects_**
+**_A Quick Guide to Organizing Computational Biology Projects_**  
 Noble, PLoS Computational Biology 2009
 
 
