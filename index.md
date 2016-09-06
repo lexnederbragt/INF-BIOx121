@@ -204,7 +204,8 @@ The curriculum consists of a set of scientific articles. The exam will
 contain questions on the material presented in these papers on the material covered during the course. Specific details of the curriculum, and a list of further suggested papers, can be found [here](misc/curriculum.html).
 
 ## Exam
-The exam for this course will be:
+
+Please be aware of the 80% attendance requirement. The exam for this course will be:
 
 -   a written exam on the course and curriculum, time and place
     to be announced
