@@ -19,26 +19,12 @@ Program|Options|Explanation
 See the manual for information on the output of Quast:
 [http://quast.bioinf.spbau.ru/manual.html#sec3](http://quast.bioinf.spbau.ru/manual.html#sec3)
 
-####Running Quast
-
-TIP: log in to the cod3 server using the `Y` flag with `ssh`:
-
-```
-ssh -Y username@cod3.hpc.uio.no
-```
-
-This becomes useful at the end.
-
-Set up quast:
-
-```
-module load quast/3.0
-```
+### Running Quast
 
 On the server, make a folder called `quast` and move into it. Then run:
 
 ```
-quast.py -T 2 \
+quast.py -t 2 \
 -o out_folder_name \
 -R /data/assembly/NC_000913_K12_MG1655.fasta \
 -G /data/assembly/e.coli_genes.gff \
@@ -49,16 +35,7 @@ quast.py -T 2 \
 
 Note that the `--scaffold` option is not used here for simplification. Also, make sure you name the assemblies (`-l`) in the same order as you give them to quast!
 
-####Quast output
-Quast will produce a html report file `report.html`. If you have logged in to the cod3 server using `ssh -Y` you can now type
-
-```
-cd out_folder_name
-firefox report.html
-```
-
-Otherwise, download the report *and* the `report_html_aux` folder to your PC and open the `html` file in your browser.
-
-Hover over the row names to get a description. Also have a look at the 'Extended report'.
+### Quast output
+Quast will produce a html report file `report.html`. Open this `html` file in your browser. Hover over the row names to get a description. Also have a look at the 'Extended report'.
 
 Alternatively, have a look at the report.pdf file (it has a few more plots).

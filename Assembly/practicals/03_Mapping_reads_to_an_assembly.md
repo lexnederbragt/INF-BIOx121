@@ -2,16 +2,7 @@ Mapping reads to an assembly and visualising the results
 ======================================
 We will use `bwa` for mapping. this is the same program you used for the variant calling module.
 
-####Set up the environment
-Load the following modules:
-
-```
-module load bwa/0.7.8
-module load samtools/1.1
-module load reapr/1.0.18
-```
-
-####Indexing the assembly
+### Indexing the assembly
 
 Your new assembly now becomes the 'reference' for `bwa`. `bwa` needs an index of the sequences to make mapping go faster. For large genomes such as the human genome, this takes a long time. For the small bacterial genome we work with here this is very fast.
 
@@ -26,7 +17,7 @@ bwa index -a bwtsw ASSEMBLY.FASTA
 Replace `ASSEMBLY.FASTA` with the name of your fasta file. Run `ls` to check the results, you should see a couple of new files.
 
 
-####Mapping paired end reads
+### Mapping paired end reads
 
 Mapping the reads using `bwa mem` yields SAM output. Instead of saving this output to disk, we will immediately convert it to a sorted (binary) BAM file by piping into the `samtools`program. 'Sorted' here means that the alignments of the mapped reads are in the order of the reference sequences, rather than random. Finally, we will generate an index of the sorted BAM file for faster searching later on.
 
@@ -65,13 +56,13 @@ If you would like to have a look at the alignments in the BAM file (which is in 
 samtools view map_pe.sorted.bam |less
 ```
 
-####Mapping mate pairs
+### Mapping mate pairs
 Repeat the `bwa mem` and `samtools` commands above, but:
 
 * use the mate pair reads `Nextera_MP_R1_50x.fastq` and `Nextera_MP_R2_50x.fastq`
 * change the output name to `map_mp.sorted`
 
-####Plotting the insert size distribution
+### Plotting the insert size distribution
 Since we know know where the pairs of reads map, we can obtain he distance between them. That information is stored in the SAM/BAM output in the 9th column, 'TLEN' (observed Template LENgth).
 
 We will use python, and the python module `pysam` to plot the distribution of insert sizes for a subset of the alignments. This we will do in another Jupyter notebook.
@@ -82,7 +73,7 @@ We will use python, and the python module `pysam` to plot the distribution of in
 * open the Jupyter notebook
 
 ```
-ipython notebook Plot_insertsizes.ipynb
+jupyter notebook Plot_insertsizes.ipynb
 ```
  
 * execute the cells as listed
@@ -95,7 +86,7 @@ ipython notebook Plot_insertsizes.ipynb
 * Why isn't the mean of the distribution a useful metric for the mate pair library?
 
 
-####Visualising the assembly in a genome browser
+### Visualising the assembly in a genome browser
 For this part, we will use Integrative Genomics Viewer (IGV), a genome browser developed by the Broad Institute.  Instead of using one of the built-in genomes, we will add the assembly as a new reference genome.
 
 **On the PC** (*NOT* on the server):
@@ -121,11 +112,10 @@ Adding tracks to the browser is as simple as uploading a new file:
 * Is coverage even? Are there gaps in the coverage, or peaks? Where?
 
 
-####Adding the locations of gaps as another track
+### Adding the locations of gaps as another track
 It would be convenient to be able to see the location of gaps in the browser. For this purpose use a script made by your teacher that creates a `bed` file with gap locations. We will use 10 bases as minimum gap length: `-m 10`. The scuipt uses BioPython so the 'python2' module is needed for it to run.
 
 ```
-module load python2/2.7.9
 scaffoldgap2bed.py -i ASSEMBLY.FASTA >gaps.bed
 ```
 
@@ -138,7 +128,7 @@ scaffoldgap2bed.py -i ASSEMBLY.FASTA >gaps.bed
 
 * Check for some gaps whether they are spanned by mate pairs? Tip: choose 'view as pairs' for the tracks
 
-####Saving the IGV session
+### Saving the IGV session
 We will get back to this assembly browser, so save your session: `File --> Save Session…`
 
   

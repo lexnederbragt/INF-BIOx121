@@ -5,14 +5,7 @@ From the REAPR website:
 
 REAPR can take both paired end reads mapped to the assembly, and mate pairs, Here we will restrict the analysis to the mate pairs
 
-####Set up the environment
-Load the following modules:
-
-```
-module load reapr
-```
-
-###Using REAPR
+### Using REAPR
 
 * `cd` to folder with assembly fasta file
 * Run REAPR as follows:
@@ -24,7 +17,7 @@ reapr pipeline ASSEMBLY.FASTA bwa/map_mp.sorted.bam reapr_results >reapr.out 2>&
 * REAPR wil start producing some files in the `reapr_results` folder, and then take a long time in the `[REAPR pipeline] Running stats` stage, while adding data to the file `01.stats.per_base.gz`. 
 * After that, it is finished quite quickly. 
 
-####REAPR output
+### REAPR output
 * The `reapr_results` folder and the folder `reapr_results/00.Sample` has a few PDFs that may be of interest
 * The file `05.summary.report.txt` has a lot of information an what REAPR did with the assembly. Error-free bases have at least 5X perfect and unique coverage of paired end reads. For more information, check the REAPR manual.
 * The file `04.break.broken_assembly_bin.fa` is a revised version of *only those* scaffolds from the assembly that were broken at places REAPR determined an error

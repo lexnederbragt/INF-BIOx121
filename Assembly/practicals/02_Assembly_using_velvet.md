@@ -1,9 +1,9 @@
 Assembly using velvet
 =====================
 
-###*De novo* assembly of Illumina reads using velvet
+## *De novo* assembly of Illumina reads using velvet
 
-####Assembling short-reads with Velvet
+### Assembling short-reads with Velvet
 
 We will use Velvet to assemble Illumina reads on their own. Velvet uses the *de Bruijn graph* approach. 
 
@@ -14,7 +14,7 @@ We wil first use paired end reads only:
 `/data/assembly/MiSeq_Ecoli_MG1655_50x_R1.fastq`  
 `/data/assembly/MiSeq_Ecoli_MG1655_50x_R2.fastq`
 
-###Building the Velvet Index File
+### Building the Velvet Index File
 
 Velvet requires an index file to be built before the assembly takes place. We must choose a *k-* mer value for building the index. Longer *k-* mers result in a more stringent assembly, at the expense of coverage. There is no definitive value of *k* for any given project. However, there are several absolute rules:
 
@@ -25,27 +25,11 @@ Firstly we are going to run Velvet in single-end mode, *ignoring the pairing inf
 
 First, we need to make sure we can use velvet:
 
-
-####Set up the environment
-
-For this part of the course, *every time you log into the server* you need to execute the command below. IMPORTANT do not use spaces between `PATH=` and `$PATH`!
-
-```
-export PATH=/data/bin/:$PATH
-```
-
-To be able to use velvet, load the following module:
-
-```
-module load velvet
-```
-
-Now, 'go home':
+First, 'go home':
 
 ```
 cd ~
 ```
-
 
 or simply type
 
@@ -53,7 +37,7 @@ or simply type
 cd
 ```
 
-Create the assembly folder:
+Create a folder for the velvet assemblies:
 
 ```
 mkdir assembly
@@ -62,7 +46,7 @@ mkdir velvet
 cd velvet
 ```
 
-####A first assembly
+### A first assembly
 
 Find a value of *k* (between 21 and 113) to start with, and record your choice in this google spreadsheet: `http://bit.ly/infbioh16velvet`. Run `velveth` to build the hash index (see below).
 
@@ -143,7 +127,7 @@ Log your results in this google spreadsheet: `bit.ly/INFBIO1`
 
 Now run `velveth` and `velvetg` for the kmer size determined by the whole class. Use this kmer from now on!
 
-####Estimating and setting `exp_cov`
+### Estimating and setting `exp_cov`
 
 Much better assemblies are produced if Velvet understands the expected coverage for unique regions of your genome. This allows it to try and resolve repeats. The data to determine this is in the `stats.txt` file. The full description of this file is in the Velvet Manual, at [http://www.ebi.ac.uk/~zerbino/velvet/Manual.pdf](http://www.ebi.ac.uk/~zerbino/velvet/Manual.pdf).
 
@@ -218,7 +202,7 @@ velvetg ASM_NAME -exp_cov PEAK_K_MER_COVERAGE
 
 * What improvements do you see in the assembly by setting a value for `exp_cov`?
 
-####Setting `cov_cutoff`
+### Setting `cov_cutoff`
 
 You can also clean up the graph by removing low-frequency nodes from the *de Bruijn* graph using the `cov_cutoff` parameter. Low-frequency nodes can result from sequencing errors, or from parts of the genome with very little sequencing coverage. Removing them will often result in better assemblies, but setting the cut-off too high will also result in losing useful parts of the assembly. Using the histogram from previously, estimate a good value for `cov_cutoff`.
 
@@ -228,7 +212,7 @@ velvetg ASM_NAME -exp_cov YOUR_VALUE -cov_cutoff YOUR_VALUE
 
 Try some different values for `cov_cutoff`, keeping `exp_cov` the same and record your assembly results.
 
-####Asking velvet to determine the parameters
+### Asking velvet to determine the parameters
 
 You can also ask Velvet to predict the values for you:
 
@@ -241,7 +225,7 @@ velvetg ASM_NAME -exp_cov auto -cov_cutoff auto
 * What values of *exp_cov* and *cov_cutoff* did Velvet choose?
 * Check the output to the screen. Is this assembly better than your best one?
 
-####Incorporating paired-end information
+### Incorporating paired-end information
 
 Paired end information contributes additional information to the assembly, allowing contigs to be scaffolded. We will first re-index your reads telling Velvet to use paired-end information, by using `-shortPaired` instead of `-short` for `velveth`. Then, re-run velvetg using the best value of `k`, `exp_cov` and `cov_cutoff` from the previous step.
 
@@ -263,7 +247,7 @@ velvetg ASM_NAME2 -exp_cov auto \
 * How does doing this affect the assembly?
 * what does velvet say about the insert size of the paired end library?
 
-####Scaffold and contig metrics
+### Scaffold and contig metrics
 
 The sequences in the `contigs.fa` file are actually scaffolds.  
 Use the `assemblathon_stats.pl` script to generate metrics for this, and all following assemblies.
@@ -315,7 +299,7 @@ Some of the metrics the script reports are:
 * how many gap bases ('N') are left in the scaffolds
 
 
-####Looking for repeats
+### Looking for repeats
 
 Have a look for contigs which are long and have a much higher coverage than the average for your genome. One tedious way to do this is to look into the `contigs.fa` file (with `less`). You will see the name of the contig ('NODE'), it's length and the kmer coverage. However, trying to find long contigs with high coverage this way is not very efficient.  
 
@@ -343,7 +327,7 @@ Find the contig with the highest coverage in the `contigs.fa` file. Perform a BL
 * What is it?
 * Is this surprising? Why, or why not?
 
-####The effect of mate pair library reads
+### The effect of mate pair library reads
 
 Long-range "mate-pair" libraries can also dramatically improve an assembly by scaffolding contigs. Typical sizes for Illumina are 2kb and 6kb, although any size is theoretically possible. You can supply a second library to Velvet. However, it is important that files are reverse-complemented first as Velvet expects a specific orientation. We have supplied a 3kb mate-pair library in the correct orientation.
 

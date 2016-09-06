@@ -5,7 +5,7 @@ Spades was written as an assembly program for bacterial genomes, from regular, a
 
 Before assembly, SPADES will error-correct the reads.
 
-###Using SPADES
+## Using SPADES
 
 Spades can be used with paired end and mate pair data:
 
@@ -22,15 +22,9 @@ Other parameters:
 * `-o` name of the output folder
 
 
-####Setting up the assembly
+### Setting up the assembly
 
-To enable SPAdes, run:
-
-```
-module load spades/3.6.0
-```
-
-First, create a new folder called `/usit/abel/u1/YOUR_USERNAME/assembly/spades` and `cd` into it.  
+First, create a new folder called `spades` and `cd` into it.  
 We will save the output from the command using `>spades.out` in a file to be able to follow progress. `2>&1` makes sure any error-messages are written to the same file.
 Run the assembly as follows:
 
@@ -85,7 +79,7 @@ If the assembly is running in a 'screen', you can follow the output by checking 
 tail -f spades.out
 ```
 
-####SPADES output
+### SPADES output
 * error-corrected reads
 * contigs for each individual k-mer assembly
 * final `contigs.fasta` and `scaffolds.fasta`, use the scaffolds file (!)
@@ -96,8 +90,7 @@ You can have a look at the lengths of the largest sequence(s) with
 fasta_length contigs.fasta |sort -nr |less
 ```
 
-
-####Re-using error-corrected reads
+### Re-using error-corrected reads
 
 Once you have run SPADES, you will have files with the error-corrected reads in `spades_folder/corrected/`. There will be one file for each input file, and one additional one for unpaired reads (where during correction, one of the pairs was removed from the dataset). Instead of running the full SPADES pipeline for your next assembly, you could add the error-corrected reads from the previous assembly. This will save time by skipping the error-correction step. I suggest to not include the files with unpaired reads.
 
@@ -108,5 +101,5 @@ Changes to the command line when using error-corrected reads:
 * point to the error-corrected read files instead of the raw read files
 * add the `--only-assembler` flag to skip correction
 
-###Next steps
+### Next steps
 As for the previous assemblies, you could map reads back to the assembly, run reapr and visualise in the browser.
