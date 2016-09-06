@@ -28,6 +28,4 @@ Figures 1-4 from
 
 [Ten Simple Rules for Reproducible Computational Research](https://wiki.uio.no/projects/clsi/images/e/ed/Sandve2013-2.pdf), Sandve _et. al._, PLoS Computational Biology 2013
 
-[A Quick Guide to Organizing Computational Biology Projects](https://wiki.uio.no/projects/clsi/images/b/b5/Noble_-_2009_-_A_quick_guide_to_organizing_computational_biology_projects.pdf) , Noble, PLoS Computational Biology 2009
-
 
