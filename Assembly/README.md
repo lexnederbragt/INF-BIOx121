@@ -1,7 +1,7 @@
 Schedule for the Assembly module
 ================================
 
-###Day 1
+### Day 1
 
 * brief overview of the module
 * assembly exercise
@@ -10,7 +10,7 @@ Schedule for the Assembly module
 * tutorial: assembly with velvet
 * starting overnight assemblies
 
-###Day 2
+### Day 2
 
 * basic metrics of the assemblies performed so far
 * mapping reads back to the velvet assembly
@@ -18,7 +18,7 @@ Schedule for the Assembly module
 * assembly improvement using REAPR
 * evaluating the other assemblies
 
-###Day 3
+### Day 3
 
 * comparing assemblies to the reference using Quast
 * lecture: "Assembly, before and after"

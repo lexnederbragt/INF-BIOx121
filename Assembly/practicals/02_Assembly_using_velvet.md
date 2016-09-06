@@ -131,40 +131,8 @@ Now run `velveth` and `velvetg` for the kmer size determined by the whole class.
 
 Much better assemblies are produced if Velvet understands the expected coverage for unique regions of your genome. This allows it to try and resolve repeats. The data to determine this is in the `stats.txt` file. The full description of this file is in the Velvet Manual, at [http://www.ebi.ac.uk/~zerbino/velvet/Manual.pdf](http://www.ebi.ac.uk/~zerbino/velvet/Manual.pdf).
 
-A so-called Jupyter notebook has been provided to plot the distribution of the coverage of the nodes. In order to use it, you need to do the following on the local linux machine *Not on the server*:
+A so-called Jupyter notebook has been provided to plot the distribution of the coverage of the nodes. 
 
-NOTE: if you are on `vetur` OR `vor`, type:
-
-```
-ssh nordur
-```
-OR    
-
-```
-ssh austur
-```
-and enter your password.
-
-* install the Jupyter notebook and some python packages (this may take a few minutes):
-
-```
-pip install --user jupyter pandas numpy pysam
-```
-
-* prepare a folder on your linux machine
-
-```
-cd ~
-mkdir assembly
-cd assembly
-mkdir velvet
-cd velvet
-mkdir ASM_NAME
-cd ASM_NAME
-```
-
-* copy the `stats.txt` file from the server to this folder using the `rsync` command
-* copy the notebook file `/data/assembly/node_coverage.ipynb` from the server to this folder using `rsync`
 * start the notebook:
 
 ```
