@@ -41,7 +41,7 @@ course.
 <tr class="even">
 <td align="left">Wednesday Sept. 7</td>
 <td align="left"><strong>C</strong></td>
-<td align="left">High-throughput sequencing</td>
+<td align="left">[High-throughput sequencing]()</td>
 <td align="left">High-throughput sequencing</td>
 </tr>
 <tr class="odd">
@@ -205,7 +205,7 @@ contain questions on the material presented in these papers on the material cove
 
 ## Exam
 
-Please be aware of the 80% attendance requirement. The exam for this course will be:
+The exam for this course will be:
 
 -   a written exam on the course and curriculum, time and place
     to be announced
