@@ -81,40 +81,19 @@ cd qc
 pwd
 ```
 
-We will be using the *module* system to 'activate' programs (technically, to add them to your environment). To be able to use fastqc, run this command:
-
-```
-module load fastqc
-``` 
-
-To check what modules we have loaded, type
-
-```
-module list
-``` 
-
-You should see
-
-```
-Currently Loaded Modulefiles:
-  1) fastqc/0.11.2
-```
-
-(for more technical information on the module system, see http://modules.sourceforge.net/).
-
-To run fastqc on the first file, run the command below; YOUR_USERNAME should be the name you used for your folder. Note that the command should be written on a *single line*. Also note where you should put spaces!
+To run `fastqc` on the first file, run the command below. Note that the command should be written on a *single line*. Also note where you should (and should *not*) put spaces!
 
 ```
 fastqc -o ./ /data/qc/cod_read1.fastq
 ```
 
-Note that we use '`-o ./`' here, which specifies the current folder '`./`' as location for the output.
+We use '`-o ./`' here, which specifies the current folder '`./`' as location for the output.
 
 The program will tell you how far it has come, and should finish in a minute or so. Check that it finished without error messages.
 
 In the folder you specified after `-o`, you should now see a new zip file called `cod_read1_fastqc.zip`, and an html file called `cod_read1_fastqc.html` 
 
-Open a webbrowser, and, using the menu option ‘Open file’, locate the html file. Alternatively, you could browse the file system and double-click on the file.
+Open a webbrowser, and, using the menu option ‘Open file’, locate the `html` file. Alternatively, you could browse the file system and double-click on the file.
 
 Study the results.
 
