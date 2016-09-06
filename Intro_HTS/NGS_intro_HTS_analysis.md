@@ -92,14 +92,11 @@ Exercise using Google sheets:
 * for each sequencing instrument still being sold, find the specifications on the company website
 * make a plot in a google spreadsheet with the read length on the x-axis and the per-run throughput in Gigabp on the Y axis
 * make both axis log scale
-* my example is [here](https://docs.google.com/spreadsheets/d/1ZJov9oT5Zoe4nfxKBewayvJrHscMljWSAnT5mU-X5Fs/edit?usp=sharing)
+* my example is [here](https://docs.google.com/spreadsheets/d/1BluwxeEfAK2QEIprPdzJK_Nsmqlkl9Xue5zQmBSCi44/edit#gid=0)
 
 Discuss my version on figshare: <http://figshare.com/articles/developments_in_NGS/100940>. See also [my blog post](https://flxlexblog.wordpress.com/2016/07/08/developments-in-high-throughput-sequencing-july-2016-edition/) on the most recent edition.
 
 Slide with figure 1 from [Reuter *et al* 2015](http://dx.doi.org/10.1016/j.molcel.2015.05.004).
-
-### Similarities between all sequencing platforms
-Exercise using mentimeter wordcloud - skipped
 
 ### Details on the technology behind the different sequencing platforms
 
@@ -159,11 +156,13 @@ We will be visited by Gregor Gilfillan and Ave Tooming-Klunderud from the Norweg
 
 ### What skills do you think you need for analysing HTS data?
 Exercise using mentimeter wordcloud.  
+
 'Tube map' from <http://nirvacana.com/thoughts/becoming-a-data-scientist/>.
 
 ![Mentimeter wordcloud](images/poll3.png)
 
-Rate the usefulness and time needed to master
+### Usefulness versus time needed to master
+
 Exercise using mentimeter
 ![Mentimeter wordcloud](images/rate1.png)
 
@@ -197,7 +196,6 @@ Subject|Items|HTS data analysis example
 ||Sensitive data|human sequencing data|
 ||Reproducibility|pipelines|
 
-     
 ### Ranking skills important for analysing HTS data
 Mentimeter exercise
 
@@ -207,17 +205,27 @@ Mentimeter exercise
 
 ### What are the basic skills we want you to learn?
 
-* Quality control (both reads and analysis results)
-* Study design (e.g. replicates)
-* Principles of mapping
-* Principles of assembly
-* Statistics, hypothesis testing
-* Summary statistics and visualisation
-* Sanity checking/validation of results
-* Model system versus non-model system organisms
-* Reproducibility
-* Finding data, and munging it
+* Technical / bioinformatic
+   * Study design
+   * Mapping principles
+   * Alignment principles
+   * Alternative splicing
+   * Model system vs non-model system organisms
+* The practice of bioinformatics / computational biology
+   * Transparency/reproducibility
+   * Data management
+   * Statistics and hypothesis testing
+   * Summary statistics and visualization
+   * Sanity checking / validation of results
+   * Finding data and munging it (incl. public databases)
 
+## Setting up computers
+
+Each student should have access to the course server.
+
+## Experimental design
+
+Guest lecture and exercise by Arvind Sundaram.
 
 # Day 3
 
@@ -226,8 +234,12 @@ Mentimeter exercise
 ### What can go wrong during Illumina sequencing (i.e. errors)
 Mentimeter exercise
 
+![Mentimeter wordcloud](images/poll4.png)
+
 ### What can go wrong during PacBio sequencing (i.e. errors)
 Mentimeter exercise
+
+![Mentimeter wordcloud](images/poll5.png)
 
 Slide: PacBio sequencing explained from the Metzker paper
 
@@ -273,5 +285,4 @@ Check out these plots first, discuss, only then read the entire article
 
 Slides: basic principles.
 
-
-
+## Optional: Q&A Unix
