@@ -40,7 +40,7 @@ course.
 </tr>
 <tr class="even">
 <td align="left">Wednesday Sept. 7</td>
-<td align="left"><strong>KN</strong></td>
+<td align="left"><strong>C</strong></td>
 <td align="left">High-throughput sequencing</td>
 <td align="left">High-throughput sequencing</td>
 </tr>
@@ -171,6 +171,7 @@ course.
 * Python: room 2269 Informatics building (Ole-Johan Dahls hus)
 * Java: room 2423 Informatics building (Ole-Johan Dahls hus)
 * KN: 'Lille auditorium' in Kristin Nygaards hus (next to the Informatics building)
+* C: room 3437 Informatics building (Ole-Johan Dahls hus)
 
 ## Requirements
 
