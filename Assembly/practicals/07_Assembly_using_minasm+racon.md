@@ -9,9 +9,9 @@ A recent [preprint](http://biorxiv.org/content/early/2016/08/05/068122) describe
 * using `racon` ('rapid consensus') for consensus calling
 * perform the `racon` step at least twice
 
-# Running `miniasm` and `racon` on MinION data
+## Running `miniasm` and `racon` on MinION data
 
-## All-against-all overlap with `minimap`
+### All-against-all overlap with `minimap`
 
 Note how the reads are used twice here, as we map the reads against themselves:
 
@@ -25,7 +25,7 @@ minimap -Sw5 -L100 -m0 \
 
 The output is in the so-called [PAF (Pairwise mApping) Format](https://github.com/lh3/miniasm/blob/master/PAF.md), and is compressed 'on the fly'.
 
-## Assembly with `miniasm`
+### Assembly with `miniasm`
 
 Minims takes the `paf` file and produces an assembly in [GFA (Graphical Fragment Assembly)](https://github.com/pmelsted/GFA-spec/blob/master/GFA-spec.md) format.
 
@@ -41,7 +41,7 @@ Since we have only one sequence in the `GFA` file (at least for this assembly), 
 head -n 1 racon_MAP006-1_2D_1.gfa | awk '{print ">"$2; print $3}' > racon_MAP006-1_2D_1.raw_assembly.fasta
 ```
 
-## Correction with `racon`, round 1
+### Correction with `racon`, round 1
 
 We first use `minimal` again, this time with the original reads mapped against the 'raw' assembly:
 
@@ -63,11 +63,11 @@ racon_MAP006-1_2D_1.racon1.fasta
 
 This will take some time.
 
-## Correction with `racon`, round 2
+### Correction with `racon`, round 2
 
 Run the mapping with `minimal` and the correction with `racon` again, but now with the results of the first round of correction as input. Please be careful when naming files!
         
-# Running `miniasm` and `racon` on PacBio data
+## Running `miniasm` and `racon` on PacBio data
 
 Use *all* available reads from the P6C4 run, i.e. :
 

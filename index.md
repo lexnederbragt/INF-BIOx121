@@ -13,8 +13,7 @@ lectures and practicals, and a final take-home exam, plus a written exam on the 
 Course days are from 9:00 to 16:00 (teachers may stay longer if
 requested), some lectures, mostly hands-on exercises. All materials for lectures and practicals will be linked from the schedule below. 
 
-NOTE The schedule below is tentative, and may be changed prior to the
-course.
+The schedule links to the webpages with the material taught (these links are added as the course progresses).
 
 <table border="1">
 <thead>
@@ -41,20 +40,20 @@ course.
 <tr class="even">
 <td align="left">Wednesday Sept. 7</td>
 <td align="left"><strong>C</strong></td>
-<td align="left">[High-throughput sequencing]()</td>
-<td align="left">High-throughput sequencing</td>
+<td align="left"><a href="Intro_HTS/index.html">High-throughput sequencing</a></td>
+<td align="left"><a href="Intro_HTS/index.html">High-throughput sequencing</a></td>
 </tr>
 <tr class="odd">
 <td align="left">Thursday Sept. 8</td>
 <td align="left">Python</td>
-<td align="left">Principles and problems of HTS data analysis</td>
-<td align="left">Experimental design</td>
+<td align="left"><a href="Intro_HTS/index.html">Principles and problems of HTS data analysis</a></td>
+<td align="left"><a href="Intro_HTS/index.html">Experimental design</a></td>
 </tr>
 <tr class="even">
 <td align="left">Friday Sept. 9</td>
 <td align="left">Python</td>
-<td align="left">Read QC + trimming</td>
-<td align="left">Project and data organisation, reporting</td>
+<td align="left"><a href="QC/Read_QC.html">Read QC + trimming</a></td>
+<td align="left"><a href="Intro_HTS/index.html">Project and data organisation, reporting</a></td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>Week 37</strong></td>
@@ -62,20 +61,20 @@ course.
 <tr class="even">
 <td align="left">Monday Sept. 12</td>
 <td align="left">Python</td>
-<td align="left"><em>De novo</em> assembly</td>
-<td align="left"><em>De novo</em> assembly</td>
+<td align="left"><a href="Assembly/index.html"><em>De novo</em> assembly</a></td>
+<td align="left"><a href="Assembly/index.html"><em>De novo</em> assembly</a></td>
 </tr>
 <tr class="odd">
 <td align="left">Tuesday Sept. 13</td>
 <td align="left">Python</td>
-<td align="left"><em>De novo</em> assembly</td>
-<td align="left"><em>De novo</em> assembly</td>
+<td align="left"><a href="Assembly/index.html"><em>De novo</em> assembly</a></td>
+<td align="left"><a href="Assembly/index.html"><em>De novo</em> assembly</a></td>
 </tr>
 <tr class="even">
 <td align="left">Wednesday Sept. 14</td>
 <td align="left">Python</td>
-<td align="left"><em>De novo</em> assembly</td>
-<td align="left"><em>De novo</em> assembly</td>
+<td align="left"><a href="Assembly/index.html"><em>De novo</em> assembly</a></td>
+<td align="left"><a href="Assembly/index.html"><em>De novo</em> assembly</a></td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>Week 38</strong></td>
