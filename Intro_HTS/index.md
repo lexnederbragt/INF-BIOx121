@@ -46,8 +46,8 @@ Detailed schedule:
 </tbody>
 </table>
 </tr>
-</tr>
 
+<br><br>
 
 * Notes of what was discussed, with links, are [here](NGS_intro_HTS_analysis.html)
 * [Slides](https://github.com/lexnederbragt/INF-BIOx121/raw/2016/Intro_HTS/NGS_intro_HTS_analysis_slides.pptx)
