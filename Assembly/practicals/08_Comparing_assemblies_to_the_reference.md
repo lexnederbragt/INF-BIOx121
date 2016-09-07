@@ -3,18 +3,17 @@ Comparing assemblies to the reference
 
 The Quast program can be used to generate similar metrics as the assemblathon_stat.pl script, pluss some more and some visualisations.
 
-Program|Options|Explanation
--------|-------|-------------
-|Quast||Evaluating genome assemblies|
-||-o|name of output folder|
-||-R|Reference genome|
-||-G|File with positions of genes in the reference (see manual)|
-||-T|number of threads (cpu's) to use|
-||sequences.fasta|one or more files with assembled sequences|
-||-l| comma-separates list of names for the assemblies, e.g. "assembly 1", "assembly 2" (in the same order as the sequence files)|
-||--scaffolds|input sequences are scaffolds, not contigs. They will be split at 10 N's or more to analyse contigs ('broken' assembly)|
-||--est-ref-size| estimated reference genome size (when not provided)|
-||--gene-finding| apply GenemarkS for gene finding|
+`Quast` options:
+
+* `-o`: name of output folder
+* `-R`: Reference genome
+* `-G`: File with positions of genes in the reference (see manual)
+* `-T`: number of threads (cpu's) to use
+* `sequences.fasta`: one or more files with assembled sequences
+* `-l`:  comma-separates list of names for the assemblies, e.g. `"assembly 1", "assembly 2"` (in the same order as the sequence files) 
+* `--scaffolds`: input sequences are scaffolds, not contigs. They will be split at 10 N's or more to analyse contigs ('broken' assembly) 
+* `--est-ref-size`:  estimated reference genome size (when not provided): 
+* `--gene-finding`: apply `GenemarkS` for gene finding
 
 See the manual for information on the output of Quast:
 [http://quast.bioinf.spbau.ru/manual.html#sec3](http://quast.bioinf.spbau.ru/manual.html#sec3)

@@ -66,30 +66,36 @@ Ran as for the MinIOn data, but use the `-pacbio-raw` for the PacBio reads.
 
 ## Correcting the `canu` PacBio assembly using `Quiver`
 
+Quiver is a program that takes a set of aligned PacBio reads and recalls the bases based on the consensus of the alignment.
+
+First, we need to map the raw (!) PacBio reds to the assembly. For this, we use the raw output from the instrument, which is in so-called `bax.h5` files (these are in the HDF5 binary format). We make a `fofn` (a 'file-of-filenames') which lists all inout files:
 
 
 ```
-canu_P6C4_quiver && cd canu_P6C4_quiver && \
-        ls /projects/cees/in_progress/lex/hts_course/H2016/assembly/data/pacbio/Analysis_Results/*.bax.h5 >input.fofn && \
-        /usr/bin/time pbalign \
-        --nproc 2 \
-        input.fofn \
-        ../canu_P6C4/assembly.fasta canu_P6C4_quiver.cmp.h5 \
-        --forQuiver \
-        >canu_P6C4_quiver_pbalign.out 2>&1 && \
+ls /data/pacbio/Analysis_Results/*.bax.h5 >input.fofn
 ```
+Then we do the mapping using `pbalign`:
+```
+pbalign \
+--nproc 2 \
+input.fofn \
+assembly.fasta canu_quiver.cmp.h5 \
+--forQuiver
+```
+
+Fir the next step, we need to index the assembly with `samtools faidx`:
+
 ```        
-samtools faidx ../canu_P6C4/assembly.fasta && \
+samtools faidx assembly.fasta
 ```
 
+Now we can run `quiver`:
+
 ```
-quiver \
-        -j 2 \
-        canu_P6C4_quiver.cmp.h5 \
-        -r ../canu_P6C4/assembly.fasta \
-        -o canu_P6C4_quiver.variants.gff \
-        -o canu_P6C4_quiver.consensus.fasta \
-        >canu_P6C4_quiver.out 2>&1 && \
-        ln -s canu_P6C4_quiver.consensus.fasta assembly.fasta
+quiver -j 2 canu_quiver.cmp.h5 \
+-r assembly.fasta \
+-o canu_quiver.variants.gff \
+-o canu_quiver.consensus.fasta
 ```
-   
+
+Our 'new' assembly is in the `consensus.fasta` file, while the `variants.gff` file is a list of changes quiver made to the original assembly (in `gff` format).

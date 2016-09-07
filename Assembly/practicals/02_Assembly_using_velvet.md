@@ -50,14 +50,13 @@ cd velvet
 
 Find a value of *k* (between 21 and 113) to start with, and record your choice in this google spreadsheet: `http://bit.ly/infbioh16velvet`. Run `velveth` to build the hash index (see below).
 
-Program|Options|Explanation
--------|-------|-------------
-|velveth||Build the Velvet index file|
-||foldername|use this name for the results folder|
-||value\_of\_k|use k-mers of this size|
-||-short|short reads (as opposed to long, Sanger-like reads)|
-||-separate|read1 and read2 are in separate files|
-||-fastq|read type is fastq|
+`velveth` options:
+
+* `folder name`: use this name for the results folder
+* `value_of_k`: use k-mers of this size
+* `-short`: short reads (as opposed to long, Sanger-like reads)
+* `-separate`: read1 and read2 are in separate files
+* `-fastq`: read type is fastq
 
 Build the index as follows:
 
@@ -227,11 +226,10 @@ Use the `assemblathon_stats.pl` script to generate metrics for this, and all fol
 The assemblathon [www.assemblathon.org](www.assemblathon.org) used a perl script to obtain standardized metrics for the assemblies that were submitted. Here we use (a slightly modified version of) this script. It takes the size of the genome, and one sequence fasta file as input. The script breaks the sequences into contigs when there are 20 or more N’s, and reports all sorts of metrics.
 
 
-Program|Options|Explanation
--------|-------|-----------
-|assemblathon_stats.pl| |Provide basic assembly metrics|
-||-size|size (in Mbp, million basepairs) of target genome (optional)|
-||seq.fasta|fasta file of contigs or scaffolds to report on|
+`assemblathon_stats.pl` options:
+
+* `-size`: size (in Mbp, million basepairs) of target genome (optional)|
+* `seq.fasta`: fasta file of contigs or scaffolds to report on|
 
 Example, for a 3.2 Mbp genome:
 
@@ -248,12 +246,6 @@ assemblathon_stats.pl -s 3.2 scaffolds.fasta > metrics.txt
 Here, `>` (redirect) symbol used to ‘redirect’ what is written to the screen to a file.
 
 **For this exercise**, use the known length for this strain, 4.6 Mbp, for the genome size.
-
-NOTE make sure you have run this command to enable the use of the script:
-
-```
-export PATH=/data/bin/:$PATH
-```
 
 Some of the metrics the script reports are:
 
