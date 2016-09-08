@@ -104,3 +104,80 @@ Early finish at 14:00
 
 For those students not well versed in biological subjects
 
+# Day 2
+
+## Q&A with sequencing experts
+
+We will be visited by Gregor Gilfillan and Ave Tooming-Klunderud from the Norwegian Sequencing Centre
+
+## Principles and problems of HTS data analysis
+
+### What skills do you think you need for analysing HTS data?
+Exercise using mentimeter wordcloud.  
+
+'Tube map' from <http://nirvacana.com/thoughts/becoming-a-data-scientist/>.
+
+![Mentimeter wordcloud](images/poll3.png)
+
+### Usefulness versus time needed to master
+
+Exercise using mentimeter
+![Mentimeter wordcloud](images/rate1.png)
+
+Subject|Items|HTS data analysis example
+-------|-----|-------------------------
+|**Data**| Amount of data|multi-GB fastq files|
+||Finding data|ENA, SRA, ensembl, UCSC|
+||Getting data in the right shape|fastq versions|
+||Scrubbing|read errors, denoising of amplicons|
+||Understanding the data (file formats)|vcf file format|
+||Data management (storing, copying, moving data)|store bam files or not?|
+||Sharing data|ENA, SRA|
+|**Software**|Understanding the algorithms|mapping reads|
+||Installing software|don't get me started|
+||Choosing program amongst all possible|mapping programs|
+||Can not always use the same tool|availability of a reference genome|
+||Not always the same tool that is best|iMetAmos|
+||Software parameter space|kmer size for assembly|
+||Validation of computational results|assembly comparison|
+|**Compute resources**|Local versus HPC versus cloud|Abel versus Amazon|
+||Computational time|mapping versus assembly|
+||Getting access|Abel|
+||Optimal use of HPC resources|disk I/O for life science applications|
+|**User interfaces**|unix shell|bwa|
+||web-based|Galaxy, Hyperbrowser|
+||GUI-based|Microsoft office, CLCBio|
+|**Skills**|Unix skills|ssh, rsync|
+||Programming skills|R, python|
+||Statistics|GWAS|
+|**Ethics**|Ethical approval|human subjects|
+||Sensitive data|human sequencing data|
+||Reproducibility|pipelines|
+
+
+### What are the basic skills we want you to learn?
+
+* Technical / bioinformatic
+   * Study design
+   * Mapping principles
+   * Alignment principles
+   * Alternative splicing
+   * Model system vs non-model system organisms
+* The practice of bioinformatics / computational biology
+   * Transparency/reproducibility
+   * Data management
+   * Statistics and hypothesis testing
+   * Summary statistics and visualization
+   * Sanity checking / validation of results
+   * Finding data and munging it (incl. public databases)
+
+
+[Anscombe's quartet](https://en.m.wikipedia.org/wiki/Anscombe's_quartet): https://en.m.wikipedia.org/wiki/Anscombe's_quartet
+
+## Setting up computers
+
+Each student should have access to the course server.
+
+## Experimental design
+
+Guest lecture and exercise by Arvind Sundaram.

@@ -50,5 +50,6 @@ Detailed schedule:
 <br><br>
 
 * Notes of what was discussed, with links, are [here](NGS_intro_HTS_analysis.html)
-* [Slides](https://github.com/lexnederbragt/INF-BIOx121/raw/2016/Intro_HTS/NGS_intro_HTS_analysis_slides.pptx)
-
+* Slides from [Lex](https://github.com/lexnederbragt/INF-BIOx121/raw/2016/Intro_HTS/NGS_intro_HTS_analysis_slides.pptx)
+* Slides on [ChIP-seq and stranded RNA-Seq](https://github.com/lexnederbragt/INF-BIOx121/raw/2016/Intro_HTS/ChIP_seq_stranded_RNA.pptx)
+* Slides on [Experimental design]()
