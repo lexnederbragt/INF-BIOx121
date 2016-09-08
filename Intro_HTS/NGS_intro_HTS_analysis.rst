@@ -19,9 +19,9 @@ What sequencing platforms do you know
 Exercise using Mentimeter wordcloud
 
 .. figure:: images/poll1.png
-   :alt: Mentimeter wordcloud
+   :alt: Mentimeter wordcloud results
 
-   Mentimeter wordcloud
+   Mentimeter wordcloud results
 
 -  Illumina HiSeq 1000 1500 2000 2500 3000 4000
 -  Illumina HiSeq X (Five and Ten)
@@ -102,9 +102,9 @@ What applications do you know of for HTS?
 Exercise using mentimeter wordcloud
 
 .. figure:: images/poll2.png
-   :alt: Mentimeter wordcloud
+   :alt: Mentimeter wordcloud results
 
-   Mentimeter wordcloud
+   Mentimeter wordcloud results
 
 Illumina `has a
 poster <http://www.illumina.com/applications/sequencing/ngs-library-prep/library-prep-methods.html>`__
@@ -155,14 +155,14 @@ Exercise using mentimeter wordcloud.
 http://nirvacana.com/thoughts/becoming-a-data-scientist/.
 
 .. figure:: images/poll3.png
-   :alt: Mentimeter wordcloud
+   :alt: Mentimeter wordcloud results
 
-   Mentimeter wordcloud
+   Mentimeter wordcloud results
 
 Usefulness versus time needed to master
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Exercise using mentimeter |Mentimeter wordcloud|
+Exercise using mentimeter |Mentimeter wordcloud results|
 
 +-------------------------+---------------------------------------------------+------------------------------------------+
 | Subject                 | Items                                             | HTS data analysis example                |
@@ -225,13 +225,16 @@ Exercise using mentimeter |Mentimeter wordcloud|
 What are the basic skills we want you to learn?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  Technical / bioinformatic
+Technical / bioinformatic:
+
 -  Study design
 -  Mapping principles
 -  Alignment principles
 -  Alternative splicing
 -  Model system vs non-model system organisms
--  The practice of bioinformatics / computational biology
+
+The practice of bioinformatics / computational biology:
+
 -  Transparency/reproducibility
 -  Data management
 -  Statistics and hypothesis testing
@@ -253,4 +256,4 @@ Experimental design
 
 Guest lecture and exercise by Arvind Sundaram.
 
-.. |Mentimeter wordcloud| image:: images/rate1.png
+.. |Mentimeter wordcloud results| image:: images/rate1.png

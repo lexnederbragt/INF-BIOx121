@@ -157,13 +157,16 @@ Subject|Items|HTS data analysis example
 
 ### What are the basic skills we want you to learn?
 
-* Technical / bioinformatic
+Technical / bioinformatic:
+
    * Study design
    * Mapping principles
    * Alignment principles
    * Alternative splicing
    * Model system vs non-model system organisms
-* The practice of bioinformatics / computational biology
+
+The practice of bioinformatics / computational biology:
+
    * Transparency/reproducibility
    * Data management
    * Statistics and hypothesis testing
