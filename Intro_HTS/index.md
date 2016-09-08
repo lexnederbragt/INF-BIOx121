@@ -4,7 +4,7 @@ Day 1-3 of the INF-BIO5151/9121 course "High Throughput Sequencing technologies 
 
 Detailed schedule:
 
-<table>
+<table border="1">
 <thead>
 <tr class="header">
 <th align="left">Day</th>

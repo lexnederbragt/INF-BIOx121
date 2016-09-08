@@ -158,7 +158,18 @@ The schedule links to the webpages with the material taught (these links are add
 <td align="left">home exam</td>
 </tr>
 <tr class="odd">
-<td align="left"><strong>Exam dates TBD</strong></td>
+<td align="left"><strong>Week 44 </strong></td>
+</tr>
+<tr class="even">
+<td align="left">Thursday Nov. 3</td>
+<td align="left">TBD</td>
+<td align="left">Oral examination of the home exam, 30 minutes</td>
+<td align="left">Oral examination of the home exam, 30 minutes</td>
+</tr>
+<tr class="odd">
+<td align="left">Friday Nov. 4</td>
+<td align="left">TBD</td>
+<td align="left">Written exam 9:00-11:00</td>
 </tr>
 </tbody>
 </table>

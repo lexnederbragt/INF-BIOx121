@@ -12,7 +12,7 @@ Slides are [here](https://github.com/lexnederbragt/INF-BIOx121/raw/2016/Intro_HT
 ### What sequencing platforms do you know
 Exercise using Mentimeter wordcloud
 
-![Mentimeter wordcloud](images/poll1.png)
+![Mentimeter wordcloud results](images/poll1.png)
 
 * Illumina HiSeq 1000 1500 2000 2500 3000 4000
 * Illumina HiSeq X (Five and Ten)
@@ -81,7 +81,7 @@ Slides/whiteboard: Paired end versus single end versus mate pair, subreads, 2D r
 ### What applications do you know of for HTS?
 Exercise using mentimeter wordcloud
 
-![Mentimeter wordcloud](images/poll2.png)
+![Mentimeter wordcloud results](images/poll2.png)
 
 Illumina [has a poster](http://www.illumina.com/applications/sequencing/ngs-library-prep/library-prep-methods.html) with all library preparation methods. 
 
@@ -117,12 +117,12 @@ Exercise using mentimeter wordcloud.
 
 'Tube map' from <http://nirvacana.com/thoughts/becoming-a-data-scientist/>.
 
-![Mentimeter wordcloud](images/poll3.png)
+![Mentimeter wordcloud results](images/poll3.png)
 
 ### Usefulness versus time needed to master
 
 Exercise using mentimeter
-![Mentimeter wordcloud](images/rate1.png)
+![Mentimeter wordcloud results](images/rate1.png)
 
 Subject|Items|HTS data analysis example
 -------|-----|-------------------------
