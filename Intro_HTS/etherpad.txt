@@ -1,0 +1,160 @@
+
+Instruments:
+* Illumina HiSeq 2500 4000
+* Illumina HiSeq X (Five and Ten)
+* Illumina NextSeq 500
+* Illumina MiSeq
+* Illumina MiniSeq
+* Pacific Biosciences RSII
+* Pacific Biosciences Sequel
+* Ion Torrent PGM
+* Ion Torrent Proton
+* Ion Torrent S5 and S5XL
+* Oxford Nanopore MinION (MkI)
+* Oxford Nanopore PromethION
+* SOLiD 5500XL
+* BGISEQ-500
+* ABI Sanger 3730xl
+
+Obsolete:
+* Roche 454 GS FLX, Junior
+* HeliScope
+
+Exercise:
+for each sequencing instrument still being sold, find the specifications on the company’s website
+make a plot in a google spreadsheet with the read length on the x-axis and the per-run throughput in Gigabp on the Y axis
+make both axis log scale
+Decide for yourself what to take as length and throughput – but be able to defend your choices
+
+Please add links to your google spreadsheet here, and add a name for your group:
+    
+Groupname  - link
+
+Group X https://docs.google.com/spreadsheets/d/1pC36Nsj7Ed79fbm7HNGlh_zp1F04X-kWM8qVNys30b0/edit#gid=0  -> https://www.dropbox.com/s/ncafemmaf5i21o5/seq_machines.png?dl=0 
+Group Y https://docs.google.com/spreadsheets/d/1PpxThmgPrWfwvcSIqFNPP-wP_sPvL6oouJIQ4Ia-HRU/edit?usp=sharing
+Group Z https://docs.google.com/spreadsheets/d/1NLAmTORj8uHbB-Rl1IDMRKCJN6ONKKhaVglUKUHavho/edit#gid=0
+Group I https://docs.google.com/spreadsheets/d/1hHKfbvrubej2W5NOg5ZUwWFVIM1BAHAsVp7xJ9SWUs0/edit#gid=0
+Group Æ https://docs.google.com/spreadsheets/d/1hkcJ56yUyyvLD3yadUeak_IcXrHcAP0rFiL6l4AqZ7I/edit#gid=0
+Group W https://docs.google.com/document/d/18ar1ECXBTD4omn6RsVWjMZErqKaLI0PO-3kQmBqTBgI/edit?usp=sharing
+Group D https://docs.google.com/spreadsheets/d/1740ELKvSEINRkQ05gOGoFWD4-Q-zUNPO_BNDYPjIz4c/edit?usp=sharing
+
+NGS field guide http://www.molecularecologist.com/next-gen-fieldguide-2016/
+
+Molecular biology book
+http://www.ncbi.nlm.nih.gov/books/NBK21054/
+
+Questions for the sequencing experts
+Why is high/low GC a problem for Illumina sequencing?
+Why is high/low GC less of a problem for PacBio sequencing?
+
+Day 2
+Skills needed for analysing HTS data
+http://nirvacana.com/thoughts/becoming-a-data-scientist/
+
+http://www.ub.uio.no/english/courses-events/courses/other/Carpentry/index.html
+
+
+Access to the course server:
+https://login.tl.uio.no with your UiO username and password
+Open a terminal and type 'hostname' to find out your server ID, it has the form ibv-course0#.hpc.uio.no
+
+OR
+ssh -X username@ibv-course0#.hpc.uio.no where # is the number you see when you type 
+
+MAC users: if you get a 'LC_CTYPE' like warning, it looks like you can ignore it.
+
+Please install Anaconda on your laptop before Monday (better: before Friday)
+https://www.continuum.io/ 
+Choose 'Download Anaconda'
+Choose Python 3.5 version GRAPHICAL INSTALLER
+
+Then see if you can start a Jupyter notebook, either from the 'Launcher' coming with Anaconda, or by opening a terminal window and typing
+
+jupyter notebook
+
+Experimental design
+
+http://nextgenseek.com/2012/10/tips-for-next-gen-sequencing-experiment-design-randomization/
+http://core-genomics.blogspot.com/2016/05/increased-read-duplication-on-patterned.html
+(see also http://bitesizebio.com/20998/beware-the-bane-of-batch-effects/)
+
+Animal Genome Size Database: http://genomesize.com/
+
+Day 3 Quality control of sequencing data
+
+
+Go to www.menti.com and use the code 98 98 39
+
+
+Article regarding reliability of variant calling (Ensembl vs RefSeq transcripts DB, plus ANNOVAR vs VEP)  http://genomemedicine.biomedcentral.com/articles/10.1186/gm543 
+
+Article regarding reliability of variant calling http://genomemedicine.biomedcentral.com/articles/10.1186/gm543 
+
+Please write down what you think may be the problem (if any) with these real datasets in /data/qc
+
+ChipSeq_example.fastq:
+Base calling looks strange because of common regions (index?), early in sequence
+GT repreating/alternating base sequence repeats
+sequence pattern at the beginning on most of the reads could be explain by common binding site
+GC content deviating from expected
+GT repeat at the start
+low GC content 
+
+microRNA_example.fastq:
+microRNAs are shorter than the sequence length, hence the bad quality towards the end of the reads
+tile problem at position 19
+high duplicate level because we're looking at transcriptome 
+Adapters are not removed, causing duplcates
+Probable PCR artifact 
+conservative k mer at the beginning
+repetition due most  likely to a transcript being overly expressed against others
+
+more_cod_read1.fastq & more_cod_read2.fastq:
+Two of the tiles in the more_cod_read2.fastq were not read
+Looks like lane-specific problems in more_cod_read1.fastq
+low quality at the end of reads in  more_cod_read2.fastq probably cos repetitive elements showed in overrepresented sequences
+
+
+Duplicate reads
+https://www.biostars.org/p/107402/
+
+
+sequencing.qcfail.com
+
+Check out these plots first, discuss, only then read the entire article
+
+* Case 1
+  * <https://sequencing.qcfail.com/wp-content/uploads/sites/2/2016/05/single_seq_quality.png>
+  * <https://sequencing.qcfail.com/articles/illumina-2-colour-chemistry-can-overcall-high-confidence-g-bases/>
+
+* Case 2
+  * <https://sequencing.qcfail.com/wp-content/uploads/sites/2/2016/03/biased_composition.png>
+  * <https://sequencing.qcfail.com/articles/biased-sequence-composition-can-lead-to-poor-quality-data-on-illumina-sequencers/>
+
+* Case 3
+  * <https://sequencing.qcfail.com/wp-content/uploads/sites/2/2016/03/priming_bias_check.png>
+  * <https://sequencing.qcfail.com/articles/data-can-be-corrupted-upon-extraction-from-sra-files/>
+
+* Case 4
+  * <https://sequencing.qcfail.com/wp-content/uploads/sites/2/2016/02/adapter_content_plot.png>
+  * <https://sequencing.qcfail.com/articles/read-through-adapters-can-appear-at-the-ends-of-sequencing-reads/>
+
+* Case 5
+  * <https://sequencing.qcfail.com/wp-content/uploads/sites/2/2016/02/phix_duplication.png>
+  * <https://sequencing.qcfail.com/articles/libraries-can-contain-technical-duplication/>
+
+* Case 6
+  * <https://sequencing.qcfail.com/wp-content/uploads/sites/2/2016/02/adapter_dimer_gc_profile.png>
+  * <https://sequencing.qcfail.com/articles/contamination-with-adapter-dimers/>
+
+* Case 7
+  * <https://sequencing.qcfail.com/wp-content/uploads/sites/2/2016/01/per_tile_bubble.png>
+  * <https://sequencing.qcfail.com/articles/position-specific-failures-of-flowcells/>
+
+
+Resources for those not having too much biology background
+(I have not selected which ones are most relevant):
+    http://www.ncbi.nlm.nih.gov/books/NBK21054/?term=molecular%20biology
+(and maybe http://www.ncbi.nlm.nih.gov/books/NBK143764/)
+
+
