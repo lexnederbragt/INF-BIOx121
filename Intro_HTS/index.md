@@ -53,4 +53,4 @@ Detailed schedule:
 * Slides from [Lex](https://github.com/lexnederbragt/INF-BIOx121/raw/2016/Intro_HTS/NGS_intro_HTS_analysis_slides.pptx)
 * Slides on [ChIP-seq and stranded RNA-Seq](https://github.com/lexnederbragt/INF-BIOx121/raw/2016/Intro_HTS/ChIP_seq_stranded_RNA.pptx)
 * Slides on Experimental design: To be added
-* Content of the [etherpad](etherpad.txt)
+* Content of the [etherpad](https://raw.githubusercontent.com/lexnederbragt/INF-BIOx121/2016/Intro_HTS/etherpad.txt)
