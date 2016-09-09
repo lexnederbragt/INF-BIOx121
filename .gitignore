@@ -3,4 +3,4 @@ _build
 .DS_Store
 schedule.html
 schedule.md
-*do_not_commit.md
+*do_not_commit.*

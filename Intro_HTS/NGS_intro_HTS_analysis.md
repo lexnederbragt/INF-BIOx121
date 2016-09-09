@@ -184,3 +184,59 @@ Each student should have access to the course server.
 ## Experimental design
 
 Guest lecture and exercise by Arvind Sundaram.
+
+# Day 3
+
+## Some aspects of errors in reads
+
+### What can go wrong during Illumina sequencing (i.e. errors)
+Mentimeter exercise
+
+![Mentimeter exercise answers](images/poll4.png)
+
+### What can go wrong during PacBio sequencing (i.e. errors)
+Mentimeter exercise
+
+![Mentimeter exercise answers](images/poll5.png)
+
+Slide: PacBio sequencing explained from the Metzker paper
+
+Slide: GC bias plot from this Laehnemann et al paper
+
+Batch effects: see <http://bitesizebio.com/20998/beware-the-bane-of-batch-effects/>
+
+### Practical: Read QC and trimming
+
+See the practical instructions [here](../QC/Read_QC.html).
+
+### Extra: sequencing.qcfail.com
+
+Check out these plots first, discuss, only then read the entire article
+
+* Case 1
+  * <https://sequencing.qcfail.com/wp-content/uploads/sites/2/2016/05/single_seq_quality.png>
+  * <https://sequencing.qcfail.com/articles/illumina-2-colour-chemistry-can-overcall-high-confidence-g-bases/>
+
+* Case 2
+  * <https://sequencing.qcfail.com/wp-content/uploads/sites/2/2016/03/biased_composition.png>
+  * <https://sequencing.qcfail.com/articles/biased-sequence-composition-can-lead-to-poor-quality-data-on-illumina-sequencers/>
+
+* Case 3
+  * <https://sequencing.qcfail.com/wp-content/uploads/sites/2/2016/03/priming_bias_check.png>
+  * <https://sequencing.qcfail.com/articles/data-can-be-corrupted-upon-extraction-from-sra-files/>
+
+* Case 4
+  * <https://sequencing.qcfail.com/wp-content/uploads/sites/2/2016/02/adapter_content_plot.png>
+  * <https://sequencing.qcfail.com/articles/read-through-adapters-can-appear-at-the-ends-of-sequencing-reads/>
+
+* Case 5
+  * <https://sequencing.qcfail.com/wp-content/uploads/sites/2/2016/02/phix_duplication.png>
+  * <https://sequencing.qcfail.com/articles/libraries-can-contain-technical-duplication/>
+
+* Case 6
+  * <https://sequencing.qcfail.com/wp-content/uploads/sites/2/2016/02/adapter_dimer_gc_profile.png>
+  * <https://sequencing.qcfail.com/articles/contamination-with-adapter-dimers/>
+
+* Case 7
+  * <https://sequencing.qcfail.com/wp-content/uploads/sites/2/2016/01/per_tile_bubble.png>
+  * <https://sequencing.qcfail.com/articles/position-specific-failures-of-flowcells/>
