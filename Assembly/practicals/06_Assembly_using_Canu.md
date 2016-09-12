@@ -29,7 +29,7 @@ canu -p canu_MAP006-1_2D -d canu_MAP006-1_2D \
 genomeSize=4.6m \
 -maxThreads=2 \
 -maxMemory=33 \
--nanopore-raw /data/MAP006-1_2D_pass.fastq \
+-nanopore-raw /data/assembly/MAP006-1_2D_pass.fastq
 ```
 * `-p` and `-d` tell `can` what to call the output folder and files
 * `-nanopore-raw` speaks for itself
@@ -60,7 +60,7 @@ This will create a new file `fixed_ASSEMBLY.fasta` with fixed sequence names, an
 Use *all* available reads from the P6C4 run, i.e. 155 x coverage:
 
 ```
-/data/pacbio/Analysis_Results/m141013_011508_sherri_c100709962550000001823135904221533_s1_p0.filtered_subreads.fastq
+/data/assembly/pacbio/Analysis_Results/m141013_011508_sherri_c100709962550000001823135904221533_s1_p0.filtered_subreads.fastq
 ```
 Ran as for the MinIOn data, but use the `-pacbio-raw` for the PacBio reads.
 
@@ -72,7 +72,7 @@ First, we need to map the raw (!) PacBio reds to the assembly. For this, we use 
 
 
 ```
-ls /data/pacbio/Analysis_Results/*.bax.h5 >input.fofn
+ls /data/assembly/pacbio/Analysis_Results/*.bax.h5 >input.fofn
 ```
 Then we do the mapping using `pbalign`:
 ```
