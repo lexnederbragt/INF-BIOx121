@@ -117,7 +117,7 @@ The important files are:
 * How many contigs are there in the `contigs.fa` file? Use `grep -c NODE contigs.fa`. Is this the same number as velvet reported?
 
 
-Log your results in this google spreadsheet: `bit.ly/INFBIO1`
+Log your results in this google spreadsheet: `http://bit.ly/infbioh16velvet`
 
 
 **We will discuss the results together and determine *the optimal* k-mer for this dataset.**
