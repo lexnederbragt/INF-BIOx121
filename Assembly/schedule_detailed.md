@@ -1,7 +1,7 @@
 Schedule for the Assembly module
 ================================
 
-###Day 1
+## Day 1
 
 * brief overview of the module
 * assembly exercise
@@ -32,29 +32,28 @@ Schedule for the Assembly module
   * spades illumina paired end + PacBio reads
   * Canu with only PacBio reads
   * Canu with only MinION reads
-  * miniasm with only PacBio reads
-  * miniasm with only MinION reads
 
-###Day 2
+## Day 2
 
 * principles behind SPADES, Canu and miniasm+racon
-	* demo: IGV and mapped PacBio and MinION reads
-* continue overnight assemblies
-  * racon round 1 on miniasm assemblies
-  * quiver on canu assemblies
+* basic metrics of the assemblies performed so far
+  * log metrics to google spreadsheet, one per group
 * mapping reads back to the velvet assembly with `bwa`
 * visualisation of mapped reads in IGV
 * lunch
-* continue overnight assemblies
-  * racon round 2 on miniasm assemblies
-* basic metrics of the assemblies performed so far
-  * <https://docs.google.com/spreadsheets/d/1RCujjvlnJqFk-W1oO2ujMLvy8WjaZw8nowAIZPZXkj0/edit?usp=sharing>
 * assembly evaluation and improvement using REAPR on the velvet paired end plus mate pair assembly
+* continue overnight assemblies
+  * miniasm with only PacBio reads
+  * miniasm with only MinION reads
+  * racon round 1 on miniasm assemblies
+  * quiver on canu assemblies
+  * racon round 2 on miniasm assemblies
 * evaluating the other assemblies
+  * demo: IGV and mapped PacBio and MinION reads
   * bwa
   * reapr
 
-###Day 3
+## Day 3
 
 * reapr on the overnight assemblies from day 1 (SPADES and HGAP)
 * comparative evaluation of assemblies

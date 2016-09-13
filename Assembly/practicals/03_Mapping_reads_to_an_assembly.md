@@ -67,8 +67,7 @@ Since we know know where the pairs of reads map, we can obtain he distance betwe
 
 We will use python, and the python module `pysam` to plot the distribution of insert sizes for a subset of the alignments. This we will do in another Jupyter notebook.
 
-* copy the `bwa` folder with the sorted `.bam` files and index files (`.bam.bai`) from the server to the assembly folder on your local Linux machine
-* copy the notebook file `/data/assembly/Plot_insertsizes.ipynb` to the same folder on your local Linux machine
+* copy the notebook file `/data/assembly/Plot_insertsizes.ipynb` to the `bwa` folder
 * in the terminal, `cd` to the same folder
 * open the Jupyter notebook
 
@@ -89,10 +88,7 @@ jupyter notebook Plot_insertsizes.ipynb
 ### Visualising the assembly in a genome browser
 For this part, we will use Integrative Genomics Viewer (IGV), a genome browser developed by the Broad Institute.  Instead of using one of the built-in genomes, we will add the assembly as a new reference genome.
 
-**On the PC** (*NOT* on the server):
-
-* download the assembly `fasta` file to the folder where you also have the `bwa` result files
-* start the IGV program by typing `igv`
+* start the IGV program by typing `igv.sh`
 * Choose `Genomes --> Load Genome from File…` (**NB** not File --> Load from File...)
 * Select the `fasta` file with your assembly (**NB** the same file as you used for mapping the reads against!)
 
@@ -120,7 +116,7 @@ scaffoldgap2bed.py -i ASSEMBLY.FASTA >gaps.bed
 ```
 
 * Inspect the BED file
-* Add the BED file to the browser (download it first to the PC)
+* Add the BED file to the browser
 * Drag the track to the top
 * Zoom in one gaps and look at the alignments
 
