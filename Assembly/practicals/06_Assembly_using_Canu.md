@@ -74,9 +74,18 @@ First, we need to map the raw (!) PacBio reds to the assembly. For this, we use 
 ```
 ls /data/assembly/pacbio/Analysis_Results/*.bax.h5 >input.fofn
 ```
-Then we do the mapping using `pbalign`:
+We also need to set up the environment to be able to run the correct programs (`pbalign` and `quiver`, simple type:
+
+```
+smrtshell
+```
+
+There will some warnings but please ignore these.
+
+Now we do the mapping using `pbalign`:
 ```
 pbalign \
+--tmpDir ./ \
 --nproc 2 \
 input.fofn \
 assembly.fasta canu_quiver.cmp.h5 \
