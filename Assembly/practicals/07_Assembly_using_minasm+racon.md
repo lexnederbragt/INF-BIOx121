@@ -48,7 +48,7 @@ We first use `minimap` again, this time with the original reads mapped against t
 ```
 minimap racon_MAP006-1_2D_1.raw_assembly.fasta \
 /data/assembly/MAP006-1_2D_pass.fastq \
->racon_MAP006-1_2D_1.raw_assembly.reads_mapped.paf && \
+>racon_MAP006-1_2D_1.raw_assembly.reads_mapped.paf
 ```
 
 `racon` is basically run as `racon -t num_threads reads.fast mapped_reads.paf assembly.fasta consensus.fasta`:
