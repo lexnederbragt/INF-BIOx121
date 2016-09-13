@@ -30,7 +30,7 @@ The output is in the so-called [PAF (Pairwise mApping) Format](https://github.co
 `miniasm` takes the `paf` file and produces an assembly in [GFA (Graphical Fragment Assembly)](https://github.com/pmelsted/GFA-spec/blob/master/GFA-spec.md) format.
 
 ```
-miniasm -f data/assembly/MAP006-1_2D_pass.fastq \
+miniasm -f /data/assembly/MAP006-1_2D_pass.fastq \
 racon_MAP006-1_2D_1.paf.gz \
 >racon_MAP006-1_2D_1.gfa
 ```
