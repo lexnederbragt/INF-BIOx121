@@ -18,8 +18,8 @@ Note how the reads are used twice here, as we map the reads against themselves:
 ```
 minimap -Sw5 -L100 -m0 \
 -t 2 \
-/data/MAP006-1_2D_pass.fastq \
-/data/MAP006-1_2D_pass.fastq \
+/data/assembly/MAP006-1_2D_pass.fastq \
+/data/assembly/MAP006-1_2D_pass.fastq \
 | gzip -1 >racon_MAP006-1_2D_1.paf.gz
 ```
 
@@ -27,10 +27,10 @@ The output is in the so-called [PAF (Pairwise mApping) Format](https://github.co
 
 ### Assembly with `miniasm`
 
-Minims takes the `paf` file and produces an assembly in [GFA (Graphical Fragment Assembly)](https://github.com/pmelsted/GFA-spec/blob/master/GFA-spec.md) format.
+`miniasm` takes the `paf` file and produces an assembly in [GFA (Graphical Fragment Assembly)](https://github.com/pmelsted/GFA-spec/blob/master/GFA-spec.md) format.
 
 ```
-miniasm -f data/MAP006-1_2D_pass.fastq \
+miniasm -f data/assembly/MAP006-1_2D_pass.fastq \
 racon_MAP006-1_2D_1.paf.gz \
 >racon_MAP006-1_2D_1.gfa
 ```
@@ -43,19 +43,19 @@ head -n 1 racon_MAP006-1_2D_1.gfa | awk '{print ">"$2; print $3}' > racon_MAP006
 
 ### Correction with `racon`, round 1
 
-We first use `minimal` again, this time with the original reads mapped against the 'raw' assembly:
+We first use `minimap` again, this time with the original reads mapped against the 'raw' assembly:
 
 ```
 minimap racon_MAP006-1_2D_1.raw_assembly.fasta \
-/data/MAP006-1_2D_pass.fastq \
+/data/assembly/MAP006-1_2D_pass.fastq \
 >racon_MAP006-1_2D_1.raw_assembly.reads_mapped.paf && \
 ```
 
-`racon` is basically run as `racon -t num_threads mapped_reads.paf assembly.fasta consensus.fasta`:
+`racon` is basically run as `racon -t num_threads reads.fast mapped_reads.paf assembly.fasta consensus.fasta`:
 
 ```
 racon -t 2 \
-/data/MAP006-1_2D_pass.fastq \
+/data/assembly/MAP006-1_2D_pass.fastq \
 racon_MAP006-1_2D_1.raw_assembly.reads_mapped.paf \
 racon_MAP006-1_2D_1.raw_assembly.fasta \
 racon_MAP006-1_2D_1.racon1.fasta
@@ -65,7 +65,7 @@ This will take some time.
 
 ### Correction with `racon`, round 2
 
-Run the mapping with `minimal` and the correction with `racon` again, but now with the results of the first round of correction as input. Please be careful when naming files!
+Run the mapping with `minimap` and the correction with `racon` again, but now with the results of the first round of correction as input. Please be careful when naming files!
         
 ## Running `miniasm` and `racon` on PacBio data
 
