@@ -22,7 +22,7 @@ Practicals:
    practicals/04_Assembly_evalation_improvement_using_REAPR.md
    practicals/05_Assembly_using_SPADES.md
    practicals/06_Assembly_using_Canu.md
-   practicals/07_06_Assembly_using_minasm+racon.md
+   practicals/07_Assembly_using_minasm+racon.md
    practicals/08_Comparing_assemblies_to_the_reference.md
    practicals/09_mapping_PacBio_MinION_using_bwa.md
    practicals/Sources
