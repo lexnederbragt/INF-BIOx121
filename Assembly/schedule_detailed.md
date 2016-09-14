@@ -47,21 +47,15 @@ Schedule for the Assembly module
   * miniasm with only MinION reads
   * racon round 1 on miniasm assemblies
   * quiver on canu assemblies
-  * racon round 2 on miniasm assemblies
-* evaluating the other assemblies
-  * demo: IGV and mapped PacBio and MinION reads
-  * bwa
-  * reapr
 
 ## Day 3
 
-* reapr on the overnight assemblies from day 1 (SPADES and HGAP)
-* comparative evaluation of assemblies
-  * quast on the SPADES and HGAP assemblies
-  * add your group's assemblies to the assembly reporting spreadsheet
+* racon round 2 on miniasm assemblies
+* reapr on the overnight assemblies from day 1
+* compare assemblies
+* comparing assemblies to the reference using Quast: velvet k81 PE + MP assembly
 * lecture: "Assembly, before and after"
 * lunch
-* comparing assemblies to the reference using Quast: velvet k81 PE + MP assembly
 * start quast on all other assemblies
 * Mentimeter multiple choice question: Which assembly is best?
 * demo:
