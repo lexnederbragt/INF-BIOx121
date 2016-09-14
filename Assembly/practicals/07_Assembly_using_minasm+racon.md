@@ -51,7 +51,7 @@ minimap racon_MAP006-1_2D_1.raw_assembly.fasta \
 >racon_MAP006-1_2D_1.raw_assembly.reads_mapped.paf
 ```
 
-`racon` is basically run as `racon -t num_threads reads.fast mapped_reads.paf assembly.fasta consensus.fasta`:
+`racon` is basically run as `racon -t num_threads reads.fastq mapped_reads.paf assembly.fasta consensus.fasta`:
 
 ```
 racon -t 2 \
@@ -72,7 +72,7 @@ Run the mapping with `minimap` and the correction with `racon` again, but now wi
 Use *all* available reads from the P6C4 run, i.e. :
 
 ```
-/data/pacbio/Analysis_Results/m141013_011508_sherri_c100709962550000001823135904221533_s1_p0.filtered_subreads.fastq
+/data/assembly/pacbio/Analysis_Results/m141013_011508_sherri_c100709962550000001823135904221533_s1_p0.filtered_subreads.fastq
 ```
 
 The commands are the same as for the MinION data. Again, please be careful when naming files!
