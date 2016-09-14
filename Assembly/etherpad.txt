@@ -1,0 +1,209 @@
+Please install Anaconda on your laptop before Monday (better: before Friday)
+https://www.continuum.io/ 
+Choose 'Download Anaconda'
+Choose Python 3.5 version GRAPHICAL INSTALLER
+
+Then see if you can start a Jupyter notebook, either from the 'Launcher' coming with Anaconda, or by opening a terminal window and typing
+
+jupyter notebook
+
+You will also need to install some python packages with
+
+pip install pysam graphviz biopython
+
+Finally, if you want to run quast, you have to temporarliy change the name of the
+/share/inf-biox121/home/username/anaconda3 folder, e.g.
+
+    cd
+    mv anaconda3 anaconda3_bak
+
+
+Resources for those not having too much biology background
+(I have not selected which ones are most relevant):
+    http://www.ncbi.nlm.nih.gov/books/NBK21054/?term=molecular%20biology
+(and maybe http://www.ncbi.nlm.nih.gov/books/NBK143764/)
+
+
+Copy data over to your harddisk
+on your local machine, 'cd' to an appropriate folder
+rsync -av username@ username@ibv-course0#.hpc.uio.no:/share/inf-biox121/home/username/path/to/file .
+Replace '#' with correct number (type 'hostname' on the course server)
+This should ask for you password and download the file
+
+
+Week 2: De novo genome assembly
+http://inf-biox121.readthedocs.io/en/2016/Assembly/index.html
+
+Electronic version of assembly exercise 'reads':
+https://raw.githubusercontent.com/lexnederbragt/INF-BIOx121/2016/Assembly/practicals/r14_c5_e0.02_nopair.txt
+
+Group number or name and longest sentence(s) you reconstructed:
+    
+    group A: its a real pleasure to drink with him if nothing else hes absolutely honest about his lunacy about it which in my 
+ 
+Group B:  nd ive found during my admittedly limited experience i find absolutely commendable be
+
+Group C: _and ive found during my admittedly limited experience i find absolutely commendeble beyon almost everything that
+
+
+Group x:
+ it's a real pleasure to drink with him. If nothing else, he's absolutely honest in his lunacy— and I've found, during my admittedly limited experience in political reporting, that power & honesty very rarely coincide.
+
+    
+    Group Y
+    that it is real pleasure to drink with him if nothing else his absolutely honest in his lunacy - and i´ve found during my admittedly limited experience I find absolutely commendable  beyond almost everything that is real the festivals night life is obviously the most elaborate and the most h
+
+Group D:
+     
+  during my admittedly experience in political
+  find absolutely honest about it / absolutely commendable be
+  most everything that  
+   it's a real pleasure  
+ the most elaborate and the right choice
+ 
+ https://www.continuum.io/downloads#linux
+ 
+# added by Anaconda3 4.1.1 installer
+export PATH="/share/inf-biox121/home/alexajo/anaconda3/bin:/share/inf-biox121/home/alexajo/anaconda3/include:$PATH"
+
+To load config file in the remote terminal:
+    source ~/.bashrc
+Or to make it permanent:w
+    echo "source ~/.bashrc" >> .bash_profile
+
+De Bruijn question: Aren't the algorithm supposed to divide the kmers into one "left" and "right" part of the KMER and iff the right matches one of the left sides to any of the others kmers you make a link. Is this correct? Hmmm.... I think the edges (links) represent a k-1 length overlap, so this covers what you say, doesn't it? Let me rephrase. I think you should look up the formal definition, which should be unambiguous. Try Pevzner PA, Tang H, Waterman MS. 2001. An Eulerian path approach to DNA fragment assembly. PNAS 98:9748–53
+
+  
+  
+http://bit.ly/infbioh16velvet
+
+
+Each group:
+one per person, divide amongst you:    
+Spades Illumina only 
+Spades Illumina + pacbio
+Spades Illumina + MinION 
+Divide amongst you two more assemblies
+Canu with PacBio
+Canu with MinION
+NOT quiver
+
+
+Check your job:
+    
+    top -u username
+    
+    (use 'q' to get out of top)
+    Expect to see 'hammer' for SPADES and 'meryl' for canu (at least in the beginning)
+
+Using screen
+https://wiki.uio.no/projects/clsi/index.php/Tip:using_screen
+
+Another way to use the server is not through the web browser, but through the terminal
+ssh -X username@ibv-course0#.hpc.uio.no where # is the number you see when you type 
+If not on UiO wifi, you'll have to use a VPN connection to UiO before this works
+
+Google spreadhseet for logging assembly results
+https://docs.google.com/spreadsheets/d/10Q3jSAJAlTwk3zyijtalDNLEqbMZo8avVACPN7rxLGE/edit?usp=sharing
+
+(free spreadsheet app without user accounts https://ethercalc.org/3mpazq5btua6 ) 
+
+Group copies
+Group name and link, metrics for scaffolds.fasta (spades) and contigs.fasta (canu)
+assemblothon stats script with genome size 4.6 and gap size 1 bp
+
+path canu assembly MinION : /share/inf-biox121/home/angelimc/assembly/canu_MAP006-1_2D
+
+
+https://docs.google.com/spreadsheets/d/1xsiSVX540Qkttw1s79dQoEoDUPfApZjtGZLDvCdBET4/edit?usp=sharing        Ignacio's awesome copy
+https://docs.google.com/spreadsheets/d/14MFdQr1-Kcu9CIUurCq-mhDjNKfSvs-_zc1kn1UPRnY/edit?usp=sharing Torgeir
+https://docs.google.com/spreadsheets/d/1IlAPGW98bnQiWQYDko8IgsWlXvi6NTUxytzxoVhq2_c/edit#gid=0 Simen
+https://docs.google.com/spreadsheets/d/1qO0FIH-pIjAjEueq7N4PEszsqGLhPkib3QNp9Uwqpck/edit?usp=sharing Alexander
+https://docs.google.com/spreadsheets/d/1U3O_hiY1SdOLcH8jaXfihmSSDRYNn2SN5THuRv6syPI/edit#gid=0       Angelica
+https://docs.google.com/spreadsheets/d/1eBmXo5lKeoTqCuum0CZVIVM06wxJXmKhepdIC0pOmJM/edit?usp=sharing ☕️☕️☕️
+
+
+
+Sam format: https://samtools.github.io/hts-specs/SAMv1.pdf
+
+IGV colors:
+http://software.broadinstitute.org/software/igv/AlignmentData
+
+
+racon:
+
+racon reads mapped_reads.paf raw_asm.fasta new_sequence.fasta
+
+racon /data/assembly/pacbio/Analysis_Results/m141013_011508_sherri_c100709962550000001823135904221533_s1_p0.filtered_subreads.fastq miniasm_pacbio.racon1.paf miniasm_pacbio.fasta miniasm_pacbio.racon1.consensus.fasta
+
+http://www.pgbovine.net/command-line-bullshittery.htm
+
+
+
+Precomputed assemblies
+Racon round1 on MinION
+ls /data/assembly/temp/miniasm_racon1/
+racon_MAP006-1_2D_1.racon1.fasta
+
+Racon round1 on PacBio
+Same folder
+racon_P6C4_1.racon1.fasta (if you did  this yesterday your file is called miniasm_pacbio.racon1.consens
+MinION racon round 2 is 4632075 bp +++++-+++++-
+PacBio racon round 2 is 4645571 bp+----|+|+++++-++
+
+fasta_length file.fasta
+
+Commands I ran:
+minimap racon_MAP006-1_2D_1.racon1.fasta \
+/data/assembly/MAP006-1_2D_pass.fastq \
+>racon_MAP006-1_2D_2.racon1.reads_mapped.paf
+
+
+racon -t 2 \
+/data/assembly/MAP006-1_2D_pass.fastq \
+racon_MAP006-1_2D_2.racon1.reads_mapped.paf \
+racon_MAP006-1_2D_1.racon1.fasta \
+racon_MAP006-1_2D_2.racon2.fasta
+
+
+minimap racon_P6C4_1.racon1.fasta \
+/data/assembly/pacbio/Analysis_Results/m141013_011508_sherri_c100709962550000001823135904221533_s1_p0.filtered_subreads.fastq \
+>racon_P6C4_2.racon1.reads_mapped.paf
+
+racon -t 2 \
+/data/assembly/pacbio/Analysis_Results/m141013_011508_sherri_c100709962550000001823135904221533_s1_p0.filtered_subreads.fastq \
+racon_P6C4_2.racon1.reads_mapped.paf \
+racon_P6C4_1.racon1.fasta \
+racon_P6C4_2.racon2.fasta
+
+
+Project organization
+Noble (2009) http://dx.doi.org/10.1371/journal.pcbi.1000424
+See also https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/
+
+Run reapr facheck (fix sequences if needed) (use reapr facheck helptext)
+Run BWA on (fixed) assembly file with mate pair data (optionally: paired end)
+Run reapr
+
+Please add a + if you have at least one new finished reapr:++++++++++++++
+Please add a + if your group is done with reapr for all assemblies in your group's google spreadsheet:
+
+
+QUAST
+workaround to get it working:
+    
+    temporarliy change the name of the /share/inf-biox121/home/username/anaconda3 folder, e.g.
+    cd
+    mv anaconda3 anaconda3.bak
+
+quast.py -t 2 -o quast_out \
+-R /data/assembly/NC_000913_K12_MG1655.fasta \
+-G /data/assembly/e.coli_genes.gff \
+asm_PE+MP/contigs.fa \
+spades_PE+MP/scaffolds.fasta  \
+-l "velvet_PE+MP, SPADES_PE+MP"
+
+
+https://www.biostars.org/p/86907/
+
+Add another assembly to your quast report
