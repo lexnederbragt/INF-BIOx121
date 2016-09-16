@@ -54,7 +54,7 @@ Schedule for the Assembly module
 * reapr on the overnight assemblies from day 1
 * compare assemblies
 * comparing assemblies to the reference using Quast: velvet k81 PE + MP assembly
-* lecture: "Assembly, before and after"
+* lecture: "Assembly, before and after" - skipped
 * lunch
 * start quast on all other assemblies
 * Mentimeter multiple choice question: Which assembly is best?
