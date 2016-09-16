@@ -67,7 +67,7 @@ The PacBio data consists of raw, uncorrected filtered subreads sequenced with th
 spades.py -t 2 --careful --memory 33 \
 --pe1-1 /data/assembly/MiSeq_Ecoli_MG1655_110721_R1.fastq \
 --pe1-2 /data/assembly/MiSeq_Ecoli_MG1655_110721_R2.fastq \
---pacbio /data/pacbio/Analysis_Results/m141013_011508_filtered_subreads_30x.fastq \
+--pacbio /data/assembly/pacbio/Analysis_Results/m141013_011508_filtered_subreads_30x.fastq \
 -o ASM_NAME >spades.out 2>&1
 ```
 

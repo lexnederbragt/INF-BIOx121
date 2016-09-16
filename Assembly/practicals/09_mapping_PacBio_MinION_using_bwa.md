@@ -10,7 +10,7 @@ samtools index map_ONT.sorted.bam
 ```
 
 ```
-bwa mem -t 2 -x pacbio /data/assembly/NC_000913_K12_MG1655.fasta /data/pacbio/Analysis_Results/m141013_011508_filtered_subreads_30x.fastq  | samtools view -buS - | samtools sort - -o map_PacBio.sorted.bam
+bwa mem -t 2 -x pacbio /data/assembly/NC_000913_K12_MG1655.fasta /data/assembly/pacbio/Analysis_Results/m141013_011508_filtered_subreads_30x.fastq  | samtools view -buS - | samtools sort - -o map_PacBio.sorted.bam
 samtools index map_PacBio.sorted.bam
 ```
 
