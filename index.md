@@ -82,20 +82,20 @@ The schedule links to the webpages with the material taught (these links are add
 <tr class="even">
 <td align="left">Monday Sept. 19</td>
 <td align="left">Python</td>
-<td align="left">RNA seq: differential expression analysis</td>
-<td align="left">RNA seq: differential expression analysis</td>
+<td align="left"><a href="RNAseq/index.html">RNA seq: differential expression analysis</a></td>
+<td align="left"><a href="RNAseq/index.html">RNA seq: differential expression analysis</a></td>
 </tr>
 <tr class="odd">
 <td align="left">Tuesday Sept. 20</td>
 <td align="left"><strong>Java</strong></td>
-<td align="left">RNA seq: differential expression analysis</td>
-<td align="left">RNA seq: differential expression analysis</td>
+<td align="left"><a href="RNAseq/index.html">RNA seq: differential expression analysis</a></td>
+<td align="left"><a href="RNAseq/index.html">RNA seq: differential expression analysis</a></td>
 </tr>
 <tr class="even">
 <td align="left">Wednesday Sept. 21</td>
 <td align="left"><strong>Smalltalk</strong></td>
-<td align="left">RNA seq: differential expression analysis</td>
-<td align="left">RNA seq: differential expression analysis</td>
+<td align="left"><a href="RNAseq/index.html">RNA seq: differential expression analysis</a></td>
+<td align="left"><a href="RNAseq/index.html">RNA seq: differential expression analysis</a></td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>Week 39</strong></td>
