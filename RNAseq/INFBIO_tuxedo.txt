@@ -1,0 +1,50 @@
+# how to make a subsample of a full sample - here how to get 1 mill reads from a larger sample
+
+# structure of command: seqtk sample -s12345 read2.fq 1000000 >sub2.fq # the -s###### is a random seed number used for the stochastic selection of reads and must be identical for both R1 and R2. 
+
+seqtk sample -s12345 4day_HK1_F_R1_trimmed_paired.fastq 1000000 > 4day_HK1_F_R1_trimmed_subsample_paired.fastq
+
+
+# tophat mapping (bowtie wrapped) -o specifies output directory, -p 2 is the number of CPUs. Remember that the index has to be in your current directory! or do export path
+tophat2 -o 6hrs_HK1_K \
+-p 2 \
+--transcriptome-index=gadMor2_ena gadMor2_ena \
+~/INFBIO/trimmed_data/6hrs_HK1_K_R1_trimmed_subsample_paired.fastq  \
+~/INFBIO/trimmed_data/6hrs_HK1_K_R2_trimmed_subsample_paired.fastq  \
+1>~/INFBIO/analysis/6hrs_HK1_K.out 2>~/INFBIO/analysis/6hrs_HK1_K.err
+
+
+# prediction of transcripts with cufflinks here using 2 cpus, specifying output dir and giving it the output from tophat (a bam file). 
+cufflinks -p 2 -o 4day_HK1_F_cuff 4day_HK1_F/accepted_hits.bam 1> 4day_HK1_F_cuff.out 2> 4day_HK1_F_cuff.err
+
+
+#before running cuffmerge you need to make a list with all the gtf files to be merged and where they are located. I suggest you use the full path if shortcuts are unfamiliar to you
+
+#content should look like this:
+#./6hrs_HK1_K_cuff/transcripts.gtf
+
+#then merge with cuffmerge
+
+cuffmerge -g ~/INFBIO/transcriptome/gadMor2_ena.gff -s ~/INFBIO/transcriptome/gadMor2_ena.fa -p 2 assembly_list 1>cuffmerge.out 2>cuffmerge.err
+
+
+#we did not actually do cuffdiff due to computation time but it would have looked like this:
+
+cuffdiff -o 6hrs_diff_out -b /node/work1/no_backup/monica/reference_genome_based_transcriptome/gadMor2_ena.fa -p 30 \
+-u merged_asm/merged.gtf \
+6hrs_HK1_K/accepted_hits.bam,6hrs_HK2_K/accepted_hits.bam,6hrs_HK3_K/accepted_hits.bam,6hrs_HK4_K/accepted_hits.bam,6hrs_HK5_K/accepted_hits.bam,6hrs_HK6_K/accepted_hits.bam \
+6hrs_HK1_F/accepted_hits.bam,6hrs_HK2_F/accepted_hits.bam,6hrs_HK3_F/accepted_hits.bam,6hrs_HK4_F/accepted_hits.bam,6hrs_HK5_F/accepted_hits.bam,6hrs_HK6_F/accepted_hits.bam \
+1>cuffdiff6hrs.out 2>cuffdiff6hrs.err
+
+#if you want change the q1/q2 labels after running cuffdiff (i.e. forgot to add labels to command) you can do this in the cuffdiff directory:
+
+
+sed -i.bak -e 's/q1/6hrsC/g;s/q2/6hrsF/g;' *.diff *.info *_tracking # for a simple comparison
+sed -i.bak -e 's/q1/6hrsC/g;s/q2/6hrsF/g;s/q3/4dayC/g;s/q4/4dayF/g;' *.diff *.info *_tracking # for both timepoints run together
+
+
+
+
+############### 
+
+fastagrep -p gamo_######## gadMor2.......transcripts.fasta

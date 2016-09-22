@@ -1,0 +1,242 @@
+#cummeRbund - making visuals for your RNAseq data
+
+
+#set working directory to the cuffdiff folder. all the cuffdiff outputfiles have to be there.  This is only necessary if you read inn cuffdata with default parameters. 
+
+ 
+library("cummeRbund") #loading in cummerbund, " isn't always needed like in Rstudio 
+ 
+library("ggplot2") #loading the plotting program ggplot2 
+
+
+
+
+ 
+cuff <- readCufflinks() #reading in the cufflinks output
+ 
+runInfo(cuff) #displays information about the analysis 
+ 
+replicates(cuff) #displays information about the replicates and applied normalization 
+
+
+#################################################
+#	THE VM DOES NOT SUPPORT PNG DISPLAY	#
+#################################################
+
+
+
+#evaluate your overall data
+
+#DISPERSION
+ 
+#dispersion estimates on gene level
+
+disp<-dispersionPlot(genes(cuff)) # genelevel disp
+ 
+ggsave(disp, filename"dispersion.pdf)
+
+
+#SQUARED COEFFICIENT OF VARIANCE 
+ 
+genes.scv<-fpkmSCVPlot(genes(cuff))
+ggsave(genes.scv, filename="concatenated_scv_genes.pdf") 
+ 
+ 
+#DISTRIBUTION OF FPKM SCORES ACROSS SAMPLES
+ 
+dens<-csDensity(genes(cuff)) #here you can also add replicates = true like this: densrep <- csDensity(genes(cuff), replicates=TRUE) 
+ggsave(dens, filename="concatenated_dens_genes.pdf") 
+ 
+ 
+#BOXPLOT FOR OUTLIER IDENTIFICATION
+ 
+b<-csBoxplot(genes(cuff)) 
+ggsave(b, filename="concatenated_boxplot_genes.pdf") 
+ 
+ 
+brep<-csBoxplot(genes(cuff),replicates=T) # add replicates for better resolution
+ggsave(brep, filename="concatenated_boxplot_genes_repl.pdf") 
+ 
+ 
+#SCATTERPLOT COMPARING FPKM PER CONDITION
+ 
+s<-csScatterMatrix(genes(cuff))
+ggsave(s, filename="concatenated_scatterplot_genes.pdf") 
+ 
+
+
+
+#DENDROGRAM ON THE JENSEN-SHANNON DIVERGENCE INDEX - does not use ggplot2 for saving 
+ 
+dend<-csDendro(genes(cuff))  
+pdf("concatenated_dendrogram_genes.pdf") 
+dend<-csDendro(genes(cuff))  
+dev.off() 
+ 
+
+dend.rep<-csDendro(genes(cuff),replicates=T) #use replicates for better resolution
+pdf("concatenated_dendrogram_genes_rep.pdf") 
+dend.rep<-csDendro(genes(cuff),replicates=T) 
+dev.off() 
+ 
+ 
+
+
+ 
+# PCA/MDS plots (see here for explanation: www.rna-seqblog.com/statquest-pca-clearly-explained 
+ 
+#MDS tends to fail on the VM if no replicates are specified
+
+genes.MDS<-MDSplot(genes(cuff), replicates=TRUE) 
+ggsave(genes.MDS,filename="concatenated_MDS.pdf") 
+ 
+#or do the PCA 
+ 
+genes.PCA <- PCAplot(genes(cuff),replicates=TRUE) 
+ggsave(genes.PCA, filename="concatenated_PCA_repl.pdf") 
+
+
+
+
+
+ 
+#VOLCANO EXPRESSION PLOTS
+ 
+#remember that your conditions are names q1 and q2 (control and treated respectively) unless you have specified otherwise - check the replicates(cuff) command for details.  
+ 
+# volcano variant 
+ 
+v1 <- csVolcano(genes(cuff),"q1","q2", alpha=0.05, showSignificant=TRUE)   
+v1 
+ 
+ggsave(v1, file='volcano_MA_6hrs_replicates.pdf') 
+ 
+ 
+
+
+
+
+
+
+
+
+#MAKING SIGNIFICANT GENE OBJECTS
+ 
+# making gene set of significant features - this will be identical to the one below if only two conditions
+ 
+mySigGeneIds<-getSig(cuff,alpha=0.05,level='genes') # this can be tweeked if multiple conditions, another p-value cutoff etc 
+ 
+head(mySigGeneIds) 
+ 
+length(mySigGeneIds) 
+ 
+
+
+ 
+ 
+#individual test setup: if you have more that two conditions you can look at the significant genes between pairs of these conditions - cuffdiff has by default done an all-to-all analysis
+ 
+mySigGeneIds1<-getSig(cuff,alpha=0.05,level='genes',x='q1',y='q2') 
+length(mySigGeneIds1) # this will give you the number of significant genes for the comparison of q1 and q2 
+ 
+mySigGeneIds3<-getSig(cuff,alpha=0.05,level='genes',x='q3',y='q4') 
+length(mySigGeneIds3) 
+ 
+ 
+mySigGenes1<-getGenes(cuff,mySigGeneIds1) 
+siggene.featurenames1 <- featureNames(mySigGenes1) # you are storing the significant genes in new objects 
+ 
+mySigGenes3<-getGenes(cuff,mySigGeneIds3) 
+siggene.featurenames3 <- featureNames(mySigGenes3) 
+  
+ 
+table1 <- featureNames(mySigGenes1) 
+ 
+table3 <- featureNames(mySigGenes3) 
+ 
+ 
+write.table(table1, file="mySigGenes1.txt", quote=F) 
+ 
+write.table(table3, file="mySigGenes3.txt", quote=F) 
+ 
+
+ 
+gene1.diff<-diffData(mySigGenes1) 
+head(gene1.diff) 
+write.table(gene1.diff, file="mySigGenes1_DE.txt", quote=F) 
+ 
+gene3.diff<-diffData(mySigGenes3) 
+head(gene3.diff) 
+write.table(gene3.diff, file="mySigGenes3_DE.txt", quote=F) 
+ 
+ 
+
+
+
+
+#EXPRESSION HEAT MAPS ON GENE SETS - maybe not the most informative plots, but can come in handy
+ 
+h1<-csHeatmap(mySigGenes1, fullnames=F, cluster='row')  
+h1 
+ggsave(file='heatmap_6hrsgenes_across_time.pdf') 
+ 
+ 
+h3<-csHeatmap(mySigGenes3, fullnames=F, cluster='row')  
+h3 
+ggsave(file='heatmap_4daygenes_across_time.pdf') 
+ 
+ 
+ 
+ 
+ 
+ 
+# PARTITIONING - PS:read about this in the cummerbund manual - this is not a high resolution partitioning strategy. AIM:looking at genes following the same expression pattern for further evaluation.
+ 
+ 
+ 
+ic<-csCluster(mySigGenes,k=6) # you can choose the number of cluster - 4, 5 or 6 are usually the most informative.  
+head(ic$cluster) 
+icp<-csClusterPlot(ic) 
+icp 
+ggsave(icp, filename="concatenated_covariance_all_genes.pdf") 
+ 
+ 
+ic1<-csCluster(mySigGenes1,k=6) # you can choose the number of cluster - 4 or 6 are usually the most informative.  
+head(ic1$cluster) 
+icp1<-csClusterPlot(ic1) 
+icp1 
+ggsave(icp1, filename="concatenated_covariance_6hrs_genes.pdf") 
+ 
+ 
+ic3<-csCluster(mySigGenes3,k=6) # you can choose the number of cluster - 4 or 6 are usually the most informative.  
+head(ic3$cluster) 
+icp3<-csClusterPlot(ic3) 
+icp3 
+ggsave(icp3, filename="concatenated_covariance_4day_genes.pdf") 
+ 
+
+
+#GETTING THE COUNT MATRIX - might be handy
+
+gene.count.matrix <- countMatrix(genes(cuff))
+head(gene.count.matrix)
+write.table(gene.count.matrix, file="countmatrix.txt")
+
+ 
+########################################################################################## 
+ 
+#MAKING INDIVIDUAL GENE PLOTS - a example
+#XLOC_017969
+ 
+myGeneId_A <- 'XLOC_017969' 
+myGeneId_A <- getGene(cuff,myGeneId_A) 
+myGeneId_A 
+head(fpkm(myGeneId_A)) 
+A <- expressionPlot(myGeneId_A) 
+A 
+Arep <- expressionPlot(myGeneId_A,replicates=TRUE) 
+Arep 
+ 
+ggsave(A, filename="A.pdf")
+ggsave(A, filename="A.pdf", width = 100, height = 100, units = c("mm")) # if you need to tweek the size of the plot
+ 
