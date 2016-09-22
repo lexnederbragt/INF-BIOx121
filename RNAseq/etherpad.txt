@@ -1,0 +1,10 @@
+SCOTTY
+
+•Go to: http://scotty.genetics.utah.edu
+•Run optimization of:
+1)Model dataset (Human liver – Blekhman)
+2)Nonmodel dataset (Atlantic cod larvae – Oomen)
+~/data/RNAseq/scotty/Trinity_genes.counts.matrix.cvsd28t13.scotty
+•Evaluate and compare results
+
+Human liver model http://scotty.genetics.utah.edu/pdfs/pdf_1209954474.pdf 
