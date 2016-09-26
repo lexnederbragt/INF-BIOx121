@@ -230,6 +230,10 @@ The exam for this course will be:
   
 **NOTE** 80% attendance is required to take the final exam.
 
+### Exams from previous years
+* [2015](https://github.com/lexnederbragt/INF-BIOx121/tree/2015/exam) (with information on how the grading was done)
+* [2014](https://wiki.uio.no/projects/clsi/images/f/f2/Examinfbio2014.pdf) (exam only)
+
 ## Contact information
 
 * Lex Nederbragt (Course coordinator) - e-mail: lex.nederbragt - at -
