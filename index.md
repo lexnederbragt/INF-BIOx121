@@ -130,8 +130,8 @@ The schedule links to the webpages with the material taught (these links are add
 <tr class="even">
 <td align="left">Monday Oct. 10</td>
 <td align="left">Python</td>
-<td align="left">Reproducible bioinformatics using Galaxy</td>
-<td align="left">Reproducible bioinformatics using Galaxy</td>
+<td align="left">Cancelled, no teaching</td>
+<td align="left">Cancelled, no teaching</td>
 </tr>
 <tr class="odd">
 <td align="left">Tuesday Oct. 11</td>
