@@ -103,20 +103,20 @@ The schedule links to the webpages with the material taught (these links are add
 <tr class="even">
 <td align="left">Wednesday Sept. 28</td>
 <td align="left">Python</td>
-<td align="left">Mapping and variant calling</td>
-<td align="left">Mapping and variant calling</td>
+<td align="left"><a href="Variant_calling/index.html">Variant calling</a></td>
+<td align="left"><a href="Variant_calling/index.html">Variant calling</a></td>
 </tr>
 <tr class="odd">
 <td align="left">Thursday Sept. 29</td>
 <td align="left">Python</td>
-<td align="left">Mapping and variant calling</td>
-<td align="left">Mapping and variant calling</td>
+<td align="left"><a href="Variant_calling/index.html">Variant calling</a></td>
+<td align="left"><a href="Variant_calling/index.html">Variant calling</a></td>
 </tr>
 <tr class="even">
 <td align="left">Friday Sept. 30</td>
 <td align="left">Python</td>
-<td align="left">Mapping and variant calling</td>
-<td align="left">Mapping and variant calling</td>
+<td align="left"><a href="Variant_calling/index.html">Variant calling</a></td>
+<td align="left"><a href="Variant_calling/index.html">Variant calling</a></td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>Week 40</strong></td>
