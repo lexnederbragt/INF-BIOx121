@@ -13,4 +13,5 @@ Practicals:
 
 * 
 
-Content of the [etherpad]().
+Content of the [etherpad](https://raw.githubusercontent.com/lexnederbragt/INF-BIOx121/2016/Variant_calling/etherpad.txt
+).

@@ -1,0 +1,41 @@
+The course machines are named: ibv-course01.hpc.uio.no
+
+## IGV VIA SSH FOR UNIX LAPTOPS (LINUX & MAC OSX)
+When starting IGV you can use the ThinLink but there are some problems with dialog boxes . An alternative is to login directly via ssh and then start up IGV. For this to work you need to used the -X option
+ssh -X username@ibv-course01.hpc.uio.no
+Then once you are logged in, you start IGV using:
+/share/inf-biox121/IGV_2.3.81/igv.sh
+    
+    
+## READING THE HELPFUL MANUAL 
+To get help on the options of a command use man command. For example:
+    man grep
+    
+## DIRECTORIES OVERVIEW
+slides >> slides for the course
+inputData >> reference genome and read sets
+exerDefinitions >> the exercise scripts
+exerSandbox >> where you do the exercises
+
+## SLIDE UPDATES
+Updated slides are on the website at: https://github.com/lexnederbragt/INF-BIOx121/blob/2016/Variant_calling/index.md
+Updated slides can be found on the central location /data/vc/slides
+You can copy these to your vc directory by using for example:
+source /data/vc/exerDefinitions/setupEnv.bash
+/data/vc/exerDefinitions/copyFiles.bash
+
+## AWK
+awk 'BEGIN{OFS="\t"; FS="\t";};{print $8};END{}'
+
+
+## GETTING HOLD OF PRE-COMPUTED RESULTS
+cp -r /data/vc/exerResults/02_basicPipeline/* vc/exerSandbox/02_basicPipeline/
+
+
+
+
+
+
+
+
+
