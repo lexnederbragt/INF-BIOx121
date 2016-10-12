@@ -68,13 +68,14 @@ Ran as for the MinIOn data, but use the `-pacbio-raw` for the PacBio reads.
 
 Quiver is a program that takes a set of aligned PacBio reads and recalls the bases based on the consensus of the alignment.
 
-First, we need to map the raw (!) PacBio reds to the assembly. For this, we use the raw output from the instrument, which is in so-called `bax.h5` files (these are in the HDF5 binary format). We make a `fofn` (a 'file-of-filenames') which lists all inout files:
+First, we need to map the raw (!) PacBio reds to the assembly. For this, we use the raw output from the instrument, which is in so-called `bax.h5` files (these are in the HDF5 binary format). We make a `fofn` (a 'file-of-filenames') which lists all input files:
 
 
 ```
-ls /data/assembly/pacbio/Analysis_Results/*.bax.h5 >input.fofn
+find /data/assembly/pacbio/ -name "*.h5" >input.fofn
 ```
-We also need to set up the environment to be able to run the correct programs (`pbalign` and `quiver`, simple type:
+
+We also need to set up the environment to be able to run the correct programs (`pbalign` and `quiver`), simple type:
 
 ```
 smrtshell
@@ -92,7 +93,7 @@ assembly.fasta canu_quiver.cmp.h5 \
 --forQuiver
 ```
 
-Fir the next step, we need to index the assembly with `samtools faidx`:
+For the next step, we need to index the assembly with `samtools faidx`:
 
 ```        
 samtools faidx assembly.fasta
