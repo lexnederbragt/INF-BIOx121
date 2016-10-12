@@ -136,14 +136,14 @@ The schedule links to the webpages with the material taught (these links are add
 <tr class="odd">
 <td align="left">Tuesday Oct. 11</td>
 <td align="left">Python</td>
-<td align="left">Statistical genomics (Hyperbrowser)</td>
-<td align="left">Statistical genomics (Hyperbrowser)</td>
+<td align="left"><a href="Statistical_genomics/index.html">Statistical genomics</a></td>
+<td align="left"><a href="Statistical_genomics/index.html">Statistical genomics</a></td>
 </tr>
 <tr class="even">
 <td align="left">Wednesday Oct. 12</td>
 <td align="left">Python</td>
-<td align="left">Statistical genomics (Hyperbrowser)</td>
-<td align="left">Statistical genomics (Hyperbrowser)</td>
+<td align="left"><a href="Statistical_genomics/index.html">Statistical genomics</a></td>
+<td align="left"><a href="Statistical_genomics/index.html">Statistical genomics</a></td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>Week 42</strong></td>
