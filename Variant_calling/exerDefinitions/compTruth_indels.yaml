@@ -1,0 +1,14 @@
+dir:
+  base: .
+  out: compTruth_indels
+  prep: compTruth_indels/prep
+experiments:
+  - sample: mutatedRef
+    ref: ../../inputData/human_g1k_v37_chr5/gatkBundle/human_g1k_v37_chr5.fasta
+    summary-level: full
+    approach: compare
+    calls:
+      - name: indelcalls
+        file: indels.raw.vcf
+      - name: truth
+        file: ../../inputData/reads_agilentV1_chr5/simul_indels/indels.vcf
