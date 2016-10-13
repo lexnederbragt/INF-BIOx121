@@ -1,0 +1,111 @@
+# GOAL
+
+To demonstrate how the coupling of variant data with functional annotation enables the detection of a variant causing disease.
+
+
+# DATA
+
+* You need to open the following file (which was the result of the previous exercise) in a spreadsheet application: snpsHQ.filt.GRCh37.64.topImpact.NSFP.vcf_asTable.txt
+* The spreadsheet application will normally take you to a "text import" dialog, here it is IMPORTANT to make sure that you ONLY use the tab character as the column separator before you click OK to import the tab separated file into the spreadsheet application.
+* You might need to widen the columns a bit to be able to read the headers
+* You need to switch on the Filter functionality, this you normally done in the "Data" menu
+* Once the filtering functionality is switched on you can click on the headers of columns and set values that the fields have to satisfy
+* Note that not all variants have values for all columns. For example, if a variant has never been seen in the 1000 genomes project rather than report a frequency of 0, the frequency is given as NA. So if you want to filter for rare variants you need to specify (freq < 0.01 OR freq = NA)
+
+
+# TASK DESCRIPTION
+
+This is a synthetic dataset but it is completely realistic.
+
+The case is as follows: a young patient with a severe but poorly defined pathology (which is suspected of having a genetic cause). The patient's DNA has been sequenced using exome capture. There is no such disease in the patients immediate family so we suspect the variant to be recessive (ie homozygous in the patient). We have mapped the reads and called variants on the sample data. This has generated thousands of variant calls, we wish to attempt to identify the variant causing the pathology.
+
+You should use the filtering functionality of the spreadsheet application, your knowledge of what the different columns are, and your knowledge of the variant calling process to find the causal variant.
+
+We explain many of the important fields in the lecture. You will find some more information below. And this should be more than sufficient for this exercise.
+
+(For a full set of definitions for all the annotations that are applied by snpEff and snpSift using the dbNSFP database, please refer to the files in the same directory as this exercise: 041_dbNSFP2.0b3_allFieldDescriptions.xlsx and 041_snpEff2.0.2_allFieldDescriptions.xlsx)
+
+THE ACTUAL TASK: Please find your top candidate variant and then search the web to find out a bit about this gene.
+
+
+
+
+# COLUMNS ############################################################
+
+* We have gone through most of the columns in the lecture, but we recap them all here.
+* Note that some columns are just for convenience as they can be derived from others
+* Note also that not all of these columns will be of use you can probably solve the exercise with very few of the columns
+
+
+# Basic ##############################################################
+CHROM	chromosome
+POS		position
+ID		dbSNP id
+REF		reference base
+ALT		variant base
+QUAL	variant call quality
+FILTER	whether or not the variant passes quality filters
+
+# Summary of genotype ###############################################
+HET		count of het genotypes
+HOM-REF count of homozygous reference genotypes
+HOM-VAR count of homozygous variant genotypes
+TYPE 	the type of event
+
+# Effect of snp ####################################################
+SNPEFF_EFFECT
+SNPEFF_IMPACT	(see below for details)
+SNPEFF_CODON_CHANGE
+SNPEFF_AMINO_ACID_CHANGE
+SNPEFF_GENE_NAME
+SNPEFF_TRANSCRIPT_ID
+SNPEFF_EXON_ID
+
+# Impact of amino acid change on protein structure ##################
+
+SIFT_score SIFT score, If a score is smaller than 0.05 the corresponding NS is predicted as "D(amaging)"; otherwise it is predicted as "T(olerated)". SIFT predicts whether an amino acid substitution affects protein function. SIFT prediction is based on the degree of conservation of amino acid residues in sequence alignments derived from closely related sequences, collected through PSI-BLAST. 
+
+Polyphen2_HVAR_pred	Polyphen2 prediction based on HumVar, "D" ("porobably damaging"), "P" ("possibly damaging") and "B" ("benign"). Multiple entries separated by ";".
+
+# Extent of conservation across species ##############################
+29way_logOdds	The higher the score the more conserved the site
+
+# Variant dbs (1000 genomes and a second study) #####################
+1k_AF 1000G allele frequency 
+
+# Genotype specifics #################################################
+GT The actual genotype of the individual 
+GQ The quality of the individual's genotype
+
+
+## Details for classification of impact 
+
+>> High-Impact effects
+SPLICE_SITE_ACCEPTOR
+SPLICE_SITE_DONOR
+START_LOST
+EXON_DELETED
+FRAME_SHIFT
+STOP_GAINED
+STOP_LOST
+
+>> Moderate-Impact effects
+NON_SYNONYMOUS_CODING
+CODON_CHANGE (note: this effect is used by SnpEff only for MNPs not SNPs
+CODON_INSERTION
+CODON_CHANGE_PLUS_CODON_INSERTION
+CODON_DELETION
+CODON_CHANGE_PLUS_CODON_DELETION
+UTR_5_DELETED
+UTR_3_DELETED
+
+>> Low-Impact effects
+SYNONYMOUS_START
+NON_SYNONYMOUS_START
+START_GAINED
+SYNONYMOUS_CODING
+SYNONYMOUS_STOP
+NON_SYNONYMOUS_STOP
+
+
+

@@ -1,0 +1,9 @@
+LIBRARY	The library on which the duplicate marking was performed.
+UNPAIRED_READS_EXAMINED	The number of mapped reads examined which did not have a mapped mate pair, either because the read is unpaired, or the read is paired to an unmapped mate.
+READ_PAIRS_EXAMINED	The number of mapped read pairs examined.
+UNMAPPED_READS	The total number of unmapped reads examined.
+UNPAIRED_READ_DUPLICATES	The number of fragments that were marked as duplicates.
+READ_PAIR_DUPLICATES	The number of read pairs that were marked as duplicates.
+READ_PAIR_OPTICAL_DUPLICATES	The number of read pairs duplicates that were caused by optical duplication. Value is always < READ_PAIR_DUPLICATES, which counts all duplicates regardless of source.
+PERCENT_DUPLICATION	The percentage of mapped sequence that is marked as duplicate.
+ESTIMATED_LIBRARY_SIZE	The estimated number of unique molecules in the library based on PE duplication.
