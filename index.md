@@ -1,187 +1,25 @@
-High Throughput Sequencing technologies and bioinformatics analysis fall 2016
+High Throughput Sequencing technologies and bioinformatics analysis fall 2017
 ==========================================
 
 Note: for previous course editions, check out [this website](http://inf-biox121.readthedocs.io).
 
-This is the webpage for the fall 2016 edition of the credited courses [**INF-BIO5121**](http://www.uio.no/studier/emner/matnat/ifi/INF-BIO5121) (master level) and [**INF-BIO9121**](http://www.uio.no/studier/emner/matnat/ifi/INF-BIO9121/) (Ph.D. level) offered by the Department of Informatics and the Department of Biosciences at the University of Oslo (UiO). Students taking the course for credit should register through UiO StudentWeb. Non UiO students are welcome and should check [this website](http://www.uio.no/english/studies/admission/).
+This is the webpage for the fall 2017 edition of the credited courses [**INF-BIO5121**](http://www.uio.no/studier/emner/matnat/ifi/INF-BIO5121) (master level) and [**INF-BIO9121**](http://www.uio.no/studier/emner/matnat/ifi/INF-BIO9121/) (Ph.D. level) offered by the Department of Informatics and the Department of Biosciences at the University of Oslo (UiO). Students taking the course for credit should register through UiO StudentWeb. Non UiO students are welcome and should check [this website](http://www.uio.no/english/studies/admission/).
 
 The High Throughput Sequencing technologies and bioinformatics
 analysis course consists of five weeks, three days each week, of
 lectures and practicals, and a final take-home exam, plus a written exam on the course material and the reading material.
 
 ## Schedule
-Course days are from 9:00 to 16:00 (teachers may stay longer if
+Course days are usually from 9:00 to 16:00 (teachers may stay longer if
 requested), some lectures, mostly hands-on exercises. All materials for lectures and practicals will be linked from the schedule below. 
 
-The schedule links to the webpages with the material taught (these links are added as the course progresses).
+The schedule will appear here early in August and will link to the webpages with the material taught (these links are added as the course progresses).
 
-<table border="1">
-<thead>
-<tr class="header">
-<th align="left">Day</th>
-<th align="left">Room</th>
-<th align="left">Morning (09:00-12:00)</th>
-<th align="left">Afternoon (13:00-16:00)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>Week 34</strong></td>
-</tr>
-<tr class="even">
-<td align="left">Tuesday August 23rd</td>
-<td align="left"><strong>Smalltalk</strong></td>
-<td align="left">Unix pre course</td>
-<td align="left">Unix pre course</td>
-</tr>
-<tr class="odd">
-<td align="left"><strong>Week 36</strong></td>
-</tr>
-<tr class="even">
-<td align="left">Wednesday Sept. 7</td>
-<td align="left"><strong>C</strong></td>
-<td align="left"><a href="Intro_HTS/index.html">High-throughput sequencing</a></td>
-<td align="left"><a href="Intro_HTS/index.html">High-throughput sequencing</a></td>
-</tr>
-<tr class="odd">
-<td align="left">Thursday Sept. 8</td>
-<td align="left">Python</td>
-<td align="left"><a href="Intro_HTS/index.html">Principles and problems of HTS data analysis</a></td>
-<td align="left"><a href="Intro_HTS/index.html">Experimental design</a></td>
-</tr>
-<tr class="even">
-<td align="left">Friday Sept. 9</td>
-<td align="left">Python</td>
-<td align="left"><a href="QC/Read_QC.html">Read QC + trimming</a></td>
-<td align="left"><a href="Intro_HTS/index.html">Project and data organisation, reporting</a></td>
-</tr>
-<tr class="odd">
-<td align="left"><strong>Week 37</strong></td>
-</tr>
-<tr class="even">
-<td align="left">Monday Sept. 12</td>
-<td align="left">Python</td>
-<td align="left"><a href="Assembly/index.html"><em>De novo</em> assembly</a></td>
-<td align="left"><a href="Assembly/index.html"><em>De novo</em> assembly</a></td>
-</tr>
-<tr class="odd">
-<td align="left">Tuesday Sept. 13</td>
-<td align="left">Python</td>
-<td align="left"><a href="Assembly/index.html"><em>De novo</em> assembly</a></td>
-<td align="left"><a href="Assembly/index.html"><em>De novo</em> assembly</a></td>
-</tr>
-<tr class="even">
-<td align="left">Wednesday Sept. 14</td>
-<td align="left">Python</td>
-<td align="left"><a href="Assembly/index.html"><em>De novo</em> assembly</a></td>
-<td align="left"><a href="Assembly/index.html"><em>De novo</em> assembly</a></td>
-</tr>
-<tr class="odd">
-<td align="left"><strong>Week 38</strong></td>
-</tr>
-<tr class="even">
-<td align="left">Monday Sept. 19</td>
-<td align="left">Python</td>
-<td align="left"><a href="RNAseq/index.html">RNA seq: differential expression analysis</a></td>
-<td align="left"><a href="RNAseq/index.html">RNA seq: differential expression analysis</a></td>
-</tr>
-<tr class="odd">
-<td align="left">Tuesday Sept. 20</td>
-<td align="left"><strong>Java</strong></td>
-<td align="left"><a href="RNAseq/index.html">RNA seq: differential expression analysis</a></td>
-<td align="left"><a href="RNAseq/index.html">RNA seq: differential expression analysis</a></td>
-</tr>
-<tr class="even">
-<td align="left">Wednesday Sept. 21</td>
-<td align="left"><strong>Smalltalk</strong></td>
-<td align="left"><a href="RNAseq/index.html">RNA seq: differential expression analysis</a></td>
-<td align="left"><a href="RNAseq/index.html">RNA seq: differential expression analysis</a></td>
-</tr>
-<tr class="odd">
-<td align="left"><strong>Week 39</strong></td>
-</tr>
-<tr class="even">
-<td align="left">Wednesday Sept. 28</td>
-<td align="left">Python</td>
-<td align="left"><a href="Variant_calling/index.html">Variant calling</a></td>
-<td align="left"><a href="Variant_calling/index.html">Variant calling</a></td>
-</tr>
-<tr class="odd">
-<td align="left">Thursday Sept. 29</td>
-<td align="left">Python</td>
-<td align="left"><a href="Variant_calling/index.html">Variant calling</a></td>
-<td align="left"><a href="Variant_calling/index.html">Variant calling</a></td>
-</tr>
-<tr class="even">
-<td align="left">Friday Sept. 30</td>
-<td align="left">Python</td>
-<td align="left"><a href="Variant_calling/index.html">Variant calling</a></td>
-<td align="left"><a href="Variant_calling/index.html">Variant calling</a></td>
-</tr>
-<tr class="odd">
-<td align="left"><strong>Week 40</strong></td>
-</tr>
-<tr class="even">
-<td align="left">No teaching, 'høstferie'</td>
-</tr>
-<tr class="odd">
-<td align="left"><strong>Week 41</strong></td>
-</tr>
-<tr class="even">
-<td align="left">Monday Oct. 10</td>
-<td align="left">Python</td>
-<td align="left">Cancelled, no teaching</td>
-<td align="left">Cancelled, no teaching</td>
-</tr>
-<tr class="odd">
-<td align="left">Tuesday Oct. 11</td>
-<td align="left">Python</td>
-<td align="left"><a href="Statistical_genomics/index.html">Statistical genomics</a></td>
-<td align="left"><a href="Statistical_genomics/index.html">Statistical genomics</a></td>
-</tr>
-<tr class="even">
-<td align="left">Wednesday Oct. 12</td>
-<td align="left">Python</td>
-<td align="left"><a href="Statistical_genomics/index.html">Statistical genomics</a></td>
-<td align="left"><a href="Statistical_genomics/index.html">Statistical genomics</a></td>
-</tr>
-<tr class="odd">
-<td align="left"><strong>Week 42</strong></td>
-</tr>
-<tr class="even">
-<td align="left">home exam</td>
-</tr>
-<tr class="odd">
-<td align="left"><strong>Week 43</strong></td>
-</tr>
-<tr class="even">
-<td align="left">home exam</td>
-</tr>
-<tr class="odd">
-<td align="left"><strong>Week 44 </strong></td>
-</tr>
-<tr class="even">
-<td align="left">Thursday Nov. 3</td>
-<td align="left">TBD</td>
-<td align="left">Oral examination of the home exam, 30 minutes</td>
-<td align="left">Oral examination of the home exam, 30 minutes</td>
-</tr>
-<tr class="odd">
-<td align="left">Friday Nov. 4</td>
-<td align="left">TBD</td>
-<td align="left">Written exam 9:00-11:00</td>
-</tr>
-</tbody>
-</table>
-<p><p>
 
 **Room locations:**
 
-* Smalltalk: room 1416, first floor auditorium near the man entrance  (Ole-Johan Dahls hus)
-* Python: room 2269 Informatics building (Ole-Johan Dahls hus)
-* Java: room 2423 Informatics building (Ole-Johan Dahls hus)
-* KN: 'Lille auditorium' in Kristin Nygaards hus (next to the Informatics building)
-* C: room 3437 Informatics building (Ole-Johan Dahls hus)
+Will appear here once allocated.
+
 
 ## Requirements
 
@@ -236,22 +74,14 @@ The exam for this course will be:
 
 ## Contact information
 
-* Lex Nederbragt (Course coordinator) - e-mail: lex.nederbragt - at -
-ibv.uio.no
-* Karin Lagesen (Course co-coordinator) - e-mail: karin.lagesen - at -
-medisin.uio.no
+* Arvind Sundaram (Course coordinator) - e-mail: arvind.sundaram - at -medisin.uio.no
 * Course administration/registration - e-mail: studieinfo@ifi.uio.no
 
 ## Teachers
 
-* Lex Nederbragt (LN, Centre for Ecological and Evolutionary Synthesis,
-Dept. of Biosciences & Research Group for Biomedical Informatics Dept. of Informatics, University of Oslo)
+* Arvind Sundaram (AS, Bioinformatician, Norwegian Sequencing Centre, Oslo University Hospital)
 * Timothy Hughes (TH, Researcher, NORMENT , Oslo Univ. Hospital)
-* Monica Solbakken (MS, Centre for Ecological and Evolutionary Synthesis,
-Dept. of Biosciences, University of Oslo)
-* Rebekah Oomen (RO, Centre for Ecological and Evolutionary Synthesis,
-Dept. of Biosciences, University of Oslo)
 * Boris Simovski (BS, Research Group for Biomedical Informatics, Dept. of
 Informatics, University of Oslo)
-* Karin Lagesen (KL, Norwegian Sequencing Centre, Oslo Univ.
-Hospital/Dept. of Informatics)
+* Karin Lagesen (KL, Norwegian Veterinary Institute and Dept. of Informatics, University of Oslo)
+* Gregor Gilfillan (GG, Researcher, Norwegian Sequencing Centre, Oslo University Hospital)
