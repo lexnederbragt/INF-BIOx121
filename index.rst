@@ -8,9 +8,11 @@ Course material for the INF-BIOx121 course
 
 **Current edition**  
 
-The 2016 course edition material can be found `here <http://inf-biox121.readthedocs.org/en/2016/>`__.
+The 2017 course edition material can be found `here <http://inf-biox121.readthedocs.org/en/2017/>`__.
 
 **Previous editions**
+
+`2016 <http://inf-biox121.readthedocs.org/en/2016>`__
 
 `2015 <http://inf-biox121.readthedocs.org/en/2015>`__
 
