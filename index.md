@@ -18,8 +18,174 @@ The schedule will appear here early in August and will link to the webpages with
 
 **Room locations:**
 
-Will appear here once allocated.
+<table border="1">
+<thead>
+<tr class="header">
+<th align="left">Day</th>
+<th align="left">Room</th>
+<th align="left">Morning (09:00-12:00)</th>
+<th align="left">Afternoon (13:00-16:00)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Week 34</strong></td>
+</tr>
+<tr class="even">
+<td align="left">Tue. Aug. 22</td>
+<td align="left">Shell</td>
+<td align="left">Unix, R pre course</td>
+<td align="left">Unix, R pre course</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Week 36</strong></td>
+</tr>
+<tr class="even">
+<td align="left">Mon. Sept. 4</td>
+<td align="left">Caml</td>
+<td align="left">Fundamentals of Molecular Biology</td>
+<td align="left">High-throughput sequencing</td>
+</tr>
+<tr class="odd">
+<td align="left">Tue. Sept. 5</td>
+<td align="left">Shell</td>
+<td align="left">High-throughput sequencing</td>
+<td align="left">Library preparation</td>
+</tr>
+<tr class="even">
+<td align="left">Wed. Sept. 6</td>
+<td align="left">Java</td>
+<td align="left">Basic file formats</td>
+<td align="left">Pre-processing of sequence data</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Week 37</strong></td>
+</tr>
+<tr class="even">
+<td align="left">Mon. Sep. 11</td>
+<td align="left">Python</td>
+<td align="left">Algorithms</td>
+<td align="left">Algorithms</td>
+</tr>
+<tr class="odd">
+<td align="left">Tue. Sep. 12</td>
+<td align="left">Python</td>
+<td align="left"><em>De novo</em> assembly</td>
+<td align="left"><em>De novo</em> assembly</td>
+</tr>
+<tr class="even">
+<td align="left">Wed. Sep. 13</td>
+<td align="left">Python</td>
+<td align="left"><em>De novo</em> assembly</td>
+<td align="left"><em>De novo</em> assembly</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Week 38</strong></td>
+</tr>
+<tr class="even">
+<td align="left">Mon. Sep. 18</td>
+<td align="left">Python</td>
+<td align="left">RNA-seq analysis</td>
+<td align="left">RNA-seq analysis</td>
+</tr>
+<tr class="odd">
+<td align="left">Tue. Sep. 19</td>
+<td align="left">Shell</td>
+<td align="left">RNA-seq analysis</td>
+<td align="left">RNA-seq analysis</td>
+</tr>
+<tr class="even">
+<td align="left">Wed. Sep. 20</td>
+<td align="left">Java</td>
+<td align="left">RNA-seq analysis</td>
+<td align="left">RNA-seq analysis</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Week 39</strong></td>
+</tr>
+<tr class="even">
+<td align="left">Mon. Sept. 25</td>
+<td align="left">Python</td>
+<td align="left">Variant calling</td>
+<td align="left">Variant calling</td>
+</tr>
+<tr class="odd">
+<td align="left">Tue. Sep. 26</td>
+<td align="left">Python</td>
+<td align="left">Variant calling</td>
+<td align="left">Variant calling</td>
+</tr>
+<tr class="even">
+<td align="left">Wed. Sep. 27</td>
+<td align="left">Python</td>
+<td align="left">Variant calling</td>
+<td align="left">Variant calling</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Week 40</strong></td>
+</tr>
+<tr class="even">
+<td align="left">No teaching, 'høstferie'</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Week 41</strong></td>
+</tr>
+<tr class="even">
+<td align="left">Mon. Oct. 9</td>
+<td align="left">Python</td>
+<td align="left">Statistical genomics</td>
+<td align="left">Statistical genomics</td>
+</tr>
+<tr class="odd">
+<td align="left">Tue. Oct. 10</td>
+<td align="left">Python</td>
+<td align="left">Statistical genomics</td>
+<td align="left">Statistical genomics</td>
+</tr>
+<tr class="even">
+<td align="left">Wed. Oct. 11</td>
+<td align="left">Python</td>
+<td align="left">Statistical genomics</td>
+<td align="left">Statistical genomics</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Week 42</strong></td>
+</tr>
+<tr class="even">
+<td align="left">home exam</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Week 43</strong></td>
+</tr>
+<tr class="even">
+<td align="left">home exam</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>Week 44 </strong></td>
+</tr>
+<tr class="even">
+<td align="left">Nov</td>
+<td align="left">TBD</td>
+<td align="left">Oral examination of the home exam, 30 minutes</td>
+<td align="left">Oral examination of the home exam, 30 minutes</td>
+</tr>
+<tr class="odd">
+<td align="left">Nov</td>
+<td align="left">TBD</td>
+<td align="left">Written exam</td>
+</tr>
+</tbody>
+</table>
+<p><p>
 
+**Room locations:**
+
+Ole-Johan Dahls hus location: <a href='https://goo.gl/maps/b1qoR'>Google maps</a>
+
+* Shell: room 1456 Informatics building (Ole-Johan Dahls hus)
+* Caml: : room 3438 Informatics building (Ole-Johan Dahls hus)
+* Java: room 2423 Informatics building (Ole-Johan Dahls hus)
+* Python: room 2269 Informatics building (Ole-Johan Dahls hus)
 
 ## Requirements
 
