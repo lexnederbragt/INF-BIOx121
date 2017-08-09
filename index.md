@@ -50,13 +50,13 @@ The schedule will appear here early in August and will link to the webpages with
 <td align="left">Tue. Sept. 5</td>
 <td align="left">Shell</td>
 <td align="left">High-throughput sequencing</td>
-<td align="left">Library preparation</td>
+<td align="left">Basic file formats and Pre-processing of sequence data</td>
 </tr>
 <tr class="even">
 <td align="left">Wed. Sept. 6</td>
 <td align="left">Java</td>
-<td align="left">Basic file formats</td>
-<td align="left">Pre-processing of sequence data</td>
+<td align="left">Algorithms</td>
+<td align="left"></td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>Week 37</strong></td>
@@ -64,8 +64,8 @@ The schedule will appear here early in August and will link to the webpages with
 <tr class="even">
 <td align="left">Mon. Sep. 11</td>
 <td align="left">Python</td>
-<td align="left">Algorithms</td>
-<td align="left">Algorithms</td>
+<td align="left"><em>De novo</em> assembly</td>
+<td align="left"><em>De novo</em> assembly</td>
 </tr>
 <tr class="odd">
 <td align="left">Tue. Sep. 12</td>
