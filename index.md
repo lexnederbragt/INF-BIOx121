@@ -56,7 +56,7 @@ The schedule will appear here early in August and will link to the webpages with
 <td align="left">Wed. Sept. 6</td>
 <td align="left">Java</td>
 <td align="left">Algorithms</td>
-<td align="left"></td>
+<td align="left">Algorithms</td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>Week 37</strong></td>
