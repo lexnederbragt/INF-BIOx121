@@ -54,16 +54,9 @@ The schedule will appear here early in August and will link to the webpages with
 </tr>
 <tr class="even">
 <td align="left">Wed. Sept. 6</td>
-<td align="left">Java</td>
-<td align="left">Pre-processing of sequence data</td>
-<td align="left">-</td>
-</tr>
-<tr class="even">
-<td align="left">Wed. Sept. 6</td>
-<td align="left">KBH 3203</td>
-<td align="left">-</td>
-<td align="left">Algorithms</td>
-</tr>
+<td align="left">Java/ KBH 3203</td>
+<td align="left">Pre-processing of sequence data (Rm: Java)</td>
+<td align="left">Algorithms (Rm: KBH 3203)</td>
 <tr class="odd">
 <td align="left"><strong>Week 37</strong></td>
 </tr>
