@@ -49,14 +49,14 @@ The schedule will appear here early in August and will link to the webpages with
 <tr class="odd">
 <td align="left">Tue. Sept. 5</td>
 <td align="left">Shell/ Prolog</td>
-<td align="left">High-throughput sequencing (Rm: Shell)</td>
-<td align="left">Basic file formats (Rm: Prolog)</td>
+<td align="left">High-throughput sequencing (Rm:Shell)</td>
+<td align="left">Basic file formats (Rm:Prolog)</td>
 </tr>
 <tr class="even">
 <td align="left">Wed. Sept. 6</td>
 <td align="left">Java/ KBH-3203</td>
-<td align="left">Pre-processing of sequence data (Rm: Java)</td>
-<td align="left">Algorithms (Rm: KBH-3203)</td>
+<td align="left">Pre-processing of sequence data (Rm:Java)</td>
+<td align="left">Algorithms (Rm:KBH-3203)</td>
 <tr class="odd">
 <td align="left"><strong>Week 37</strong></td>
 </tr>
@@ -90,8 +90,8 @@ The schedule will appear here early in August and will link to the webpages with
 <tr class="odd">
 <td align="left">Tue. Sep. 19</td>
 <td align="left">Shell/ Postscript</td>
-<td align="left">RNA-seq analysis (Rm: Shell)</td>
-<td align="left">RNA-seq analysis (Rm: Postscript)</td>
+<td align="left">RNA-seq analysis (Rm:Shell)</td>
+<td align="left">RNA-seq analysis (Rm:Postscript)</td>
 </tr>
 <tr class="even">
 <td align="left">Wed. Sep. 20</td>
