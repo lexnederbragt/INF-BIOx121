@@ -63,7 +63,7 @@ The schedule will appear here early in August and will link to the webpages with
 <tr class="even">
 <td align="left">Mon. Sep. 11</td>
 <td align="left">Python</td>
-<td align="left"><em>De novo</em> assembly</td>
+<td align="left">Algorithms</td>
 <td align="left"><em>De novo</em> assembly</td>
 </tr>
 <tr class="odd">
