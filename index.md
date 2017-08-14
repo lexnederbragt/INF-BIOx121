@@ -48,15 +48,21 @@ The schedule will appear here early in August and will link to the webpages with
 </tr>
 <tr class="odd">
 <td align="left">Tue. Sept. 5</td>
-<td align="left">Shell</td>
-<td align="left">High-throughput sequencing</td>
-<td align="left">Basic file formats and Pre-processing of sequence data</td>
+<td align="left">Shell/ Prolog</td>
+<td align="left">High-throughput sequencing (Rm: Shell)</td>
+<td align="left">Basic file formats (Rm: Prolog)</td>
 </tr>
 <tr class="even">
 <td align="left">Wed. Sept. 6</td>
 <td align="left">Java</td>
-<td align="left">Algorithms</td>
+<td align="left">Pre-processing of sequence data</td>
 <td align="left">-</td>
+</tr>
+<tr class="even">
+<td align="left">Wed. Sept. 6</td>
+<td align="left">KBH 3203</td>
+<td align="left">-</td>
+<td align="left">Algorithms</td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>Week 37</strong></td>
@@ -90,9 +96,9 @@ The schedule will appear here early in August and will link to the webpages with
 </tr>
 <tr class="odd">
 <td align="left">Tue. Sep. 19</td>
-<td align="left">Shell</td>
-<td align="left">RNA-seq analysis</td>
-<td align="left">RNA-seq analysis</td>
+<td align="left">Shell/ Postscript</td>
+<td align="left">RNA-seq analysis (Rm: Shell)</td>
+<td align="left">RNA-seq analysis (Rm: Postscript)</td>
 </tr>
 <tr class="even">
 <td align="left">Wed. Sep. 20</td>
@@ -182,10 +188,13 @@ The schedule will appear here early in August and will link to the webpages with
 
 Ole-Johan Dahls hus location: <a href='https://goo.gl/maps/b1qoR'>Google maps</a>
 
-* Shell: room 1456 Informatics building (Ole-Johan Dahls hus)
 * Caml: : room 3438 Informatics building (Ole-Johan Dahls hus)
 * Java: room 2423 Informatics building (Ole-Johan Dahls hus)
 * Python: room 2269 Informatics building (Ole-Johan Dahls hus)
+* Postscript: room 2458 Informatics building (Ole-Johan Dahls hus)
+* Shell: room 1456 Informatics building (Ole-Johan Dahls hus)
+
+Sep 6: Kristine Bonnevies hus location: <a href='https://goo.gl/maps/pLn9cipNMZA2'>Google maps</a>
 
 ## Requirements
 
