@@ -54,9 +54,9 @@ The schedule will appear here early in August and will link to the webpages with
 </tr>
 <tr class="even">
 <td align="left">Wed. Sept. 6</td>
-<td align="left">Java/ KBH 3203</td>
+<td align="left">Java/ KBH-3203</td>
 <td align="left">Pre-processing of sequence data (Rm: Java)</td>
-<td align="left">Algorithms (Rm: KBH 3203)</td>
+<td align="left">Algorithms (Rm: KBH-3203)</td>
 <tr class="odd">
 <td align="left"><strong>Week 37</strong></td>
 </tr>
@@ -181,13 +181,13 @@ The schedule will appear here early in August and will link to the webpages with
 
 Ole-Johan Dahls hus location: <a href='https://goo.gl/maps/b1qoR'>Google maps</a>
 
-* Caml: : room 3438 Informatics building (Ole-Johan Dahls hus)
+* Caml: room 3438 Informatics building (Ole-Johan Dahls hus)
 * Java: room 2423 Informatics building (Ole-Johan Dahls hus)
 * Python: room 2269 Informatics building (Ole-Johan Dahls hus)
 * Postscript: room 2458 Informatics building (Ole-Johan Dahls hus)
 * Shell: room 1456 Informatics building (Ole-Johan Dahls hus)
 
-Sep 6: Kristine Bonnevies hus location: <a href='https://goo.gl/maps/pLn9cipNMZA2'>Google maps</a>
+Sep 6 (KBH-3203): Kristine Bonnevies hus Seminarrom 3203 location: <a href='https://goo.gl/maps/pLn9cipNMZA2'>Google maps</a>
 
 ## Requirements
 
