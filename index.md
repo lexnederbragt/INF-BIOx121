@@ -253,3 +253,4 @@ The exam for this course will be:
 Informatics, University of Oslo)
 * Karin Lagesen (KL, Norwegian Veterinary Institute and Dept. of Informatics, University of Oslo)
 * Gregor Gilfillan (GG, Researcher, Norwegian Sequencing Centre, Oslo University Hospital)
+* Ave Tooming-Klunderud (AT, CEES, Faculty of Mathematics and Natural Sciences, University of Oslo)
