@@ -61,9 +61,3 @@ Detailed schedule:asa
 </tr>
 
 <br><br>
-
-* [Notes of what was discussed, with links](NGS_intro_HTS_analysis.html)
-* [Slides from Lex](https://github.com/lexnederbragt/INF-BIOx121/raw/2016/Intro_HTS/NGS_intro_HTS_analysis_slides.pptx)
-* [Slides on ChIP-seq and stranded RNA-Seq](https://github.com/lexnederbragt/INF-BIOx121/raw/2016/Intro_HTS/ChIP_seq_stranded_RNA.pptx)
-* [Slides on Experimental design](https://github.com/lexnederbragt/INF-BIOx121/raw/2016/Intro_HTS/NGS_experimental_design_slides_2016.pptx)
-* [Content of the etherpad](https://raw.githubusercontent.com/lexnederbragt/INF-BIOx121/2016/Intro_HTS/etherpad.txt)
