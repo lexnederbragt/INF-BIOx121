@@ -2,6 +2,19 @@ Intro to High Throughput Sequencing and applications
 =======================================
 Day 1-3 of the INF-BIO5151/9121 course "High Throughput Sequencing technologies and bioinformatics analysis"
 
+* [Slides from Pre-course](https://github.com/lexnederbragt/INF-BIOx121/blob/2017/Lectures/010_unix_R.pdf)
+
+
+
+
+
+
+
+
+
+
+
+
 Detailed schedule:asa
 
 <table border="1">
