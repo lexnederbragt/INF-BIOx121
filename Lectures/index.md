@@ -1,9 +1,9 @@
-Intro to High Throughput Sequencing and applications
+Unix / R pre-course
 =======================================
-Day 1-3 of the INF-BIO5151/9121 course "High Throughput Sequencing technologies and bioinformatics analysis"
+* [Aug 22: Slides from Pre-course](https://github.com/lexnederbragt/INF-BIOx121/blob/2017/Lectures/010_unix_R.pdf)
 
-* [Slides from Pre-course](https://github.com/lexnederbragt/INF-BIOx121/blob/2017/Lectures/010_unix_R.pdf)
-
+Fundamentals of Molecular biology
+=======================================
 
 
 
