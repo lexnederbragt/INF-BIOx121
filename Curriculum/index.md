@@ -1,6 +1,10 @@
 
 Curriculum
 ============
+[The sequence of sequencers: The history of sequencing DNA](Curriculum/HTS_history.pdf), Heather JM, Chain B, Genomics 2016
+
+[High-Throughput Sequencing Technologies](Curriculum/HTS_technology.pdf), Reuter JA, Spacek DV, Snyder MP, Molecular Cell 2015
+
 
 
 From 2016
