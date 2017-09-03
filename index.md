@@ -224,7 +224,7 @@ If you are struggling with anything of the above, in particular if you have forg
 
 ## Curriculum and suggested reading
 The curriculum consists of a set of scientific articles. The exam will
-contain questions on the material presented in these papers on the material covered during the course. Specific details of the curriculum, and a list of further suggested papers, can be found [here](curriculum/index.md).
+contain questions on the material presented in these papers on the material covered during the course. Specific details of the curriculum, and a list of further suggested papers, can be found [here](Curriculum).
 
 ## Exam
 
