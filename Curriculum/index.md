@@ -3,7 +3,7 @@ Curriculum
 ============
 [The sequence of sequencers: The history of sequencing DNA](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Curriculum/HTS_history.pdf), Heather JM, Chain B, Genomics 2016
 
-[High-Throughput Sequencing Technologies](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Curriculu/HTS_technology.pdf), Reuter JA, Spacek DV, Snyder MP, Molecular Cell 2015
+[High-Throughput Sequencing Technologies](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Curriculum/HTS_technology.pdf), Reuter JA, Spacek DV, Snyder MP, Molecular Cell 2015
 
 
 
