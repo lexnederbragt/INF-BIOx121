@@ -1,10 +1,13 @@
 
 Curriculum
 ============
-[The sequence of sequencers: The history of sequencing DNA](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Curriculum/HTS_history.pdf), Heather JM, Chain B, Genomics 2016
+[The sequence of sequencers: The history of sequencing DNA](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Curriculum/HTS_history.pdf), Heather JM _et. al._, Genomics 2016
 
-[High-Throughput Sequencing Technologies](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Curriculum/HTS_technology.pdf), Reuter JA, Spacek DV, Snyder MP, Molecular Cell 2015
+[High-Throughput Sequencing Technologies](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Curriculum/HTS_technology.pdf), Reuter JA _et. al._, Molecular Cell 2015
 
+[Sequencing depth and coverage: key considerations in genomic analyses](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Curriculum/HTS_Coverage_Depth.pdf), Sims D _et. al._, Nature Reviews 2014
+
+[RNA-seq differential expression studies: more sequence or more replication?](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Curriculum/HTS_DE.pdf), Liu Y _et. al._, Bioinformatics 2014
 
 
 From 2016
