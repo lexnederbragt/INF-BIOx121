@@ -1,10 +1,9 @@
 
-Curriculum
-============
+# Curriculum
 
-Molecular Biology : Refer to Wikipedia for basic information
+## Molecular Biology : Refer to Wikipedia for basic information
 
-High throughput sequencing (HTS)
+## High throughput sequencing (HTS)
 
 [The sequence of sequencers: The history of sequencing DNA](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Curriculum/HTS_history.pdf), Heather JM _et. al._, Genomics 2016
 
