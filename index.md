@@ -192,6 +192,7 @@ Ole-Johan Dahls hus location: <a href='https://goo.gl/maps/b1qoR'>Google maps</a
 * Java: room 2423 Informatics building (Ole-Johan Dahls hus)
 * Python: room 2269 Informatics building (Ole-Johan Dahls hus)
 * Postscript: room 2458 Informatics building (Ole-Johan Dahls hus)
+* Prolog: room 2465 Informatics building (Ole-Johan Dahls hus)
 * Shell: room 1456 Informatics building (Ole-Johan Dahls hus)
 
 Sep 6 (KBH-3203): Kristine Bonnevies hus Seminarrom 3203 location: <a href='https://goo.gl/maps/pLn9cipNMZA2'>Google maps</a>
