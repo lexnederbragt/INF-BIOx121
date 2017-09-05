@@ -14,7 +14,7 @@
 * [Sep 5 : Slides from HTS - PacBio](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/Mod1_Day2_2_PacBio.pdf)
 * [Sep 5 : Slides from HTS - Basic file formats](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/Mod1_Day2_3_BasicFileFormats.pdf)
 
-###### De novo genome assembly
+###### *De novo* genome assembly
 
 ###### RNA-seq analysis
 
