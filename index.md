@@ -8,6 +8,10 @@ Note: for previous course editions, check out [this website](http://inf-biox121.
 [Lecture slides](http://inf-biox121.readthedocs.io/en/2017/Lectures/)
 This page is updated after each lecture/Module.
 
+## Link to VM
+
+http://vdi-apcon-t01.uio.no/
+
 ## Introduction
 
 This is the webpage for the fall 2017 edition of the credited courses [**INF-BIO5121**](http://www.uio.no/studier/emner/matnat/ifi/INF-BIO5121) (master level) and [**INF-BIO9121**](http://www.uio.no/studier/emner/matnat/ifi/INF-BIO9121/) (Ph.D. level) offered by the Department of Informatics and the Department of Biosciences at the University of Oslo (UiO). Students taking the course for credit should register through UiO StudentWeb. Non UiO students are welcome and should check [this website](http://www.uio.no/english/studies/admission/).
