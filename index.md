@@ -3,8 +3,8 @@ High Throughput Sequencing technologies and bioinformatics analysis fall 2017
 
 Note: for previous course editions, check out [this website](http://inf-biox121.readthedocs.io).
 
-## Lecutre slides 
-
+Lecutre slides 
+-----------------
 [Lecture slides](http://inf-biox121.readthedocs.io/en/2017/Lectures/)
 This page is updated after each lecture/Module.
 
