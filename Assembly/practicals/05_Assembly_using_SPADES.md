@@ -1,7 +1,10 @@
 Assembly using SPADES
 =====================
 
-Spades was written as an assembly program for bacterial genomes, from regular, as well as from whole-genome amplified samples. It performed very well in the GAGE-B competition, see [http://ccb.jhu.edu/gage_b/](http://ccb.jhu.edu/gage_b/). SPAdes also works well, sometimes even best, when given high-coverage datasets.
+Spades was written as an assembly program for bacterial genomes, from regular, 
+as well as from whole-genome amplified samples. It performed very well in the 
+GAGE-B competition, see [http://ccb.jhu.edu/gage_b/](http://ccb.jhu.edu/gage_b/). 
+SPAdes also works well, sometimes even best, when given high-coverage datasets.
 
 Before assembly, SPADES will error-correct the reads.
 
@@ -10,9 +13,16 @@ Before assembly, SPADES will error-correct the reads.
 Spades can be used with paired end and mate pair data:
 
 * The `--careful` flag is used to reduce the number of mismatches and short indels. 
-* For each read file, a flag is used to indicate whether it is from a paired end (`--pe`) or mate (`--mp`) pair dataset, followed by a number for the dataset, and a number for read1 or read2. For example: `--pe1-1` and `--pe1-2` indicate pared end data set 1, read1 and read2, respectively.
+* For each read file, a flag is used to indicate whether it is from a paired 
+end (`--pe`) or mate (`--mp`) pair dataset, followed by a number for the dataset, 
+and a number for read1 or read2. For example: `--pe1-1` and `--pe1-2` indicate 
+paired end data set 1, read1 and read2, respectively.
 * Similarly, use `--mp-1-1` and `--mp1-2` for the mate pair files. 
-* Spades assumes mate pairs are in the orientation as they are in the original files coming from the Illumina instrument: <-- and --> ('outie' orientation, or 'rf' for reverse-forward). Our reads are in the --> and <-- ('innie', 'fr' for forward-reverse) orientation, so we add the `--mp1-fr` flag to let SPADES know about this
+* Spades assumes mate pairs are in the orientation as they are in the original 
+files coming from the Illumina instrument: <-- and --> ('outie' orientation, or 
+'rf' for reverse-forward). Our reads are in the --> and <-- ('innie', 'fr' for 
+forward-reverse) orientation, so we add the `--mp1-fr` flag to let SPADES know 
+about this.
   
 Other parameters:
 

@@ -5,9 +5,12 @@ Assembly using velvet
 
 ### Assembling short-reads with Velvet
 
-We will use Velvet to assemble Illumina reads on their own. Velvet uses the *de Bruijn graph* approach. 
+We will use Velvet to assemble Illumina reads on their own. Velvet uses the *de 
+Bruijn graph* approach. 
 
-We will assemble *E. coli K12* strain MG1655 which was sequenced on an Illumina MiSeq. The instrument read 150 bases from each direction.
+
+We will assemble *E. coli K12* strain MG1655 which was sequenced on an Illumina 
+MiSeq. The instrument read 150 bases from each direction.
 
 We wil first use a down-sampled set of paired end reads only: 
 
@@ -16,18 +19,18 @@ We wil first use a down-sampled set of paired end reads only:
 
 ### Building the Velvet Index File
 
-Velvet requires an index file to be built before the assembly takes place. We must choose a *k-* mer value for building the index. Longer *k-* mers result in a more stringent assembly, at the expense of coverage. There is no definitive value of *k* for any given project. However, there are several absolute rules:
+Velvet requires an index file to be built before the assembly takes place. We 
+must choose a *k-* mer value for building the index. Longer *k-* mers result in 
+a more stringent assembly, at the expense of coverage. There is no definitive 
+value of *k* for any given project. However, there are several absolute rules:
 
 * *k* must be less than the read length
 * it should be an odd number 
 
-Firstly we are going to run Velvet in single-end mode, *ignoring the pairing information*. Later on we will incorporate this information.
+Firstly we are going to run Velvet in single-end mode, *ignoring the pairing 
+information*. Later on we will incorporate this information.
 
 First, we need to make sure we can use velvet:
-
-<!---
-TODO: figure out if they should work on home 
--->
 
 First, 'go home':
 
@@ -52,7 +55,8 @@ cd velvet
 
 ### A first assembly
 
-Find a value of *k* (between 21 and 113) to start with, and record your choice [in this google spreadsheet](https://drive.google.com/open?id=11HNLfErxdkoEAcC2Q4gIfjeAV89Q51oDFa0YI8BKXJY) . Run `velveth` to build the hash index (see below).
+Find a value of *k* (between 21 and 113) to start with, and record your 
+choice [in this google spreadsheet](https://drive.google.com/open?id=11HNLfErxdkoEAcC2Q4gIfjeAV89Q51oDFa0YI8BKXJY) . Run `velveth` to build the hash index (see below).
 
 `velveth` options:
 
@@ -74,9 +78,12 @@ velveth ASM_NAME VALUE_OF_K \
 
 * Change `ASM_NAME` to a directory name of your choosing
 * Change `VALUE_OF_K` to the value you have picked
-* The command is split over several lines by adding a space, and a `\` (backslash) to each line. This trick makes long commands more readable. If you want, you can write the whole command on one line instead.
+* The command is split over several lines by adding a space, and a `\` 
+(backslash) to each line. This trick makes long commands more readable. If you 
+want, you can write the whole command on one line instead.
 
-After `velveth` is finished, use `ls` to look in the new folder that has the name you chose. You should see the following files:
+After `velveth` is finished, use `ls` to look in the new folder that has the 
+name you chose. You should see the following files:
 
 ```
 Log
@@ -85,7 +92,9 @@ Sequences
 ```
 
 
-The '`Log`' file has a useful reminder of what commands you typed to get this assembly result, for reproducing results later on. '`Sequences`' contains the sequences we put in, and '`Roadmaps`' contains the index you just created.
+The '`Log`' file has a useful reminder of what commands you typed to get this 
+assembly result, for reproducing results later on. '`Sequences`' contains the 
+sequences we put in, and '`Roadmaps`' contains the index you just created.
 
 Now we will run the assembly with default parameters:
 
@@ -97,7 +106,10 @@ Velvet will end with a text like this:
 
 `Final graph has ... nodes and n50 of ..., max ..., total ..., using .../... reads`
 
-The number of nodes represents the number of nodes in the graph, which (more or less) is the number of contigs. Velvet reports its N50 (as well as everything else) in 'kmer' space. The conversion to 'basespace' is as simple as adding k-1 to the reported length.
+The number of nodes represents the number of nodes in the graph, which (more or 
+less) is the number of contigs. Velvet reports its N50 (as well as everything 
+else) in 'kmer' space. The conversion to 'basespace' is as simple as adding k-1 
+to the reported length.
 
 Look again at the folder `ASM_NAME`, you should see the following extra files:
 
@@ -124,34 +136,48 @@ The important files are:
 Log your results [in this google spreadsheet](https://drive.google.com/open?id=11HNLfErxdkoEAcC2Q4gIfjeAV89Q51oDFa0YI8BKXJY)
 
 
-**We will discuss the results together and determine *the optimal* k-mer for this dataset.**
+**We will discuss the results together and determine *the optimal* k-mer for 
+this dataset.**
 
-**Advanced tip:** You can also use VelvetOptimiser to automate this process of selecting appropriate *k*-mer values. VelvetOptimizer is included with the Velvet installation.
+**Advanced tip:** You can also use VelvetOptimiser to automate this process of 
+selecting appropriate *k*-mer values. VelvetOptimizer is included with the Velvet installation.
 
-Now run `velveth` and `velvetg` for the kmer size determined by the whole class. Use this kmer from now on!
+Now run `velveth` and `velvetg` for the kmer size determined by the whole class. 
+Use this kmer from now on!
 
 ### Estimating and setting `exp_cov`
 
-Much better assemblies are produced if Velvet understands the expected coverage for unique regions of your genome. This allows it to try and resolve repeats. The data to determine this is in the `stats.txt` file. The full description of this file is in the Velvet Manual, at [http://www.ebi.ac.uk/~zerbino/velvet/Manual.pdf](http://www.ebi.ac.uk/~zerbino/velvet/Manual.pdf).
+Much better assemblies are produced if Velvet understands the expected coverage 
+for unique regions of your genome. This allows it to try and resolve repeats. 
+The data to determine this is in the `stats.txt` file. The full description of 
+this file is in the Velvet Manual, at [http://www.ebi.ac.uk/~zerbino/velvet/Manual.pdf](http://www.ebi.ac.uk/~zerbino/velvet/Manual.pdf).
 
-A so-called Jupyter notebook has been provided to plot the distribution of the coverage of the nodes. 
+A so-called Jupyter notebook has been provided to plot the distribution of the 
+coverage of the nodes. 
 
-<!---
-TODO: test the notebook
+To run this notebook, we first have to activate the right version of python:
+
+```
+scl enable python33 bash
+
+```
+
+This will cause your prompt to change. This is expected and ok.
+
+Then, copy the notebook to the velvet directory, and run it:
+
+
+```
+cp /share/inf-biox121/data/assembly/node_coverage.ipynb
+ipython notebook 
+
+```
+
+<!--
+TODO: fix text re how to run
+TODO: fix notebook
 -->
-* start the notebook:
 
-```
-python notebook node_coverage.ipynb
-
-```
-
-OR
-
-```
-ipython notebook node_coverage.ipynb
-
-```
 
 * After a little while, your web browser will start with a new tab with the notebook in it
 * follow the instructions in the notebook
