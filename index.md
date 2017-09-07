@@ -181,8 +181,8 @@ The schedule will appear here early in August and will link to the webpages with
 </tr>
 <tr class="odd">
 <td align="left">Nov 2</td>
-<td align="left">TBD</td>
-<td align="left">Written exam</td>
+<td align="left">Silurveien 2 sal 3D</td>
+<td align="left">Written exam (09:00-11:00)</td>
 </tr>
 </tbody>
 </table>
