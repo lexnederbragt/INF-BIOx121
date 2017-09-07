@@ -180,7 +180,7 @@ The schedule will appear here early in August and will link to the webpages with
 <td align="left">Oral examination of the home exam, 30 minutes</td>
 </tr>
 <tr class="odd">
-<td align="left">Nov</td>
+<td align="left">Nov 2</td>
 <td align="left">TBD</td>
 <td align="left">Written exam</td>
 </tr>
