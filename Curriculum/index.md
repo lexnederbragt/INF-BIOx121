@@ -13,7 +13,7 @@ Refer to Wikipedia for basic information
 
 [RNA-seq differential expression studies: more sequence or more replication?](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Curriculum/HTS_DE.pdf), Liu Y _et. al._, Bioinformatics 2014
 
-##### _de novo_ genome assembly
+##### _De novo_ genome assembly
 
 ##### RNA-seq analysis
 [A survey of best practices for RNA-seq data analysis](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Curriculum/RNAseq_BestPractice.pdf), Conesa A _et. al._, Genome Biology 2016 
