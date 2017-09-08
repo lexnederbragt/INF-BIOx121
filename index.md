@@ -173,18 +173,18 @@ The schedule will appear here early in August and will link to the webpages with
 <tr class="odd">
 <td align="left"><strong>Week 44 </strong></td>
 </tr>
-<tr class="even">
-<td align="left">Nov</td>
-<td align="left">TBD</td>
-<td align="left">Oral examination of the home exam, 30 minutes</td>
-<td align="left">Oral examination of the home exam, 30 minutes</td>
-</tr>
 <tr class="odd">
 <td align="left">Nov 2</td>
 <td align="left">Silurveien 2 sal 3D</td>
 <td align="left">Written exam (09:00-11:00)</td>
 </tr>
-</tbody>
+<tr class="even">
+<td align="left">Nov 3</td>
+<td align="left">TBD</td>
+<td align="left">Oral examination of the home exam, 30 minutes</td>
+<td align="left">Oral examination of the home exam, 30 minutes</td>
+</tr>
+ </tbody>
 </table>
 <p><p>
 
