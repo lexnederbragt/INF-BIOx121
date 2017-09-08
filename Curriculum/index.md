@@ -13,6 +13,22 @@ Refer to Wikipedia for basic information
 
 [RNA-seq differential expression studies: more sequence or more replication?](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Curriculum/HTS_DE.pdf), Liu Y _et. al._, Bioinformatics 2014
 
+##### _de novo_ genome assembly
+
+##### RNA-seq analysis
+[A survey of best practices for RNA-seq data analysis](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Curriculum/RNAseq_BestPractice.pdf), Conesa A _et. al._, Genome Biology 2016 
+
+[Differential gene and transcript expression analysis of RNA-seq experiments with TopHat and Cufflinks](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Curriculum/RNAseq_Tophat.pdf), Trapnell C _et. al._, Nature Protocol 2014 
+
+[De novo transcript sequence reconstruction from RNA-seq using the Trinity platform for reference generation and analysis](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Curriculum/RNAseq_Trinity.pdf), Hass BJ _et. al._, Nature Protocol 2013
+
+[Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Curriculum/RNAseq_DESeq2.pdf), Love MI _et. al._, Genome Biology 2014 
+
+[edgeR: a Bioconductor package for differential expression analysis of digital gene expression data](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Curriculum/RNAseq_edgeR.pdf), Robinson MD _et. al._, Bioinformatics 2010 
+
+##### Variant Calling
+
+##### Statistical genomics
 
 From 2016
 ============
