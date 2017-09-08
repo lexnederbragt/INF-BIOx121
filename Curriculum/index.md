@@ -30,6 +30,8 @@ Refer to Wikipedia for basic information
 
 ##### Statistical genomics
 
+
+
 From 2016
 ============
 [Coming of age: ten years of next-generation sequencing technologies](https://wiki.uio.no/projects/clsi/images/6/6f/Goodwin2016.pdf), Goodwin _et. al._, Nature Reviews Genetics 2016
