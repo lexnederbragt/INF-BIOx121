@@ -27,7 +27,7 @@ value of *k* for any given project. However, there are several absolute rules:
 * *k* must be less than the read length
 * it should be an odd number 
 
-Firstly we are going to run Velvet in single-end mode, *ignoring the pairing 
+First we are going to run Velvet in single-end mode, *ignoring the pairing 
 information*. Later on we will incorporate this information.
 
 First, we need to make sure we can use velvet:
@@ -128,8 +128,8 @@ The important files are:
 **Questions**
 
 * What k-mer did you use?
-* What is the N50 of the assembly?
-* What is the size of the largest contig?
+* What is the N50 of the assembly? (in basespace, not in k-mer space)
+* What is the size of the largest contig? (in basespace, not in k-mer space)
 * How many contigs are there in the `contigs.fa` file? Use `grep -c NODE contigs.fa`. Is this the same number as velvet reported?
 
 
@@ -142,6 +142,8 @@ this dataset.**
 **Advanced tip:** You can also use VelvetOptimiser to automate this process of 
 selecting appropriate *k*-mer values. VelvetOptimizer is included with the Velvet installation.
 
+FROM NOW ON: keep track of the values that velvet reports on your own!
+
 Now run `velveth` and `velvetg` for the kmer size determined by the whole class. 
 Use this kmer from now on!
 
@@ -150,7 +152,7 @@ Use this kmer from now on!
 Much better assemblies are produced if Velvet understands the expected coverage 
 for unique regions of your genome. This allows it to try and resolve repeats. 
 The data to determine this is in the `stats.txt` file. The full description of 
-this file is in the Velvet Manual, at [http://www.ebi.ac.uk/~zerbino/velvet/Manual.pdf](http://www.ebi.ac.uk/~zerbino/velvet/Manual.pdf).
+this file is [in the Velvet Manual](http://www.ebi.ac.uk/~zerbino/velvet/Manual.pdf).
 
 A so-called Jupyter notebook has been provided to plot the distribution of the 
 coverage of the nodes. 
@@ -166,21 +168,16 @@ This will cause your prompt to change. This is expected and ok.
 
 Then, copy the notebook to the velvet directory, and run it:
 
-
 ```
-cp /share/inf-biox121/data/assembly/node_coverage.ipynb
+cp /share/inf-biox121/data/assembly/node_coverage.ipynb .
 ipython notebook 
 
 ```
 
-<!--
-TODO: fix text re how to run
-TODO: fix notebook
--->
-
-
-* After a little while, your web browser will start with a new tab with the notebook in it
-* follow the instructions in the notebook
+* After a little while, you will see a link in your window, copy it into your
+browser
+* Click on the notebook name to open it
+* Follow the instructions in the notebook
 
 **Question:**
 
@@ -191,8 +188,11 @@ When you are done with the Jupyter notebook:
 * save the notebook
 * close the browser windows
 * in the terminal where you started Jupyter notebook, click ctrl-c and confirm.
+* type in exit, to get the normal prompt back
 
-Now run velvet again, supplying the value for `exp_cov` (k-mer coverage) corresponding to your answer:
+Now run velvet again, supplying the value for `exp_cov` (k-mer coverage) 
+corresponding to your answer:
+
 
 ```
 velvetg ASM_NAME -exp_cov PEAK_K_MER_COVERAGE
@@ -242,7 +242,7 @@ Paired end information contributes additional information to the assembly,
 allowing contigs to be scaffolded. We will first re-index your reads telling 
 Velvet to use paired-end information, by using `-shortPaired` instead 
 of `-short` for `velveth`. Then, re-run velvetg using the best value 
-of `k`, `exp_cov` and `cov_cutoff` from the previous step.
+of `k` from the previous step.
 
 **!!! IMPORTANT Pick a new name for your assembly !!!**
 
@@ -270,7 +270,6 @@ for the paired library.
 The sequences in the `contigs.fa` file are actually scaffolds.  
 Use the `assemblathon_stats.pl` script to generate metrics for this, and all 
 following assemblies.
-
 
 
 **The assemblathon stats script**  
@@ -347,7 +346,9 @@ that column 2 ($2, the length) is at least 1000 and column 6 ($6, coverage) at
 least 60. If this is the case, awk will print the entire line. See 
 [http://bit.ly/QjbWr7](http://bit.ly/QjbWr7) for more information on awk.
 
-Find the contig with the highest coverage in the `contigs.fa` file. Perform a BLAST search using NCBI. 
+Find the contig with the highest coverage in the `contigs.fa` file. Perform a 
+BLAST search using NCBI. Look at the `Graphics` results to see what is in the
+region of the results that you got.
 
 **Question:**
 
@@ -365,7 +366,10 @@ the correct orientation.
 
 **!!! IMPORTANT Pick a new name for your assembly !!!**
 
-We will use `-shortPaired` for the paired end library reads as before, and add `-shortPaired2` for the mate pairs. Also, to make sure we all end up having the same assembly, the kmer size is given:
+We will use `-shortPaired` for the paired end library reads as before, and 
+add `-shortPaired2` for the mate pairs. Also, to make sure we all end up 
+having the same assembly, the kmer size is given. Make sure you are in the
+`velvet` directory before running the command.
 
 ```
 velveth ASM_NAME3 81 \  
@@ -377,7 +381,8 @@ velveth ASM_NAME3 81 \
 /share/inf-biox121/data/assembly/Nextera_MP_R2_50x.fastq  
 ```
 
-We use auto values for velvetg because the addition of new reads will change the genome coverage. The assembly command then becomes:
+We use auto values for velvetg because the addition of new reads will change 
+the genome coverage. The assembly command then becomes:
 
 ```
 velvetg ASM_NAME3 -cov_cutoff auto -exp_cov auto
@@ -399,7 +404,7 @@ If this is the case for your data, add the `-shortMatePaired2 yes` to let
 Velvet know it.
 
 Make a copy of the contigs file and call it `velvet_pe+mp.fa`.  
-NOTE We will use this assembly for several exercises later on,
+NOTE We will use this assembly for several exercises later on
 
 .. toctree::
    :maxdepth: 1
