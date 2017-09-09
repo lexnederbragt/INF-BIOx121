@@ -65,7 +65,7 @@ spades.py -t 3 -k 21,33,55,77 --careful --memory 30 \
 --pe1-2 /share/inf-biox121/data/assembly/MiSeq_Ecoli_MG1655_110721_R2.fastq \
 --mp1-1 /share/inf-biox121/data/assembly/Nextera_MP_R1_50x.fastq \
 --mp1-2 /share/inf-biox121/data/assembly/Nextera_MP_R2_50x.fastq \
---mp1-fr -o ASM_NAME >spades1.out 2>&1
+--mp1-fr -o spades_pe_mp >spades_pe_mp.out 2>&1
 ```
 
 **Option 2: paired end Illumina with MinION data:**
@@ -80,7 +80,7 @@ spades.py -t 3 --careful --memory 30 \
 --pe1-1 /share/inf-biox121/data/assembly/MiSeq_Ecoli_MG1655_110721_R1.fastq \
 --pe1-2 /share/inf-biox121/data/assembly/MiSeq_Ecoli_MG1655_110721_R2.fastq \
 --nanopore /share/inf-biox121/data/assembly/MAP006-1_2D_pass.fastq \
--o ASM_NAME >spades.out 2>&1
+-o spades_mi >spades_mi.out 2>&1
 ```
 
 **Option 3: paired end Illumina with PacBio data:**
@@ -92,7 +92,7 @@ spades.py -t 3 --careful --memory 30 \
 --pe1-1 /share/inf-biox121/data/assembly/MiSeq_Ecoli_MG1655_110721_R1.fastq \
 --pe1-2 /share/inf-biox121/data/assembly/MiSeq_Ecoli_MG1655_110721_R2.fastq \
 --pacbio /data/assembly/pacbio/Analysis_Results/m141013_011508_filtered_subreads_30x.fastq \
--o ASM_NAME >spades.out 2>&1
+-o spades_pb >spades_pb.out 2>&1
 ```
 
 **TIP**: use this command to track the output as it is added to the file. Use `ctrl-c` to cancel.
