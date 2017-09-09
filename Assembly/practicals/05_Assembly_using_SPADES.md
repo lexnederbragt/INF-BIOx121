@@ -60,7 +60,7 @@ Choose **ONE** of the three below to run:
 For this assembly, we'll tell SPADES what range of k-mers to use.
 
 ```
-spades.py -t 2 -k 21,33,55,77 --careful --memory 30 \
+spades.py -t 3 -k 21,33,55,77 --careful --memory 30 \
 --pe1-1 /share/inf-biox121/data/assembly/MiSeq_Ecoli_MG1655_110721_R1.fastq \
 --pe1-2 /share/inf-biox121/data/assembly/MiSeq_Ecoli_MG1655_110721_R2.fastq \
 --mp1-1 /share/inf-biox121/data/assembly/Nextera_MP_R1_50x.fastq \
@@ -76,7 +76,7 @@ the *E. coli* genome. We'll let SPADES found out itself what range of kmers
 to use.
 
 ```
-spades.py -t 2 --careful --memory 33 \
+spades.py -t 3 --careful --memory 30 \
 --pe1-1 /share/inf-biox121/data/assembly/MiSeq_Ecoli_MG1655_110721_R1.fastq \
 --pe1-2 /share/inf-biox121/data/assembly/MiSeq_Ecoli_MG1655_110721_R2.fastq \
 --nanopore /share/inf-biox121/data/assembly/MAP006-1_2D_pass.fastq \
@@ -88,7 +88,7 @@ spades.py -t 2 --careful --memory 33 \
 The PacBio data consists of raw, uncorrected filtered subreads sequenced with the P6C4 chemistry on the RS II, with average length 9 Kbp, giving around 30x coverage of the *E. coli* genome. We'll let SPADES found out itself what range of kmers to use.
 
 ```
-spades.py -t 2 --careful --memory 30 \
+spades.py -t 3 --careful --memory 30 \
 --pe1-1 /share/inf-biox121/data/assembly/MiSeq_Ecoli_MG1655_110721_R1.fastq \
 --pe1-2 /share/inf-biox121/data/assembly/MiSeq_Ecoli_MG1655_110721_R2.fastq \
 --pacbio /data/assembly/pacbio/Analysis_Results/m141013_011508_filtered_subreads_30x.fastq \
