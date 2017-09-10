@@ -11,7 +11,9 @@ Schedule for the Assembly module
 * lecture: "Principles and problems of *de novo* genome assembly"
 * pen-and-paper: draw some De Bruijn graphs
 * tutorial: exploring De Bruijn graphs in interactive Jupyter Notebook
-* Lunch break
+
+## Day 2
+
 * short lecture: *de novo* assembly using velvet
 * tutorial: assembly with velvet
   * test singleton reads with k between 21 and 113, log N50 in google spreadsheet
@@ -26,36 +28,36 @@ Schedule for the Assembly module
   * finding repeats by exploring the `stats.txt` file
   * add mate pair library and redo the assembly (all had started this at 16:00)
   * discuss assembly and BLAST results in plenum
-* starting overnight assemblies in groups
+* starting over lunch assemblies in groups
   * spades illumina paired end + mate pair
   * spades illumina paired end + MinION reads
   * spades illumina paired end + PacBio reads
   * Canu with only PacBio reads
   * Canu with only MinION reads
-
-## Day 2
-
+* Lunch
+* velvet cont
 * principles behind SPADES, Canu and miniasm+racon
 * basic metrics of the assemblies performed so far
   * log metrics to google spreadsheet, one per group
-* mapping reads back to the velvet assembly with `bwa`
-* visualisation of mapped reads in IGV
-* lunch
-* assembly evaluation and improvement using REAPR on the velvet paired end plus mate pair assembly
-* continue overnight assemblies
+* overnight assemblies
   * miniasm with only PacBio reads
+    * racon on PacBio assembly
   * miniasm with only MinION reads
-  * racon round 1 on miniasm assemblies
-  * quiver on canu assemblies
-
+    * racon on MinIon assembly
+  * quiver part 1 on canu assemblies
+  
 ## Day 3
-
-* racon round 2 on miniasm assemblies
-* reapr on the overnight assemblies from day 1
-* compare assemblies
-* comparing assemblies to the reference using Quast: velvet k81 PE + MP assembly
-* lecture: "Assembly, before and after" - skipped
+ 
+* check on overnight assemblies
+* quiver part 2 on pacbio asm
+! collect info on asms
+* comparing assemblies to the reference using Quast: velvet k81 PE + MP assembly  
+* mapping reads back to the velvet assembly with `bwa`
 * lunch
+* visualisation of mapped reads in IGV
+* assembly evaluation and improvement using REAPR on the velvet paired end plus mate pair assembly
+* IF time, map other assemblies, and do reapr with those.
+* compare assemblies
 * start quast on all other assemblies
 * Mentimeter multiple choice question: Which assembly is best?
 * demo:
