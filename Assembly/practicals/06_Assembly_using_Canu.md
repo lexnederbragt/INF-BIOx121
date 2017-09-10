@@ -76,7 +76,7 @@ your assembly is ready for `reapr`.
 Use *all* available reads from the P6C4 run, i.e. 155 x coverage:
 
 ```
-/data/assembly/pacbio/Analysis_Results/m141013_011508_sherri_c100709962550000001823135904221533_s1_p0.filtered_subreads.fastq
+/share/inf-biox121/data/assembly/m141013_011508_sherri_c100709962550000001823135904221533_s1_p0.filtered_subreads.fastq
 ```
 Ran as for the MinIOn data, but use the `-pacbio-raw` for the PacBio reads.
 
