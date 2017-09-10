@@ -95,7 +95,8 @@ spades.py -t 3 --careful --memory 30 \
 -o spades_pb >spades_pb.out 2>&1
 ```
 
-**TIP**: use this command to track the output as it is added to the file. Use `ctrl-c` to cancel.
+**TIP**: use this command to track the output as it is added to the file. 
+Use `ctrl-c` to cancel.
 
 ```
 tail -f spades.out
@@ -109,19 +110,31 @@ tail -f spades.out
 You can have a look at the lengths of the largest sequence(s) with
 
 ```
-fasta_length contigs.fasta |sort -nr |less
+fasta_length scaffolds.fasta |sort -nr |less
 ```
 
 ### Re-using error-corrected reads
 
-Once you have run SPADES, you will have files with the error-corrected reads in `spades_folder/corrected/`. There will be one file for each input file, and one additional one for unpaired reads (where during correction, one of the pairs was removed from the dataset). Instead of running the full SPADES pipeline for your next assembly, you could add the error-corrected reads from the previous assembly. This will save time by skipping the error-correction step. I suggest to not include the files with unpaired reads.
+Once you have run SPADES, you will have files with the error-corrected reads 
+in `spades_folder/corrected/`. There will be one file for each input file, 
+and one additional one for unpaired reads (where during correction, one of 
+the pairs was removed from the dataset). Instead of running the full SPADES 
+pipeline for your next assembly, you could add the error-corrected reads from 
+the previous assembly. This will save time by skipping the error-correction 
+step. I suggest to not include the files with unpaired reads.
 
-Error-corrected read files are compressed, but SPADES will accept them as such (no need to uncompress).
+Error-corrected read files are compressed, but SPADES will accept them as 
+such (no need to uncompress).
 
 Changes to the command line when using error-corrected reads:
 
 * point to the error-corrected read files instead of the raw read files
 * add the `--only-assembler` flag to skip correction
 
+<!---
+
 ### Next steps
-As for the previous assemblies, you could map reads back to the assembly, run reapr and visualise in the browser.
+As for the previous assemblies, you could map reads back to the assembly, 
+run reapr and visualise in the browser.
+
+-->
