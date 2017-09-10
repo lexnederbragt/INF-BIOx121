@@ -45,6 +45,7 @@ genomeSize=4.6m \
 * `-nanopore-raw` speaks for itself
 * the assembly file will be called `canu_MAP006-1_2D.contigs.fasta`
 
+TODO
 ### REAPR on the results
 
 If you want to run `reapr` on the canu output, there is one catch. We'll check 
@@ -92,10 +93,11 @@ which lists all input files:
 
 
 ```
-find /share/inf-biox121/data/assembly/pacbio/ -name "*.h5" >input.fofn
+find /share/inf-biox121/data/assembly/ -name "*.h5" >input.fofn
 ```
 
-We also need to set up the environment to be able to run the correct programs (`pbalign` and `quiver`), simple type:
+We also need to set up the environment to be able to run the correct programs 
+(`pbalign` and `quiver`), simply type:
 
 ```
 smrtshell
@@ -103,20 +105,24 @@ smrtshell
 
 There will some warnings but please ignore these.
 
+Please note, in the command below, use the assembly file you got from the `canu`
+run as the ASSEMBLY.FASTA file.
+
 Now we do the mapping using `pbalign`:
 ```
 pbalign \
 --tmpDir ./ \
---nproc 2 \
+--nproc 3 \
 input.fofn \
-assembly.fasta canu_quiver.cmp.h5 \
+ASSEMBLY.FASTA canu_quiver.cmp.h5 \
 --forQuiver
 ```
+This last command is likely to run a couple of hours.
 
 For the next step, we need to index the assembly with `samtools faidx`:
 
 ```        
-samtools faidx assembly.fasta
+samtools faidx ASSEMBLY.FASTA
 ```
 
 Now we can run `quiver`:
@@ -128,4 +134,5 @@ quiver -j 2 canu_quiver.cmp.h5 \
 -o canu_quiver.consensus.fasta
 ```
 
-Our 'new' assembly is in the `consensus.fasta` file, while the `variants.gff` file is a list of changes quiver made to the original assembly (in `gff` format).
+Our 'new' assembly is in the `consensus.fasta` file, while the `variants.gff` 
+file is a list of changes quiver made to the original assembly (in `gff` format).
