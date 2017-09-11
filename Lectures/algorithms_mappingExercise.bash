@@ -104,7 +104,7 @@ cd ..
 # Locate a sample in the 1000 genomes project with fastq data to map to our reference genome
 # These are files from a whole genome sequencing of a human samples (you can find more details at http://www.internationalgenome.org/data-portal/sample/HG00513)
 # wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR016/ERR016118/ERR016118_1.fastq.gz
-# wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR016/ERR016118/ERR016118_1.fastq.gz
+# wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR016/ERR016118/ERR016118_2.fastq.gz
 
 
 # Take a look at the content of these fastq files (which should be familiar by now)
