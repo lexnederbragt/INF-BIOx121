@@ -1,0 +1,17 @@
+# Why do you think the beginning of the sequence is represented as Ns?
+less chr20.fa
+# >>>>> ANSWER: the telomoeres of chromosomes (ends of chromosomes) are difficult to sequence. The same is true of the telomeres.
+
+# What are the two biggest files?
+# Take a look at the extensions of these files (the extension of a file is the portion after the last "." and consists typically of 3 letters)
+# >>>>> ANSWER: the biggest files have the extension .bwt and .sa
+
+# What do you think these files contain?
+# >>>>> ANSWER: the Burrows-Wheeler transform and the suffix array
+
+# If you want to know why I used "gunzip -c", try "man gunzip" and check out the "-c" option
+gunzip -c /share/inf-biox121/data/vc/indexingAndMapping/ERR016118_1.fastq.gz | less
+# >>>>> ANSWER: gunzip -c decompresses "on the fly" so that the file on disk remains compressed but you can inspect it in less.
+
+# Notice that most of the sequences do not map to the reference. Do you know why that is?
+# >>>>> ANSWER: The fastq file is a whole genome sequencing of a human sample. The human genome is spread over 23 chromosomes, but we only included two of the shortest chromosomes in our reference sequence. Most of the reads in the fastq file are of sequence of the other chromosomes. Had we included all the human chromosomes in our reference genome index, then we would have seen many more the reads from the fastq file mapping to the reference.
