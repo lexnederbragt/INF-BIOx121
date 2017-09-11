@@ -22,7 +22,8 @@
   * [Sep 11 : Exercise Answers from HTS - Algorithms mapping](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/algorithms_mappingExercise_ANSWERS.txt)
 
 ###### *De novo* genome assembly
-
+  * [Sep 11 : Slides and practicals from genome assembly](http://inf-biox121.readthedocs.io/en/2017/Assembly/index.html)
+  
 ###### RNA-seq analysis
 
 ###### Variant calling
