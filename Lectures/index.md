@@ -14,10 +14,12 @@
 * [Sep 5 : Slides from HTS - PacBio](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/Mod1_Day2_2_PacBio.pptx)
 * [Sep 5 : Slides from HTS - Basic file formats](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/Mod1_Day2_3_BasicFileFormats.pdf)
 * [Sep 6 : Slides from HTS - Data pre-processing](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/Mod1_Day3_1_DataPreprocessing.pdf)
+
+###### Algorithms
 * [Sep 6 : Slides from HTS - Algorithms alignment](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/algorithms_alignmentPresentation.pdf)
 * [Sep 11 : Slides from HTS - Algorithms mapping](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/algorithms_mappingPresentation.pdf)
-  * [Sep 6 : Exercise from HTS - Algorithms mapping](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/algorithms_mappingExercise.bash)
-  * [Sep 6 : Exercise Answers from HTS - Algorithms mapping](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/algorithms_mappingExercise_ANSWERS.txt)
+  * [Sep 11 : Exercise from HTS - Algorithms mapping](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/algorithms_mappingExercise.bash)
+  * [Sep 11 : Exercise Answers from HTS - Algorithms mapping](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/algorithms_mappingExercise_ANSWERS.txt)
 
 ###### *De novo* genome assembly
 
