@@ -22,19 +22,6 @@ See the manual for information on the output of Quast:
 [http://quast.bioinf.spbau.ru/manual.html#sec3](http://quast.bioinf.spbau.ru/manual.html#sec3)
 
 
-<!--
-NOTE: on the course server, you can't run `quast` if anaconda is in your PATH. To temporarily remove anaconda, run
-
-```
-$ cd
-$ mv anaconda3 anaconda3_bak
-```
-
-Now log out and back in again.
-
-Other programs/scripts need anaconda, so you should name the folder back to `anaconda3` when you want to use them again and log out and back in again. Sorry for the confusion.
--->
-
 ### Running Quast
 
 Go to the `assembly` folder, make a folder called `quast` and move into it. 
