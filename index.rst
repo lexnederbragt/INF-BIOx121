@@ -23,5 +23,5 @@ The 2017 course edition material can be found `here <http://inf-biox121.readthed
 2012: INF-BIO9120 and INF-BIO5120 Fall 2012 did not have its own website
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
