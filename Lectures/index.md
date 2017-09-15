@@ -23,7 +23,7 @@
 
 ###### *De novo* genome assembly
   * [Sep 11 : Slides and practicals from genome assembly](http://inf-biox121.readthedocs.io/en/2017/Assembly/index.html)
-  
+  * [Sep 11 : Link to Etherpad](https://etherpad.wikimedia.org/p/INF_BIOx121_2017)
 ###### RNA-seq analysis
 
 ###### Variant calling
