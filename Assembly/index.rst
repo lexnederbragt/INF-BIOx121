@@ -25,4 +25,4 @@ Practicals:
    practicals/09_mapping_PacBio_MinION_using_bwa.md
    practicals/Sources
 
-Content of the `etherpad <https://raw.githubusercontent.com/lexnederbragt/INF-BIOx121/2016/Assembly/etherpad.txt>`__
+Content of the `etherpad <https://etherpad.wikimedia.org/p/INF_BIOx121_2017>`__
