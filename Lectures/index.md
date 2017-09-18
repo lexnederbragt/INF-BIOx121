@@ -24,8 +24,12 @@
 ###### *De novo* genome assembly
   * [Sep 11 : Slides and practicals from genome assembly](http://inf-biox121.readthedocs.io/en/2017/Assembly/index.html)
   * [Sep 11 : Link to Etherpad](https://etherpad.wikimedia.org/p/INF_BIOx121_2017)
+  
 ###### RNA-seq analysis
-
+  * [Sep 18 : Slides from RNA-seq - Introduction](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/RNAseq_001_Intro.pdf)
+  * [Sep 18 : Slides from RNA-seq - Transcriptome](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/RNAseq_002_Transcriptome.pdf)
+  * [Sep 18 : Slides from RNA-seq - Case Study](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/RNAseq_CaseStudy.pdf)
+  
 ###### Variant calling
 
 ###### Statistical genomics
