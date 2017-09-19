@@ -30,7 +30,11 @@ Refer to Wikipedia for basic information
 
 ##### Statistical genomics
 
+[Ten Simple Rules for Reproducible Computational Research](https://wiki.uio.no/projects/clsi/images/e/ed/Sandve2013-2.pdf), Sandve _et. al._, PLoS Computational Biology 2013
 
+[The dilemma of choosing the ideal permutation strategy while estimating statistical significance of genome-wide enrichment](https://wiki.uio.no/projects/clsi/images/9/92/The_dilemma_of_choosing_the_ideal_permutation_strategy_while_estimating_statistical_significance_of_genome-wide_enrichment.pdf), Subhajyoti _et. al._, Briefings in Bioinformatics 2013
+
+[GSuite HyperBrowser: integrative analysis of dataset collections across the genome and epigenome](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Curriculum/GSuite_HyperBrowser.pdf), Simovski _et. al._, GigaScience 2107
 
 From 2016
 ============
@@ -55,10 +59,8 @@ Figures 1-4 from
 
 [The power and promise of RNA‐seq in ecology and evolution](https://wiki.uio.no/projects/clsi/images/6/63/Todd2016.pdf), Todd _et. al._, Molecular Ecology 2016
 
-[The dilemma of choosing the ideal permutation strategy while estimating statistical significance of genome-wide enrichment](https://wiki.uio.no/projects/clsi/images/9/92/The_dilemma_of_choosing_the_ideal_permutation_strategy_while_estimating_statistical_significance_of_genome-wide_enrichment.pdf), Subhajyoti _et. al._, Briefings in Bioinformatics 2013
 
-[GSuite HyperBrowser: integrative analysis of dataset collections across the genome and epigenome](https://wiki.uio.no/projects/clsi/images/8/86/SimovskiPre.pdf), Simovski _et. al._, BioRxiv preprint
 
-[Ten Simple Rules for Reproducible Computational Research](https://wiki.uio.no/projects/clsi/images/e/ed/Sandve2013-2.pdf), Sandve _et. al._, PLoS Computational Biology 2013
+
 
 
