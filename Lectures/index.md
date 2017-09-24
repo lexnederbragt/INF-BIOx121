@@ -34,6 +34,8 @@
   * [Sep 18-20 : Slides from RNA-seq - Case study](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/RNAseq_CaseStudy.pdf)
    
 ###### Variant calling
-
+  * [Sep 25 : Slides from VC - slide deck 1](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/vc_autumn2017_mod1_intro.pdf)
+  * [Sep 25 : Slides from VC - slide deck 1](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/vc_autumn2017_mod2_toBasicPipeline.pdf)
+  
 ###### Statistical genomics
 
