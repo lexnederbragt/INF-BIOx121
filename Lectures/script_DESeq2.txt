@@ -38,7 +38,7 @@ $ rstudio
 > getwd()
 # should point to 40_DESeq2
 
-> library(ÒDESeq2Ó)
+> library("DESeq2")
 
 # Read the count file created using featureCounts. Remember to "skip" the first line
 > data <- read.delim("../35_tophat_for_featureCounts/counts_paired", skip=1)
