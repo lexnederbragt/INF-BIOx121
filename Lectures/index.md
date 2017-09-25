@@ -31,7 +31,7 @@
   * [Sep 19 : Slides from RNA-seq - Experimental design](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/RNAseq_003_Experimental_Design.pdf)
   * [Sep 19 : Slides from RNA-seq - Differential expression](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/RNAseq_004_DE_statistics.pdf)
   * [Sep 20 : Slides from RNA-seq - After DE](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/RNAseq_005_After_DE.pdf)
-  * [Sep 18-20 : Slides from RNA-seq - Case study](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/RNAseq_CaseStudy.pdf)
+  * [Sep 18-20 : Slides from RNA-seq - Case study (Updated)](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/RNAseq_CaseStudy.pdf)
    
 ###### Variant calling
   * [Sep 25 : Slides from VC - slide deck 1](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/vc_autumn2017_mod1_intro.pdf)
