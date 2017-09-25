@@ -1,0 +1,78 @@
+$ cd
+$ cd Desktop
+$ cd rna_seq
+$ mkdir 35_tophat_for_featureCounts
+$ cd 35_tophat_for_featureCounts
+
+# Link tophat2 output BAM files to the above folder. These are "accepted_hits.bam" files but renamed to make it easier for "featureCounts".
+$ ln -s /data/RNA-seq/35_tophat_for_featureCounts/C*bam .
+
+$ cd
+$ cd Desktop
+$ cd rna_seq
+$ mkdir 40_featureCounts
+$ cd 40_featureCounts
+
+## Correct
+
+$ featureCounts -p -s 2 -a ../reference/genes.gtf -o counts_paired ../35_tophat_for_featureCounts/*bam 2> counts_paired.log
+# Check FeatureCounts output
+$ cat counts_paired.log
+
+## Try the following, run DESeq2 and check the difference from above
+
+# featureCounts -p -a ../reference/genes.gtf -o counts_paired_stranded ../35_tophat_for_featureCounts/*bam
+# featureCounts -a ../reference/genes.gtf -o counts ../35_tophat_for_featureCounts/*bam
+
+
+##### DESeq2 in rstudio
+
+$ cd
+$ cd Desktop
+$ cd rna_seq
+$ mkdir 40_DESeq2
+$ cd 40_DESeq2
+
+## R using Rstudio
+$ rstudio
+> getwd()
+# should point to 40_DESeq2
+
+> library(ÒDESeq2Ó)
+
+# Read the count file created using featureCounts. Remember to "skip" the first line
+> data <- read.delim("../35_tophat_for_featureCounts/counts_paired", skip=1)
+
+# Extract count columns in a matrix, make the row names point to gene id and rename the column names
+> countData <- data[,c(7:12)]
+> rownames(countData) <- data[,1]
+> colnames(countData) <- c("C1_R1", "C1_R2", "C1_R3", "C2_R1", "C2_R2", "C2_R3")
+
+# Create the data file with row names point to column names in the above matrix - Refer to DESeq2 for more information
+> colData <- data.frame(condition = c("C1", "C1", "C1", "C2", "C2", "C2"))
+> rownames(colData) <- colnames(countData)
+
+# Now import both the above files into DESeq2 format with information regarding the design
+> dds <- DESeqDataSetFromMatrix(countData = countData, colData = colData, design =~ condition)
+
+# Normalise and analyse the count file using DESeq2
+> dds_process <- DESeq(dds)
+
+# Extract the results
+> res <- results(dds_process)
+> summary(res)
+
+# Extract the results with alpha (q value) less than 0.05 as a criteria for significance  
+> res_05 <- results(dds_process, alpha=0.05)
+> summary(res_05)
+
+# Extract significantly DE list and write them to a file
+> diff.genes <- subset(res_05, padj <= 0.05)
+> write.table(diff.genes, "DE_DESeq2_genes.txt", quote=F)
+
+# Refer to DESeq2 manual for plot description
+
+> plotDispEsts(dds_process)
+> plotPCA(DESeqTransform(dds_process))
+> plotMA(dds_process)
+> sizeFactors(dds_process)
