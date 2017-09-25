@@ -30,7 +30,7 @@
   * [Sep 18 : Slides from RNA-seq - Transcriptome](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/RNAseq_002_Transcriptome.pdf)
   * [Sep 19 : Slides from RNA-seq - Experimental design](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/RNAseq_003_Experimental_Design.pdf)
   * [Sep 19 : Slides from RNA-seq - Differential expression](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/RNAseq_004_DE_statistics.pdf)
-  * [Sep 20 : Slides from RNA-seq - After DE]
+  * [Sep 20 : Slides from RNA-seq - After DE](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/RNAseq_005_After_DE.pdf)
   * [Sep 18-20 : Slides from RNA-seq - Case study](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/RNAseq_CaseStudy.pdf)
    
 ###### Variant calling
