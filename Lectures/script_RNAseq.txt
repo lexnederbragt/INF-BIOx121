@@ -1,0 +1,61 @@
+$ cd
+$ cd Desktop
+$ mkdir rna_seq
+$ cd rna_seq
+$ mkdir reference
+$ cd reference
+# Link Genome fasta and Genes annotation file (GTF format)
+$ ln -s /data/RNA-seq/reference/genome.fa .
+$ ln -s /data/RNA-seq/reference/genes.gtf .
+
+# Build bowtie2 index for Genome fasta file
+$ bowtie2-build genome.fa genome
+
+# Build tophat2 transcriptome index using bowtie2 index and the GTF file
+$ tophat2 -G genes.gtf --transcriptome-index=known genome
+
+$ cd
+$ cd Desktop
+$ mkdir rna_seq
+$ cd rna_seq
+$ mkdir 00_raw_data
+$ cd 00_raw_data
+$ ln -s /data/RNA-seq/00_raw_data/C*fq.gz .
+
+## Run fastQC to check raw data
+$ fastqc C*fq.gz
+
+# Run tophat2 for each paired sample
+$ tophat2 -p 6 -G reference/genes.gtf --transcriptome-index=reference/known -o C1_R1_thout reference/genome 00_raw_data/C1_R1_1.fq.gz 00_raw_data/C1_R1_2.fq.gz
+
+# tophat2 -p 6 -G reference/genes.gtf --transcriptome-index=reference/known -o C1_R2_thout reference/genome 00_raw_data/C1_R2_1.fq.gz 00_raw_data/C1_R2_2.fq.gz
+# tophat2 -p 6 -G reference/genes.gtf --transcriptome-index=reference/known -o C1_R3_thout reference/genome 00_raw_data/C1_R3_1.fq.gz 00_raw_data/C1_R3_2.fq.gz
+# tophat2 -p 6 -G reference/genes.gtf --transcriptome-index=reference/known -o C2_R1_thout reference/genome 00_raw_data/C2_R1_1.fq.gz 00_raw_data/C2_R1_2.fq.gz
+# tophat2 -p 6 -G reference/genes.gtf --transcriptome-index=reference/known -o C2_R2_thout reference/genome 00_raw_data/C2_R2_1.fq.gz 00_raw_data/C2_R2_2.fq.gz
+# tophat2 -p 6 -G reference/genes.gtf --transcriptome-index=reference/known -o C2_R3_thout reference/genome 00_raw_data/C2_R3_1.fq.gz 00_raw_data/C2_R3_2.fq.gz
+
+$ cd
+$ cd Desktop
+$ cd rna_seq
+$ mkdir 10_tophat
+$ cd 10_tophat
+
+# Copy pre computed tophat2 result for C1_R1 paired end data
+$ cp /data/RNA-seq/10_tophat/C1_R1_thout_preCompute.tar .
+$ tar -xvf C1_R1_thout_preCompute.tar
+$ cd C1_R1_thout_preCompute
+
+# Check tophat output files
+$ cat align_summary.txt
+$ cat logs/tophat.log
+
+# In case you want to run cuffdiff, you the following script
+# cuffdiff -p 8 -b reference/genome.fa -u reference/genes.gtf -o diff_out -L C1,C2 C1_R1_thout/accepted_hits.bam,C1_R2_thout/accepted_hits.bam,C1_R3_thout/accepted_hits.bam C2_R1_thout/accepted_hits.bam,C2_R2_thout/accepted_hits.bam,C2_R3_thout/accepted_hits.bam
+
+# Copy pre computed cuffdiff result
+$ cd 
+$ cd Desktop/rna_seq
+$ cp /data/RNA-seq/20_cuffdiff.tar .
+$ tar -xvf 20_cufflinks.tar
+
+

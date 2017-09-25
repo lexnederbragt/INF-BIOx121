@@ -1,0 +1,64 @@
+$ cd 
+$ cd Desktop/rna_seq
+$ mkdir 30_cummeRbund
+$ cd 30_cummeRbund
+## R using Rstudio
+$ rstudio
+
+> getwd()
+# should point to 30_cummeRbund
+> library("cummeRbund")
+> cuff <- readCufflinks("../20_cuffdiff")
+> cuff
+
+# Refer to CummeRbund manual for plot description
+
+> dispersionPlot(genes(cuff))
+> csDensity(genes(cuff), replicates=T)
+> csBoxplot(genes(cuff), replicates=T)
+> csScatterMatrix(genes(cuff))
+> csDendro(genes(cuff), replicates=T)
+> fpkmSCVPlot(genes(cuff))
+> csVolcanoMatrix(genes(cuff))
+> MDSplot(genes(cuff), replicates=T)
+> sigMatrix(cuff)
+> sigMatrix(cuff, level="isoforms")
+
+
+# Extract differential expression information for all genes
+> diff.genes <- diffData(genes(cuff))
+
+# Extract gene level annotation
+> annot.genes <- annotation(genes(cuff))[,c(1,4)]
+
+# Merge DE list and annotation file
+> diff.genes.annot <- merge(diff.genes, annot.genes, by = "gene_id")
+
+# Extract significantly DE list
+> diff.genes.sig <- subset(diff.genes.annot, significant=="yes")
+
+# Write significantly DE genes to a file
+> write.table(diff.genes.sig, "DE_cuff_genes.txt", quote=F, sep="\t", row.names=F)
+
+# Same as above but for isoforms
+> diff.iso <- diffData(isoforms(cuff))
+> annot.iso <- annotation(isoforms(cuff))[,c(1,2,4)]
+> diff.iso.annot <- merge(diff.iso, annot.iso, by = "isoform_id") 
+> diff.iso.sig <- subset(diff.iso, significant=="yes")
+> write.table(diff.iso.sig, "DE_cuff_isoforms.txt", quote=F, sep="\t", row.names=F)
+
+# Extract gene ids of significantly DE genes
+> myGene <- diff.genes.sig[,1]
+
+# Extract cuffGeneSet for the above list
+> myGenes <- getGenes(cuff, myGene)
+
+# Create heatmap
+> csHeatmap(myGenes)
+
+# Extract FPKM list for all replicates and add 1 to all the values.
+# Write the data to a file to use it in TM4 MeV tool (Makre sure you take care of the header for row.names in Excel)
+> fpkm <- repFpkmMatrix(genes(myGenes))
+> fpkm <- fpkm + 1
+> write.table(fpkm, "fpkm_list.txt", sep="/t", quote=F)
+
