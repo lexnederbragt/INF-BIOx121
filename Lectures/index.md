@@ -34,9 +34,9 @@
   * [Sep 19 : Slides from RNA-seq - Differential expression](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/RNAseq_004_DE_statistics.pdf)
   * [Sep 20 : Slides from RNA-seq - After DE](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/RNAseq_005_After_DE.pdf)
   * [Sep 18-20 : Slides from RNA-seq - Case study (Updated)](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/RNAseq_CaseStudy.pdf)
-   * [Script - RNASeq](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/script_RNAseq.txt)
-   * [Script - CummeRbund](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/script_cummeRbund.txt)
-   * [Script - DESeq2](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/script_DESeq2.txt)
+    * [Script - RNASeq](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/script_RNAseq.txt)
+    * [Script - CummeRbund](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/script_cummeRbund.txt)
+    * [Script - DESeq2](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/script_DESeq2.txt)
    
    
 ###### Variant calling
