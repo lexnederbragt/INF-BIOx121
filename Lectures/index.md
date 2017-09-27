@@ -43,9 +43,9 @@
   * [Sep 25 : Slides from VC - slide deck 1](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/vc_autumn2017_mod1_intro.pdf)
   * [Sep 25 : Slides from VC - slide deck 2](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/vc_autumn2017_mod2_toBasicPipeline.pdf)
   * [Sep 26 : Slides from VC - slide deck 3](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/vc_autumn2017_mod3_toGeneratingReports.pdf)  
-  * [Sep 26 : Slides from VC - slide deck 4](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/vc_autumn2017_mod4_variantCallingAndVCF.pdf)  
-  * [Sep 26 : Slides from VC - slide deck 5](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/vc_autumn2017_mod5_toAdvancedPipeline.pdf)  
-  * [Sep 25 : Slides from VC - slide deck 6](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/vc_autumn2017_mod6_toFunctionalAnnotation.pdf)
+  * [Sep 27 : Slides from VC - slide deck 4](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/vc_autumn2017_mod4_variantCallingAndVCF.pdf)  
+  * [Sep 27 : Slides from VC - slide deck 5](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/vc_autumn2017_mod5_toAdvancedPipeline.pdf)  
+  * [Sep 27 : Slides from VC - slide deck 6](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/vc_autumn2017_mod6_toFunctionalAnnotation.pdf)
   
 ###### Statistical genomics
 
