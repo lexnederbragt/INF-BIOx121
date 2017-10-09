@@ -7,31 +7,19 @@ Below you will find the link to the home exam questions followed by the list of 
 
 All the best!
 
-* [De novo assembly]()  
-Anna Sofia Elisabeth Lundahl  
-Eirik Berg Nordheim  
-Ibrahim Ahmed Akkouh  
-Leila Heidarg Rad  
-Øyvind Sætren Gulbrandsen  
+* [De novo assembly]()
+
+Anna Sofia Elisabeth Lundahl, Eirik Berg Nordheim, Ibrahim Ahmed Akkouh,  Leila Heidarg Rad, Øyvind Sætren Gulbrandsen  
 
 
 * [RNA-Seq analysis](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/misc/RNAseq_home_exam_2017.pdf)  
-Ana Beatriz Riguetti Zanardo Botelho  
-Elena Kirsanova  
-Hengyi Zhu  
-Meriam Guellil  
-Ranjana Pathak  
 
-* [Variant Calling]()  
-Albina Hulda Palsdottir  
-Fawzi Rahmadiyan Zuhairi  
-Håkon Kaspersen  
-Nardos Tesfaye Woldemariam  
-Susanne Maria Moltubakk Tande  
+Ana Beatriz Riguetti Zanardo Botelho, Elena Kirsanova, Hengyi Zhu, Meriam Guellil, Ranjana Pathak  
+
+* [Variant Calling]() 
+
+Albina Hulda Palsdottir, Fawzi Rahmadiyan Zuhairi, Håkon Kaspersen, Nardos Tesfaye Woldemariam, Susanne Maria Moltubakk Tande  
 
 * [Statistical genomics]()  
-Aruppillai Suthaparan  
-Girum Tadesse Tessema  
-Jonfinn Blix Knutsen  
-Nirujah Kirupanithy  
-Therese Isabelle Dahle  
+
+Aruppillai Suthaparan, Girum Tadesse Tessema, Jonfinn Blix Knutsen, Nirujah Kirupanithy, Therese Isabelle Dahle  
