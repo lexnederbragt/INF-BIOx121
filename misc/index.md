@@ -2,7 +2,7 @@
 
 Thanks for attending this course and hope you enjoyed it!
 
-It would be great if you can provide some (anonymous) feedback regarding the course using this [form](https://skjema.uio.no/88320).
+### It would be great if you can provide some (anonymous) feedback regarding the course using this [form](https://skjema.uio.no/88320).
 
 Oral exam will take place on Nov 3. Exact time table will be published here before Nov 1.
 In case of any questions regarding the home exam, do get in touch with the teachers directly via email or contact Arvind Sundaram (arvind.sundaram @ medisin.uio.no)
@@ -11,7 +11,7 @@ Below you will find the link to the home exam questions followed by the list of 
 
 All the best!
 
-* [De novo assembly]()
+* [*De novo assembly*]()
 
 Anna Sofia Elisabeth Lundahl, Eirik Berg Nordheim, Ibrahim Ahmed Akkouh,  Leila Heidarg Rad, Øyvind Sætren Gulbrandsen  
 
