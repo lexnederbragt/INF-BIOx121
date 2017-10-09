@@ -50,4 +50,5 @@
   * [Sep 27 : Slides from VC - slide deck 6](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/vc_autumn2017_mod6_toFunctionalAnnotation.pdf)
   
 ###### Statistical genomics
+  * [Oct 09 : Slides from Statistical genomics - part 1](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Lectures/Statistical_genomics_2017_Day1.pdf)
 
