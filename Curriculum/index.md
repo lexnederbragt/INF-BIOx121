@@ -36,9 +36,9 @@ Refer to Wikipedia for basic information
 
 [GSuite HyperBrowser: integrative analysis of dataset collections across the genome and epigenome](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Curriculum/GSuite_HyperBrowser.pdf), Simovski _et. al._, GigaScience 2107
 
-[Hypothesis testing](http://www.biostathandbook.com/hypothesistesting.html)
+[Hypothesis testing](http://www.biostathandbook.com/hypothesistesting.html), McDonald, Handbook of Biological Statistics
 
-[Multiple testing](http://www.biostathandbook.com/multiplecomparisons.html)
+[Multiple testing](http://www.biostathandbook.com/multiplecomparisons.html), McDonald, Handbook of Biological Statistics
 
 From 2016
 ============
