@@ -26,8 +26,8 @@ Albina Hulda Palsdottir, Fawzi Rahmadiyan Zuhairi, Håkon Kaspersen, Nardos Tesf
 
 * [Statistical genomics]()  
 
-Aruppillai Suthaparan  
-Girum Tadesse Tessema  
-Jonfinn Blix Knutsen  
-Nirujah Kirupanithy  
-Therese Isabelle Dahle  
+Aruppillai Suthaparan\s
+Girum Tadesse Tessema\s
+Jonfinn Blix Knutsen\s
+Nirujah Kirupanithy\s
+Therese Isabelle Dahle\s
