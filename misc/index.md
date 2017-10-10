@@ -11,7 +11,7 @@ Below you will find the link to the home exam questions followed by the list of 
 
 All the best!
 
-* [*De novo assembly*]()
+* [*De novo assembly*](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/misc/Denovo_home_exam_2017.pdf)
 
 Anna Sofia Elisabeth Lundahl<br>
 Eirik Berg Nordheim<br>
