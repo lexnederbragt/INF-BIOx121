@@ -14,6 +14,9 @@ Refer to Wikipedia for basic information
 [RNA-seq differential expression studies: more sequence or more replication?](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Curriculum/HTS_DE.pdf), Liu Y _et. al._, Bioinformatics 2014
 
 ##### _De novo_ genome assembly
+[A field guide to whole‐genome sequencing, assembly and annotation](https://wiki.uio.no/projects/clsi/images/9/99/Ekblom2014.pdf), Ekblom and Wolf, Evolutionary Applications 2014
+
+[The Theory and Practice of Genome Sequence Assembly](https://wiki.uio.no/projects/clsi/images/8/8f/Simpson2015.pdf), Simpson and Pop, Annual Review of Genomics and Human Genetics 2015
 
 ##### RNA-seq analysis
 [A survey of best practices for RNA-seq data analysis](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/Curriculum/RNAseq_BestPractice.pdf), Conesa A _et. al._, Genome Biology 2016 
@@ -48,12 +51,6 @@ Figures 1-4 from
 [Sequencing technologies — the next generation](https://wiki.uio.no/projects/clsi/images/a/a5/Sequencing_technologies_the_next_generation.pdf), Metzker, Nature Reviews Genetics 2009
 
 [An Extensive Evaluation of Read Trimming Effects on Illumina NGS Data Analysis](https://wiki.uio.no/projects/clsi/images/3/3e/Fabbro2013.pdf), Fabbro _et. al._, PLoS ONE 2013
-
-[Sequencing depth and coverage: key considerations in genomic analyses](https://wiki.uio.no/projects/clsi/images/7/75/Sims2014.pdf), Sims _et. al._, Nature Reviews Genetics 2014
-
-[A field guide to whole‐genome sequencing, assembly and annotation](https://wiki.uio.no/projects/clsi/images/9/99/Ekblom2014.pdf), Ekblom and Wolf, Evolutionary Applications 2014
-
-[The Theory and Practice of Genome Sequence Assembly](https://wiki.uio.no/projects/clsi/images/8/8f/Simpson2015.pdf), Simpson and Pop, Annual Review of Genomics and Human Genetics 2015
 
 [Benchmarking short sequence mapping tools](https://wiki.uio.no/projects/clsi/images/e/ea/Hatem2013.pdf) , Hatem  _et. al._, BMC Bioinformatics 2013
 
