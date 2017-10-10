@@ -13,21 +13,32 @@ All the best!
 
 * [*De novo assembly*]()
 
-Anna Sofia Elisabeth Lundahl, Eirik Berg Nordheim, Ibrahim Ahmed Akkouh,  Leila Heidarg Rad, Øyvind Sætren Gulbrandsen  
-
+Anna Sofia Elisabeth Lundahl<br>
+Eirik Berg Nordheim<br>
+Ibrahim Ahmed Akkouh<br>
+Leila Heidarg Rad<br>
+Øyvind Sætren Gulbrandsen<br>
 
 * [RNA-Seq analysis](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/misc/RNAseq_home_exam_2017.pdf)  
 
-Ana Beatriz Riguetti Zanardo Botelho, Elena Kirsanova, Hengyi Zhu, Meriam Guellil, Ranjana Pathak  
+Ana Beatriz Riguetti Zanardo Botelho<br>
+Elena Kirsanova<br>
+Hengyi Zhu<br>
+Meriam Guellil<br>
+Ranjana Pathak<br>
 
 * [Variant Calling]() 
 
-Albina Hulda Palsdottir, Fawzi Rahmadiyan Zuhairi, Håkon Kaspersen, Nardos Tesfaye Woldemariam, Susanne Maria Moltubakk Tande  
+Albina Hulda Palsdottir<br>
+Fawzi Rahmadiyan Zuhairi<br>
+Håkon Kaspersen<br>
+Nardos Tesfaye Woldemariam<br>
+Susanne Maria Moltubakk Tande<br>
 
 * [Statistical genomics]()  
 
 Aruppillai Suthaparan<br>
-Girum Tadesse Tessema\<br>
+Girum Tadesse Tessema<br>
 Jonfinn Blix Knutsen<br>
 Nirujah Kirupanithy<br>
 Therese Isabelle Dahle<br>
