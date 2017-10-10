@@ -56,8 +56,6 @@ Figures 1-4 from
 
 [Genotype and SNP calling from next-generation sequencing data](https://wiki.uio.no/projects/clsi/images/3/33/Genotype_and_SNP_calling_from_next-generation_sequencing_data.pdf), Nielsen _et. al._, Nature Reviews Genetics 2011
 
-[A survey of best practices for RNA-seq data analysis](https://wiki.uio.no/projects/clsi/images/a/a6/Conesa2016.pdf), Conesa _et. al._ Genome Biology 2016
-
 [The power and promise of RNA‐seq in ecology and evolution](https://wiki.uio.no/projects/clsi/images/6/63/Todd2016.pdf), Todd _et. al._, Molecular Ecology 2016
 
 
