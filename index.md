@@ -8,6 +8,10 @@ Lecutre slides
 [Lecture slides](http://inf-biox121.readthedocs.io/en/2017/Lectures/)
 This page is updated after each lecture/Module.
 
+<!--- ## Home exam
+[Link](http://inf-biox121.readthedocs.io/en/2017/misc/) to home exam.
+
+--->
 ## Link to VM
 
 http://vdi-apcon-t01.uio.no/
