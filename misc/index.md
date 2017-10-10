@@ -27,7 +27,7 @@ Hengyi Zhu<br>
 Meriam Guellil<br>
 Ranjana Pathak<br>
 
-* [Variant Calling]() 
+* [Variant Calling](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/misc/VC_home_exam_2017.pdf)  
 
 Albina Hulda Palsdottir<br>
 Fawzi Rahmadiyan Zuhairi<br>
