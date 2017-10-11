@@ -35,7 +35,7 @@ Håkon Kaspersen<br>
 Nardos Tesfaye Woldemariam<br>
 Susanne Maria Moltubakk Tande<br>
 
-* [Statistical genomics]()  
+* [Statistical genomics](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/misc/StatisticalGenomics_home_exam_2017.pdf)  
 
 Aruppillai Suthaparan<br>
 Girum Tadesse Tessema<br>
