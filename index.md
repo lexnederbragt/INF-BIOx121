@@ -14,7 +14,7 @@ This page is updated after each lecture/Module.
 
 ## Link to VM
 
-http://vdi-apcon-t01.uio.no/
+https://desktop.uio.no/
 
 ## Introduction
 
