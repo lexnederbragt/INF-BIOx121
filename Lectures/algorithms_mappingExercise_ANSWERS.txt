@@ -1,6 +1,6 @@
 # Why do you think the beginning of the sequence is represented as Ns?
 less chr20.fa
-# >>>>> ANSWER: the telomoeres of chromosomes (ends of chromosomes) are difficult to sequence. The same is true of the telomeres.
+# >>>>> ANSWER: the telomoeres of chromosomes (ends of chromosomes) are difficult to sequence. The same is true of the centromeres.
 
 # What are the two biggest files?
 # Take a look at the extensions of these files (the extension of a file is the portion after the last "." and consists typically of 3 letters)
