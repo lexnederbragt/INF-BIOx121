@@ -184,7 +184,7 @@ The schedule will appear here early in August and will link to the webpages with
 </tr>
 <tr class="even">
 <td align="left">Nov 3</td>
-<td align="left">TBD</td>
+<td align="left">Epsilon/ Eta(or Delta)</td>
 <td align="left">Oral examination of the home exam, 30 minutes</td>
 <td align="left">Oral examination of the home exam, 30 minutes</td>
 </tr>
