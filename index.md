@@ -253,6 +253,7 @@ The exam for this course will be:
 **NOTE** 80% attendance is required to take the final exam.
 
 ### Written exams from previous years
+* [2016](https://github.com/lexnederbragt/INF-BIOx121/raw/2017/misc/2016.pdf) (exam only)
 * [2015](https://github.com/lexnederbragt/INF-BIOx121/tree/2015/exam) (with information on how the grading was done)
 * [2014](https://wiki.uio.no/projects/clsi/images/f/f2/Examinfbio2014.pdf) (exam only)
 
