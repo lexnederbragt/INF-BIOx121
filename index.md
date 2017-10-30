@@ -205,6 +205,11 @@ Ole-Johan Dahls hus location: <a href='https://goo.gl/maps/b1qoR'>Google maps</a
 
 Sep 6 (KBH-3203): Kristine Bonnevies hus Seminarrom 3203 location: <a href='https://goo.gl/maps/pLn9cipNMZA2'>Google maps</a>
 
+**Exam location:**
+Written exam will take place at Silurveien 2 and NOT at IFI.
+
+https://www.uio.no/om/finn-fram/omrader/andre/silurveien/
+
 ## Requirements
 
 * No prior background in bioinformatics or computer science is required, however, we expect students to have a basic understanding of the unix shell. For this, we organise an **introductory unix course** about a
