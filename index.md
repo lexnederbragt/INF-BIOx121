@@ -206,9 +206,10 @@ Ole-Johan Dahls hus location: <a href='https://goo.gl/maps/b1qoR'>Google maps</a
 Sep 6 (KBH-3203): Kristine Bonnevies hus Seminarrom 3203 location: <a href='https://goo.gl/maps/pLn9cipNMZA2'>Google maps</a>
 
 **Exam location:**
-Written exam will take place at Silurveien 2 and NOT at IFI.
 
-https://www.uio.no/om/finn-fram/omrader/andre/silurveien/
+Written exam will take place at [Silurveien 2](https://www.uio.no/om/finn-fram/omrader/andre/silurveien/) and NOT at IFI.
+
+
 
 ## Requirements
 
