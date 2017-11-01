@@ -11,6 +11,8 @@ In case of any questions regarding the home exam, do get in touch with the teach
 
 **Oral exam schedule:**
 
+Oral exam will take place at Ole-Johan Dahls hus (same building as the lectures) location: <a href='https://goo.gl/maps/b1qoR'>Google maps</a>
+
 Plan your presentation for 15-20 mins max. 
 Also, please arrive at least 15 mins before your timeslot. Call Arvind Sundaram (90873284) in case you are lost!
 
