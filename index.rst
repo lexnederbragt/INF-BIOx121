@@ -6,11 +6,14 @@
 Course material for the INF-BIOx121 course
 ==========================================
 
-**Current edition**  
+This is the website of the PhD/MSc course **High Throughput Sequencing technologies and bioinformatics analysis** INF-BIO-5121/9121 that was taught at the University of Oslo from 2012 to 2017.
 
-The 2017 course edition material can be found `here <http://inf-biox121.readthedocs.org/en/2017/>`__.
+From 2018, the course changed format under a new name, "Genome Sequencing Technologies, Assembly, Variant Calling and Statistical Genomics", and recieved a new course code. The material for that course can be found at the websie for `IN-BIOS5000/9000. <https://in-biosx000.readthedocs.io/en/2018/>`__
+
 
 **Previous editions**
+
+`2017 <http://inf-biox121.readthedocs.org/en/2017>`__
 
 `2016 <http://inf-biox121.readthedocs.org/en/2016>`__
 
